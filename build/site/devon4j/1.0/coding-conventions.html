@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Coding</li>
+    <li><a href="coding-conventions.html">Coding Conventions</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/coding-conventions.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_coding_conventions">Coding Conventions</a></li>
+<li><a href="#_naming">Naming</a></li>
+<li><a href="#_packages">Packages</a></li>
+<li><a href="#_code_tasks">Code Tasks</a>
+<ul class="sectlevel2">
+<li><a href="#_todo">TODO</a></li>
+<li><a href="#_fixme">FIXME</a></li>
+<li><a href="#_review">REVIEW</a></li>
+</ul>
+</li>
+<li><a href="#_code_documentation">Code-Documentation</a></li>
+<li><a href="#_code_style">Code-Style</a>
+<ul class="sectlevel2">
+<li><a href="#_blobs">BLOBs</a></li>
+<li><a href="#_stateless_programming">Stateless Programming</a></li>
+<li><a href="#_closing_resources">Closing Resources</a></li>
+<li><a href="#_catching_and_handling_exceptions">Catching and handling Exceptions</a></li>
+<li><a href="#_lambdas_and_streams">Lambdas and Streams</a></li>
+<li><a href="#_optionals">Optionals</a></li>
+<li><a href="#_encoding">Encoding</a></li>
+<li><a href="#_prefer_general_api">Prefer general API</a></li>
+<li><a href="#_prefer_primitive_boolean">Prefer primitive boolean</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_coding_conventions"><a class="anchor" href="#_coding_conventions"></a>Coding Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The code should follow general conventions for Java (see <a href="http://www.oracle.com/technetwork/java/namingconventions-139351.html">Oracle Naming Conventions</a>, <a href="https://google.github.io/styleguide/javaguide.html">Google Java Style</a>, etc.).We consider this as common sense and provide configurations for <a href="http://www.sonarqube.org/">SonarQube</a> and related tools such as <a href="http://checkstyle.sourceforge.net/">Checkstyle</a> instead of repeating this here.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_naming"><a class="anchor" href="#_naming"></a>Naming</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Besides general Java naming conventions, we follow the additional rules listed here explicitly:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Always use short but speaking names (for types, methods, fields, parameters, variables, constants, etc.).</p>
+</li>
+<li>
+<p>Strictly avoid special characters in technical names (for files, types, fields, methods, properties, variables, database tables, columns, constraints, etc.). In other words only use Latin alpahnumeric ASCII characters with the common allowed technical separators for the accordign context (e.g. underscore) for technical names (even excluding whitespaces).</p>
+</li>
+<li>
+<p>For package segments and type names prefer singular forms (<code>CustomerEntity</code> instead of <code class="line-through">CustomersEntity</code>). Only use plural forms when there is no singular or it is really semantically required (e.g. for a container that contains multiple of such objects).</p>
+</li>
+<li>
+<p>Avoid having duplicate type names. The name of a class, interface, enum or annotation should be unique within your project unless this is intentionally desired in a special and reasonable situation.</p>
+</li>
+<li>
+<p>Avoid artificial naming constructs such as prefixes (<code>I*</code>) or suffixes (<code>*IF</code>) for interfaces.</p>
+</li>
+<li>
+<p>Use CamelCase even for abbreviations (<code>XmlUtil</code> instead of <code class="line-through">XMLUtil</code>)</p>
+</li>
+<li>
+<p>Avoid property/field names where the second character is upper-case at all (e.g. 'aBc'). See <a href="https://github.com/devonfw/cobigen/issues/1095">#1095</a> for details.</p>
+</li>
+<li>
+<p>Names of Generics should be easy to understand. Where suitable follow the common rule <code>E=Element</code>, <code>T=Type</code>, <code>K=Key</code>, <code>V=Value</code> but feel free to use longer names for more specific cases such as <code>ID</code>, <code>DTO</code> or <code>ENTITY</code>. The capitalized naming helps to distinguish a generic type from a regular class.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_packages"><a class="anchor" href="#_packages"></a>Packages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Java Packages are the most important element to structure your code. We use a strict packaging convention to map technical layers and business components (slices) to the code (See <a href="architecture.html#technical-architecture" class="xref page">technical architecture</a> for further details). By using the same names in documentation and code we create a strong link that gives orientation and makes it easy to find from business requirements, specifications or story tickets into the code and back.</p>
+</div>
+<div class="paragraph">
+<p>For an devon4j based application we use the following Java-Package schema:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">«root».«component».«layer»[.«detail»]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>E.g. in our example application we find the Spring Data repositories for the <code>ordermanagement</code> component in the package <code>com.devonfw.application.mtsj.ordermanagement.dataaccess.api.repo</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Segments of package schema</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Segment</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«root»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is the basic Java Package name-space of your app. Typically we suggest to use <code>«group».«artifact»</code> where <code>«group»</code> is your maven/gradle <code>groupId</code> corresponding to your organization or IT project owning the code following common Java Package conventions. The segment <code>«artifact»</code> is your maven/gradle <code>artifactId</code> and is typically the technical name of your app.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>com.devonfw.application.mtsj</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«component»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The (business) component the code belongs to. It is defined by the business architecture and uses terms from the business domain. Use the implicit component <code>general</code> for code not belonging to a specific component (foundation code).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>salesmanagement</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«layer»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the technical layer (See <a href="architecture.html" class="xref page">technical architecture</a>). Details are described for the <a href="guide-structure-modern.html#layers" class="xref page">modern project structure</a> and for the <a href="guide-structure-classic.html#layers" class="xref page">classic project structure</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>logic</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«detail»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Here you are free to further divide your code into sub-components and other concerns according to the size of your component part. If you want to strictly separate API from implementation you should start <code>«detail»</code> with <code>«scope»</code> that is explained below.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dao</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«scope»</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The scope which is one of <code>api</code> (official API to be used by other layers or components), <code>base</code> (basic code to be reused by other implementations) and <code>impl</code> (implementation that should never be imported from outside). This segment was initially mandatory but due to trends such as microservices, lean, and agile we decided to make it optional and do not force anybody to use it.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>api</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Please note that <code>devon4j</code> library modules for spring use <code>com.devonfw.module</code> as <code>«root»</code> and the name of the module as <code>«component»</code>. E.g. the API of our <code>beanmapping</code> module can be found in the package <code>com.devonfw.module.beanmapping.common.api</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_code_tasks"><a class="anchor" href="#_code_tasks"></a>Code Tasks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Code spots that need some rework can be marked with the following tasks tags. These are already properly pre-configured in your development environment for auto completion and to view tasks you are responsible for. It is important to keep the number of code tasks low. Therefore, every member of the team should be responsible for the overall code quality. So if you change a piece of code and hit a code task that you can resolve in a reliable way, please do this as part of your change and remove the according tag.</p>
+</div>
+<div class="sect2">
+<h3 id="_todo"><a class="anchor" href="#_todo"></a>TODO</h3>
+<div class="paragraph">
+<p>Used to mark a piece of code that is not yet complete (typically because it can not be completed due to a dependency on something that is not ready).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"> // TODO «author» «description»</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A TODO tag is added by the author of the code who is also responsible for completing this task.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixme"><a class="anchor" href="#_fixme"></a>FIXME</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"> // FIXME «author» «description»</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A FIXME tag is added by the author of the code or someone who found a bug he can not fix right now. The «author» who added the FIXME is also responsible for completing this task. This is very similar to a TODO but with a higher priority. FIXME tags indicate problems that should be resolved before a release is completed while TODO tags might have to stay for a longer time.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review"><a class="anchor" href="#_review"></a>REVIEW</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"> // REVIEW «responsible» («reviewer») «description»</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A REVIEW tag is added by a reviewer during a code review. Here the original author of the code is responsible to resolve the REVIEW tag and the reviewer is assigning this task to him. This is important for feedback and learning and has to be aligned with a review "process" where people talk to each other and get into discussion. In smaller or local teams a peer-review is preferable but this does not scale for large or even distributed teams.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_code_documentation"><a class="anchor" href="#_code_documentation"></a>Code-Documentation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As a general goal, the code should be easy to read and understand. Besides, clear naming the documentation is important. We follow these rules:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>APIs (especially component interfaces) are properly documented with JavaDoc.</p>
+</li>
+<li>
+<p>JavaDoc shall provide actual value - we do not write JavaDoc to satisfy tools such as checkstyle but to express information not already available in the signature.</p>
+</li>
+<li>
+<p>We make use of <code>{@link}</code> tags in JavaDoc to make it more expressive.</p>
+</li>
+<li>
+<p>JavaDoc of APIs describes how to use the type or method and not how the implementation internally works.</p>
+</li>
+<li>
+<p>To document implementation details, we use code comments (e.g. <code>// we have to flush explicitly to ensure version is up-to-date</code>). This is only needed for complex logic.</p>
+</li>
+<li>
+<p>Avoid the pointless <code>{@inheritDoc}</code> as since Java 1.5 there is the <code>@Override</code> annotation for overridden methods and your JavaDoc is inherited automatically even without any JavaDoc comment at all.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_code_style"><a class="anchor" href="#_code_style"></a>Code-Style</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section gives you best practices to write better code and avoid pitfalls and mistakes.</p>
+</div>
+<div class="sect2">
+<h3 id="_blobs"><a class="anchor" href="#_blobs"></a>BLOBs</h3>
+<div class="paragraph">
+<p>Avoid using <code>byte[]</code> for BLOBs as this will load them entirely into your memory. This will cause performance issues or out of memory errors. Instead, use streams when dealing with BLOBs. For further details see <a href="guide-blob-support.html" class="xref page">BLOB support</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stateless_programming"><a class="anchor" href="#_stateless_programming"></a>Stateless Programming</h3>
+<div class="paragraph">
+<p>When implementing logic as components or <em>beans</em> of your container using <a href="guide-dependency-injection.html" class="xref page">dependency injection</a>, we strongly encourage stateless programming.
+This is not about data objects like an <a href="guide-jpa.html#entity" class="xref page">entity</a> or <a href="guide-transferobject.html" class="xref page">transfer-object</a> that are stateful by design.
+Instead this applies to all classes annotated with <code>@Named</code>, <code>@ApplicationScoped</code>, <code>@Stateless</code>, etc. and all their super-classes.
+These classes especially include your <a href="guide-repository.html" class="xref page">repositories</a>, <a href="guide-usecase.html" class="xref page">use-cases</a>, and <a href="guide-rest.html#jax-rs" class="xref page">REST services</a>.
+Such classes shall never be modified after initialization.
+Methods called at runtime (after initialization via the container) do not assign fields (member variables of your class) or mutate the object stored in a field.
+This allows your component or bean to be stateless and thread-safe.
+Therefore it can be initialized as a singleton so only one instance is created and shared accross all threads of the application.
+Here is an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ApplicationScoped
+@Named
+public class UcApproveContractImpl implements UcApproveContract {
+
+  // bad
+  private String contractOwner;
+
+  private MyState state;
+
+  @Overide
+  public void approve(Contract contract) {
+    this.contractOwner = contract.getOwner();
+    this.contractOwner = this.contractOwner.toLowerCase(Locale.US);
+    this.state.setAdmin(this.contractOwner.endsWith("admin"));
+    if (this.state.isAdmin()) {
+      ...
+    } else {
+      ...
+    }
+  }
+
+  // fine
+  @Overide
+  public void approveContract(Contract contract) {
+    String contractOwner = contract.getOwner().toLowerCase(Locale.US);
+    if (contractOwner.endsWith("admin")) {
+      ...
+    } else {
+      ...
+    }
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see in the <code>bad</code> code fields of the class are assigned when the method <code>approve</code> is called.
+So mutliple users and therefore threads calling this method concurrently can interfere and override this state causing side-effects on parallel threads.
+This will lead to nasty bugs and errors that are hard to trace down.
+They will not occur in simple tests but for sure in production with real users.
+Therefore <strong>never</strong> do this and implement your functionality stateless.
+That is keeping all state in local variables and strictly avoid modifying fields or their value as illustrated in the <code>fine</code> code.
+If you find yourself passing many parameters between methods that all represent state, you can easily create a separate class that encapsulates this state.
+However, then you need to create this state object in your method as local variable and pass it between methods as parameter:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ApplicationScoped
+@Named
+public class UcApproveContractImpl implements UcApproveContract {
+
+  // fine
+  @Overide
+  public void approveContract(Contract contract) {
+    String contractOwner = contract.getOwner().toLowerCase(Locale.US);
+    MyState state = new MyState();
+    state.setAdmin(this.contractOwner.endsWith("admin"));
+    doApproveContract(contract, state);
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_closing_resources"><a class="anchor" href="#_closing_resources"></a>Closing Resources</h3>
+<div class="paragraph">
+<p>Resources such as streams (<code>InputStream</code>, <code>OutputStream</code>, <code>Reader</code>, <code>Writer</code>) or transactions need to be handled properly. Therefore, it is important to follow these rules:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Each resource has to be closed properly, otherwise you will get out of file handles, TX sessions, memory leaks or the like</p>
+</li>
+<li>
+<p>Where possible avoid to deal with such resources manually. That is why we are recommending <code>@Transactional</code> for transactions in devonfw (see <a href="guide-transactions.html" class="xref page">Transaction Handling</a>).</p>
+</li>
+<li>
+<p>In case you have to deal with resources manually (e.g. binary streams) ensure to close them properly. See the example below for details.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Closing streams and other such resources is error prone. Have a look at the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// bad
+try {
+  InputStream in = new FileInputStream(file);
+  readData(in);
+  in.close();
+} catch (IOException e) {
+  throw new IllegalStateException("Failed to read data.", e);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The code above is wrong as in case of an <code>IOException</code> the <code>InputStream</code> is not properly closed. In a server application such mistakes can cause severe errors that typically will only occur in production. As such resources implement the <code>AutoCloseable</code> interface you can use the <code>try-with-resource</code> syntax to write correct code. The following code shows a correct version of the example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// fine
+try (InputStream in = new FileInputStream(file)) {
+  readData(in);
+} catch (IOException e) {
+  throw new IllegalStateException("Failed to read data.", e);
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_catching_and_handling_exceptions"><a class="anchor" href="#_catching_and_handling_exceptions"></a>Catching and handling Exceptions</h3>
+<div class="paragraph">
+<p>When catching exceptions always ensure the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Never call <code>printStackTrace()</code> method on an exception</p>
+</li>
+<li>
+<p>Either log or wrap and re-throw the entire catched exception. Be aware that the cause(s) of an exception is very valuable information. If you loose such information by improper exception-handling you may be unable to properly analyse production problems what can cause severe issues.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If you wrap and re-throw an exception ensure that the catched exception is passed as cause to the newly created and thrown exception.</p>
+</li>
+<li>
+<p>If you log an exception ensure that the entire exception is passed as argument to the logger (and not only the result of <code>getMessage()</code> or <code>toString()</code> on the exception).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>See <a href="guide-exceptions.html#handling-exceptions" class="xref page">exception handling</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lambdas_and_streams"><a class="anchor" href="#_lambdas_and_streams"></a>Lambdas and Streams</h3>
+<div class="paragraph">
+<p>With Java8 you have cool new features like lambdas and monads like (<code>Stream</code>, <code>CompletableFuture</code>, <code>Optional</code>, etc.).
+However, these new features can also be misused or led to code that is hard to read or debug. To avoid pain, we give you the following best practices:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Learn how to use the new features properly before using. Developers are often keen on using cool new features. When you do your first experiments in your project code you will cause deep pain and might be ashamed afterwards. Please study the features properly. Even Java8 experts still write for loops to iterate over collections, so only use these features where it really makes sense.</p>
+</li>
+<li>
+<p>Streams shall only be used in fluent API calls as a Stream can not be forked or reused.</p>
+</li>
+<li>
+<p>Each stream has to have exactly one terminal operation.</p>
+</li>
+<li>
+<p>Do not write multiple statements into lambda code:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// bad
+collection.stream().map(x -&gt; {
+Foo foo = doSomething(x);
+...
+return foo;
+}).collect(Collectors.toList());</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This style makes the code hard to read and debug. Never do that! Instead, extract the lambda body to a private method with a meaningful name:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// fine
+collection.stream().map(this::convertToFoo).collect(Collectors.toList());</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Do not use <code>parallelStream()</code> in general code (that will run on server side) unless you know exactly what you are doing and what is going on under the hood. Some developers might think that using parallel streams is a good idea as it will make the code faster. However, if you want to do performance optimizations talk to your technical lead (architect). Many features such as security and transactions will rely on contextual information that is associated with the current thread. Hence, using parallel streams will most probably cause serious bugs. Only use them for standalone (CLI) applications or for code that is just processing large amounts of data.</p>
+</li>
+<li>
+<p>Do not perform operations on a sub-stream inside a lambda:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">set.stream().flatMap(x -&gt; x.getChildren().stream().filter(this::isSpecial)).collect(Collectors.toList()); // bad
+set.stream().flatMap(x -&gt; x.getChildren().stream()).filter(this::isSpecial).collect(Collectors.toList()); // fine</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Only use <code>collect</code> at the end of the stream:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">set.stream().collect(Collectors.toList()).forEach(...) // bad
+set.stream().peek(...).collect(Collectors.toList()) // fine</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Lambda parameters with Types inference</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">(String a, Float b, Byte[] c) -&gt; a.toString() + Float.toString(b) + Arrays.toString(c)  // bad
+(a,b,c)  -&gt; a.toString() + Float.toString(b) + Arrays.toString(c)  // fine
+
+Collections.sort(personList, (Person p1, Person p2) -&gt; p1.getSurName().compareTo(p2.getSurName()));  // bad
+Collections.sort(personList, (p1, p2) -&gt; p1.getSurName().compareTo(p2.getSurName()));  // fine</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Avoid Return Braces and Statement</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"> a -&gt;  { return a.toString(); } // bad
+ a -&gt;  a.toString();   // fine</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Avoid Parentheses with Single Parameter</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">(a) -&gt; a.toString(); // bad
+ a -&gt; a.toString();  // fine</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Avoid if/else inside foreach method. Use Filter method &amp; comprehension</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// bad
+static public Iterator&lt;String&gt; TwitterHandles(Iterator&lt;Author&gt; authors, string company) {
+    final List result = new ArrayList&lt;String&gt; ();
+    foreach (Author a : authors) {
+      if (a.Company.equals(company)) {
+        String handle = a.TwitterHandle;
+        if (handle != null)
+          result.Add(handle);
+      }
+    }
+    return result;
+  }</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// fine
+public List&lt;String&gt; twitterHandles(List&lt;Author&gt; authors, String company) {
+    return authors.stream()
+            .filter(a -&gt; null != a &amp;&amp; a.getCompany().equals(company))
+            .map(a -&gt; a.getTwitterHandle())
+            .collect(toList());
+  }</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_optionals"><a class="anchor" href="#_optionals"></a>Optionals</h3>
+<div class="paragraph">
+<p>With <code>Optional</code> you can wrap values to avoid a <code>NullPointerException</code> (NPE). However, it is not a good code-style to use <code>Optional</code> for every parameter or result to express that it may be null. For such case use <code>@Nullable</code> or even better instead annotate <code>@NotNull</code> where <code>null</code> is not acceptable.</p>
+</div>
+<div class="paragraph">
+<p>However, <code>Optional</code> can be used to prevent NPEs in fluent calls (due to the lack of the elvis operator):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Long id;
+id = fooCto.getBar().getBar().getId(); // may cause NPE
+id = Optional.ofNullable(fooCto).map(FooCto::getBar).map(BarCto::getBar).map(BarEto::getId).orElse(null); // null-safe</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_encoding"><a class="anchor" href="#_encoding"></a>Encoding</h3>
+<div class="paragraph">
+<p>Encoding (esp. Unicode with combining characters and surrogates) is a complex topic. Please study this topic if you have to deal with encodings and processing of special characters. For the basics follow these recommendations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Whenever possible prefer unicode (UTF-8 or better) as encoding. This especially impacts your databases and has to be defined upfront as it typically can not be changed (easily) afterwards.</p>
+</li>
+<li>
+<p>Do not cast from <code>byte</code> to <code>char</code> (unicode characters can be composed of multiple bytes, such cast may only work for ASCII characters)</p>
+</li>
+<li>
+<p>Never convert the case of a String using the default locale (esp. when writing generic code like in devonfw). E.g. if you do <code>"HI".toLowerCase()</code> and your system locale is Turkish, then the output will be "hı" instead of "hi", which can lead to wrong assumptions and serious problems. If you want to do a "universal" case conversion always explicitly use an according western locale (e.g. <code>toLowerCase(Locale.US)</code>). Consider using a helper class (see e.g. <a href="https://github.com/m-m-m/base/blob/master/core/src/main/java/io/github/mmm/base/text/CaseHelper.java">CaseHelper</a>) or create your own little static utility for that in your project.</p>
+</li>
+<li>
+<p>Write your code independent from the default encoding (system property <code>file.encoding</code>) - this will most likely differ in JUnit from production environment</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Always provide an encoding when you create a <code>String</code> from <code>byte[]</code>: <code>new String(bytes, encoding)</code></p>
+</li>
+<li>
+<p>Always provide an encoding when you create a <code>Reader</code> or <code>Writer</code> : <code>new InputStreamReader(inStream, encoding)</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prefer_general_api"><a class="anchor" href="#_prefer_general_api"></a>Prefer general API</h3>
+<div class="paragraph">
+<p>Avoid unnecessary strong bindings:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not bind your code to implementations such as <code>Vector</code> or <code>ArrayList</code> instead of <code>List</code></p>
+</li>
+<li>
+<p>In APIs for input (=parameters) always consider to make little assumptions:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>prefer <code>Collection</code> over <code>List</code> or <code>Set</code> where the difference does not matter (e.g. only use <code>Set</code> when you require uniqueness or highly efficient <code>contains</code>)</p>
+</li>
+<li>
+<p>consider preferring <code>Collection&lt;? extends Foo&gt;</code> over <code>Collection&lt;Foo&gt;</code> when <code>Foo</code> is an interface or super-class</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prefer_primitive_boolean"><a class="anchor" href="#_prefer_primitive_boolean"></a>Prefer primitive boolean</h3>
+<div class="paragraph">
+<p>Unless in rare cases where you need to allow a flag being <code>null</code> avoid using the object type <code>Boolean</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// bad
+public Boolean isEmpty {
+  return size() == 0;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Instead always use the primitive <code>boolean</code> type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// fine
+public boolean isEmpty {
+  return size() == 0;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The only known excuse is for flags in <a href="guide-jpa.html#embeddable" class="xref page">embeddable types</a> due to limitations of hibernate.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

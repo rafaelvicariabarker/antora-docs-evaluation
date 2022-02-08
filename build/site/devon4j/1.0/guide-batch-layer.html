@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Documentation</li>
+    <li><a href="guide-batch-layer.html">Batch Layer</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-batch-layer.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_batch_layer">Batch Layer</a></li>
+<li><a href="#_layering">Layering</a>
+<ul class="sectlevel2">
+<li><a href="#_directly_accessing_data_access_layer">Directly accessing data access layer</a></li>
+</ul>
+</li>
+<li><a href="#_project_structure_and_packaging">Project structure and packaging</a></li>
+<li><a href="#_implementation">Implementation</a></li>
+<li><a href="#start-batch">Starting from command line</a></li>
+<li><a href="#_scheduling">Scheduling</a></li>
+<li><a href="#_handling_restarts">Handling restarts</a>
+<ul class="sectlevel2">
+<li><a href="#_using_spring_batch_executioncontext_for_restarts">Using spring batch ExecutionContext for restarts</a></li>
+</ul>
+</li>
+<li><a href="#_exit_codes">Exit codes</a></li>
+<li><a href="#_stop_batches_and_manage_batch_status">Stop batches and manage batch status</a>
+<ul class="sectlevel2">
+<li><a href="#_cli_tool">CLI-Tool</a></li>
+</ul>
+</li>
+<li><a href="#_authentication">Authentication</a></li>
+<li><a href="#_tipps_tricks">Tipps &amp; tricks</a>
+<ul class="sectlevel2">
+<li><a href="#_identifying_job_parameters">Identifying job parameters</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_batch_layer"><a class="anchor" href="#_batch_layer"></a>Batch Layer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We understand batch processing as a bulk-oriented, non-interactive, typically long running execution of tasks. For simplicity, we use the term "batch" or "batch job" for such tasks in the following documentation.</p>
+</div>
+<div class="paragraph">
+<p>devonfw uses <a href="http://projects.spring.io/spring-batch/">Spring Batch</a> as a batch framework.</p>
+</div>
+<div class="paragraph">
+<p>This guide explains how Spring Batch is used in devonfw applications. It focuses on aspects which are special to devonfw. If you want to learn about spring-batch you should adhere to springs references documentation.</p>
+</div>
+<div class="paragraph">
+<p>There is an example of a simple batch implementation in the <a href="https://github.com/devonfw/my-thai-star/tree/develop/java/mtsj/batch">my-thai-star batch module</a>.</p>
+</div>
+<div class="paragraph">
+<p>In this chapter, we will describe the overall architecture (especially concerning layering) and how to administer batches.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layering"><a class="anchor" href="#_layering"></a>Layering</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Batches are implemented in the batch layer. The batch layer is responsible for batch processes, whereas the business logic is implemented in the logic layer. Compared to the <a href="guide-service-layer.html" class="xref page">service layer</a>, you may understand the batch layer just as a different way of accessing the business logic.
+From a component point of view, each batch is implemented as a subcomponent in the corresponding business component.
+The business component is defined by the <a href="architecture.html" class="xref page">business architecture</a>.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s make an example for that. The sample application implements a batch for exporting ingredients. This ingredientExportJob belongs to the dishmanagement business component.
+So the ingredientExportJob is implemented in the following package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">&lt;basepackage&gt;.dishmanagement.batch.impl.*</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Batches should invoke use cases in the logic layer for doing their work.
+Only "batch specific" technical aspects should be implemented in the batch layer.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Example:
+For a batch, which imports product data from a CSV file, this means that all code for actually reading and parsing the CSV input file is implemented in the batch layer.
+The batch calls the use case "create product" in the logic layer for actually creating the products for each line read from the CSV input file.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_directly_accessing_data_access_layer"><a class="anchor" href="#_directly_accessing_data_access_layer"></a>Directly accessing data access layer</h3>
+<div class="paragraph">
+<p>In practice, it is not always appropriate to create use cases for every bit of work a batch should do. Instead, the data access layer can be used directly.
+An example for that is a typical batch for data retention which deletes out-of-time data.
+Often deleting, out-dated data is done by invoking a single SQL statement. It is appropriate to implement that SQL in a <a href="guide-repository.html" class="xref page">Repository</a> or <a href="guide-dao.html" class="xref page">DAO</a> method and call this method directly from the batch.
+But be careful: this pattern is a simplification which could lead to business logic cluttered in different layers, which reduces the maintainability of your application.
+It is a typical design decision you have to make when designing your specific batches.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project_structure_and_packaging"><a class="anchor" href="#_project_structure_and_packaging"></a>Project structure and packaging</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Batches will be implemented in a separate Maven module to keep the application core free of batch dependencies. The batch module includes a dependency on the application core-module to allow the reuse of the use cases, DAOs etc.
+Additionally the batch module has dependencies on the required spring batch jars:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">  &lt;dependencies&gt;
+
+    &lt;dependency&gt;
+      &lt;groupId&gt;${project.groupId}&lt;/groupId&gt;
+      &lt;artifactId&gt;mtsj-core&lt;/artifactId&gt;
+      &lt;version&gt;${project.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+      &lt;artifactId&gt;spring-boot-starter-batch&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+
+  &lt;/dependencies&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To allow an easy <a href="#start-batch">start of the batches</a> from the command line it is advised to create a bootified jar for the batch module by adding the following to the <code>pom.xml</code> of the batch module:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">  &lt;build&gt;
+    &lt;resources&gt;
+      &lt;resource&gt;
+        &lt;directory&gt;src/main/resources&lt;/directory&gt;
+        &lt;filtering&gt;true&lt;/filtering&gt;
+      &lt;/resource&gt;
+    &lt;/resources&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+        &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+        &lt;configuration&gt;
+          &lt;excludes&gt;
+            &lt;exclude&gt;config/application.properties&lt;/exclude&gt;
+          &lt;/excludes&gt;
+        &lt;/configuration&gt;
+      &lt;/plugin&gt;
+      &lt;!-- Create bootified jar for batch execution via command line.
+           Your applications spring boot app is used as main-class.
+       --&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+        &lt;configuration&gt;
+          &lt;mainClass&gt;com.devonfw.application.mtsj.SpringBootApp&lt;/mainClass&gt;
+          &lt;classifier&gt;bootified&lt;/classifier&gt;
+        &lt;/configuration&gt;
+        &lt;executions&gt;
+          &lt;execution&gt;
+            &lt;goals&gt;
+              &lt;goal&gt;repackage&lt;/goal&gt;
+            &lt;/goals&gt;
+          &lt;/execution&gt;
+        &lt;/executions&gt;
+      &lt;/plugin&gt;
+    &lt;/plugins&gt;
+  &lt;/build&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most of the details about implementation of batches is described in the <a href="https://spring.io/projects/spring-batch">spring batch documentation</a>.
+There is nothing special about implementing batches in devonfw. You will find an easy <a href="https://github.com/devonfw/my-thai-star/tree/develop/java/mtsj/batch">example in my-thai-star</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="start-batch"><a class="anchor" href="#start-batch"></a>Starting from command line</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Devonfw advises to start batches via command line. This is most common to many ops teams and allows easy integration in existing <a href="#scheduling">schedulers</a>. In general batches are started with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>java -jar &lt;app&gt;-batch-&lt;version&gt;-bootified.jar --spring.main.web-application-type=none --spring.batch.job.enabled=true --spring.batch.job.names=&lt;myJob&gt; &lt;params&gt;</pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--spring.main.web-application-type=none</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This disables the web app (e.g. Tomcat)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--spring.batch.job.names=&lt;myJob&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This specifies the name of the job to run. If you leave this out ALL jobs will be executed. Which probably does not make to much sense.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;params&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Optional) additional parameters which are passed to your job</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>This will launch your normal spring boot app, disables the web application part and runs the designated job via Spring Boots <code>org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scheduling"><a class="anchor" href="#_scheduling"></a>Scheduling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In real world scheduling of batches is not as simple as it first might look like.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple batches have to be executed in order to achieve complex tasks. If one of those batches fails the further execution has to be stopped and operations should be notified for example.</p>
+</li>
+<li>
+<p>Input files or those created by batches have to be copied from one node to another.</p>
+</li>
+<li>
+<p>Scheduling batch executing could get complex easily (quarterly jobs, run job on first workday of a month, &#8230;&#8203;)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For devonfw we propose the batches themselves should not mess around with details of scheduling.
+Likewise your application should not do so. This complexity should be externalized to a dedicated batch administration service or scheduler.
+This service could be a complex product or a simple tool like cron. We propose <a href="http://rundeck.org">Rundeck</a> as an open source job scheduler.</p>
+</div>
+<div class="paragraph">
+<p>This gives full control to operations to choose the solution which fits best into existing administration procedures.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_handling_restarts"><a class="anchor" href="#_handling_restarts"></a>Handling restarts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you start a job with the same parameters set after a failed run (BatchStatus.FAILED) a restart will occur.
+In many cases your batch should then not reprocess all items it processed in the previous runs.
+For that you need some logic to start at the desired offset. There different ways to implement such logic:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Marking processed items in the database in a dedicated column</p>
+</li>
+<li>
+<p>Write all IDs of items to process in a separate table as an initialization step of your batch. You can then delete IDs of already processed items from that table during the batch execution.</p>
+</li>
+<li>
+<p>Storing restart information in springs ExecutionContext (see below)</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_using_spring_batch_executioncontext_for_restarts"><a class="anchor" href="#_using_spring_batch_executioncontext_for_restarts"></a>Using spring batch ExecutionContext for restarts</h3>
+<div class="paragraph">
+<p>By implementing the <code>ItemStream</code> interface in your <code>ItemReader</code> or <code>ItemWriter</code> you may store information about the batch progress in the <code>ExecutionContext</code>. You will find an example for that in the CountJob in My Thai Star.</p>
+</div>
+<div class="paragraph">
+<p>Additional hint: It is important that bean definition method of your <code>ItemReader</code>/<code>ItemWriter</code> return types implementing <code>ItemStream</code>(and not just <code>ItemReader</code> or <code>ItemWriter</code> alone). For that the <code>ItemStreamReader</code> and <code>ItemStreamWriter</code> interfaces are provided.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exit_codes"><a class="anchor" href="#_exit_codes"></a>Exit codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your batches should create a meaningful exit code to allow reaction to batch errors e.g. in a <a href="#scheduling">scheduler</a>.
+For that spring batch automatically registers an <code>org.springframework.boot.autoconfigure.batch.JobExecutionExitCodeGenerator</code>. To make this mechanism work your spring boot app main class as to populate this exit code to the JVM:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication
+public class SpringBootApp {
+
+  public static void main(String[] args) {
+    if (Arrays.stream(args).anyMatch((String e) -&gt; e.contains("--spring.batch.job.names"))) {
+      // if executing batch job, explicitly exit jvm to report error code from batch
+      System.exit(SpringApplication.exit(SpringApplication.run(SpringBootApp.class, args)));
+    } else {
+      // normal web application start
+      SpringApplication.run(SpringBootApp.class, args);
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stop_batches_and_manage_batch_status"><a class="anchor" href="#_stop_batches_and_manage_batch_status"></a>Stop batches and manage batch status</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring batch uses several database tables to store the status of batch executions.
+Each execution may have <a href="https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html#jobexecution">different status</a>.
+You may use this mechanism to <a href="https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html#stoppingAJob">gracefully stop batches</a>.
+Additionally in some edge cases (batch process crashed) the execution status may be in an undesired state.
+E.g. the state will be running, despite the process crashed sometime ago.
+For that cases you have to change the status of the execution in the database.</p>
+</div>
+<div class="sect2">
+<h3 id="_cli_tool"><a class="anchor" href="#_cli_tool"></a>CLI-Tool</h3>
+<div class="paragraph">
+<p>Devonfw provides a easy to use cli-tool to manage the executing status of your jobs.
+The tool is implemented in the devonfw module <code>devon4j-batch-tool</code>. It will provide a runnable jar, which may be used as follows:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">List names of all previous executed jobs</dt>
+<dd>
+<p><code>java -D'spring.datasource.url=jdbc:h2:~/mts;AUTO_SERVER=TRUE' -jar devon4j-batch-tool.jar jobs list</code></p>
+</dd>
+<dt class="hdlist1">Stop job named 'countJob'</dt>
+<dd>
+<p><code>java -D'spring.datasource.url=jdbc:h2:~/mts;AUTO_SERVER=TRUE' -jar devon4j-batch-tool.jar jobs stop countJob</code></p>
+</dd>
+<dt class="hdlist1">Show help</dt>
+<dd>
+<p><code>java -D'spring.datasource.url=jdbc:h2:~/mts;AUTO_SERVER=TRUE' -jar devon4j-batch-tool.jar</code></p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>As you can the each invocation includes the JDBC connection string to your database.
+This means that you have to make sure that the corresponding DB driver is in the classpath (the prepared jar only contains H2).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authentication"><a class="anchor" href="#_authentication"></a>Authentication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most business application incorporate authentication and authorization.
+Your spring boot application will implement some kind of security, e.g. integrated login with username+password or in many cases authentication via an existing IAM.
+For security reasons your batch should also implement an authentication mechanism and obey the authorization implemented in your application (e.g. via @RolesAllowed).</p>
+</div>
+<div class="paragraph">
+<p>Since there are many different authentication mechanism we cannot provide an out-of-the-box solution in devonfw, but we describe a pattern how this can be implemented in devonfw batches.</p>
+</div>
+<div class="paragraph">
+<p>We suggest to implement the authentication in a Spring Batch tasklet, which runs as the first step in your batch. This tasklet will do all of the work which is required to authenticate the batch. A simple example which authenticates the batch "locally" via username and password could be implemented like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Named
+public class SimpleAuthenticationTasklet implements Tasklet {
+
+  @Override
+  public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+
+    String username = chunkContext.getStepContext().getStepExecution().getJobParameters().getString("username");
+    String password = chunkContext.getStepContext().getStepExecution().getJobParameters().getString("password");
+    Authentication authentication = new UsernamePasswordAuthenticationToken(username, password);
+
+    SecurityContextHolder.getContext().setAuthentication(authentication);
+    return RepeatStatus.FINISHED;
+  }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The username and password have to be supplied via two cli parameters <code>-username</code> and <code>-password</code>. This implementation creates an "authenticated" <code>Authentication</code> and sets in the Spring Security context. This is just for demonstration normally you should not provide passwords via command line. The actual authentication will be done automatically via Spring Security as in your "normal" application.
+If you have a more complex authentication mechanism in your application e.g. via OpenID connect just call this in the tasklet. Naturally you may read authentication parameters (e.g. secrets) from the command line or more securely from a configuration file.</p>
+</div>
+<div class="paragraph">
+<p>In your Job Configuration set this tasklet as the first step:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+@EnableBatchProcessing
+public class BookingsExportBatchConfig {
+  @Inject
+  private JobBuilderFactory jobBuilderFactory;
+
+  @Inject
+  private StepBuilderFactory stepBuilderFactory;
+
+  @Bean
+  public Job myBatchJob() {
+    return this.jobBuilderFactory.get("myJob").start(myAuthenticationStep()).next(...).build();
+  }
+
+  @Bean
+  public Step myAuthenticationStep() {
+    return this.stepBuilderFactory.get("myAuthenticationStep").tasklet(myAuthenticatonTasklet()).build();
+  }
+
+  @Bean
+  public Tasklet myAuthenticatonTasklet() {
+    return new SimpleAuthenticationTasklet();
+  }
+...</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tipps_tricks"><a class="anchor" href="#_tipps_tricks"></a>Tipps &amp; tricks</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_identifying_job_parameters"><a class="anchor" href="#_identifying_job_parameters"></a>Identifying job parameters</h3>
+<div class="paragraph">
+<p>Spring uses a jobs parameters to identify <a href="https://docs.spring.io/spring-batch/docs/current/reference/html/domain.html#jobexecution">job executions</a>. Parameters starting with "-" are not considered for identifying a job execution.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

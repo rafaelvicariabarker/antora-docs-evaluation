@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/spring/guide-spring-testing.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_testing">Testing</a></li>
+<li><a href="#_implementation">Implementation</a>
+<ul class="sectlevel2">
+<li><a href="#_module_test">Module Test</a></li>
+<li><a href="#_subsystem_test">Subsystem Test</a></li>
+</ul>
+</li>
+<li><a href="#_configuration">Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_configure_test_specific_beans">Configure Test Specific Beans</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_testing"><a class="anchor" href="#_testing"></a>Testing</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_module_test"><a class="anchor" href="#_module_test"></a>Module Test</h3>
+<div class="paragraph">
+<p>In devon4j you can extend the abstract class <a href="https://github.com/devonfw/devon4j/blob/develop/modules/test/src/main/java/com/devonfw/module/test/common/base/ModuleTest.java">ModuleTest</a> to basically get access to assertions. In order to test classes embedded in dependencies  and external services one needs to provide mocks for that. As the <a href="#test-automation-technology-stack">technology stack</a> recommends we use the Mockito framework to offer this functionality. The following example shows how to implement Mockito into a JUnit test.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.mock;
+...
+
+public class StaffmanagementImplTest extends ModuleTest {
+  @Rule
+  public MockitoRule rule = MockitoJUnit.rule();
+
+  @Test
+  public void testFindStaffMember() {
+  ...}
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that the test class does not use the <code>@SpringApplicationConfiguration</code> annotation. In a module test one does not use the whole application.
+The JUnit rule is the best solution to use in order to get all needed functionality of Mockito. Static imports are a convenient option to enhance readability within Mockito tests.
+You can define mocks with the <code>@Mock</code> annotation or the <code>mock(*.class)</code> call. To inject the mocked objects into your class under test you can use the <code>@InjectMocks</code> annotation. This automatically uses the setters of <code>StaffmanagementImpl</code> to inject the defined mocks into the <em>class under test (CUT)</em> when there is a setter available. In this case the <code>beanMapper</code> and the <code>staffMemberDao</code> are injected. Of course it is possible to do this manually if you need more control.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @Mock
+  private BeanMapper beanMapper;
+  @Mock
+  private StaffMemberEntity staffMemberEntity;
+  @Mock
+  private StaffMemberEto staffMemberEto;
+  @Mock
+  private StaffMemberDao staffMemberDao;
+  @InjectMocks
+  StaffmanagementImpl staffmanagementImpl = new StaffmanagementImpl();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The mocked objects do not provide any functionality at the time being. To define what happens on a method call on a mocked dependency in the CUT one can use <code>when(<em>condition</em>).thenReturn(<em>result</em>)</code>. In this case we want to test <code>findStaffMember(Long id)</code> in the <a href="https://github.com/oasp/oasp4j/blob/master/samples/core/src/main/java/io/oasp/gastronomy/restaurant/staffmanagement/logic/impl/StaffmanagementImpl.java">StaffmanagementImpl</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public StaffMemberEto findStaffMember(Long id) {
+  return getBeanMapper().map(getStaffMemberDao().find(id), StaffMemberEto.class);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this simple example one has to stub two calls on the CUT as you can see below. For example the method call of the CUT <code>staffMemberDao.find(id)</code> is stubbed for returning a mock object <code>staffMemberEntity</code> that is also defined as mock.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_subsystem_test"><a class="anchor" href="#_subsystem_test"></a>Subsystem Test</h3>
+<div class="paragraph">
+<p>devon4j provides a simple test infrastructure to aid with the implementation of subsystem tests. It becomes available by simply subclassing <a href="https://github.com/oasp/oasp4j/blob/master/samples/core/src/test/java/io/oasp/gastronomy/restaurant/general/common/base/AbstractRestServiceTest.java">AbstractRestServiceTest.java</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//given
+long id = 1L;
+Class&lt;StaffMemberEto&gt; targetClass = StaffMemberEto.class;
+when(this.staffMemberDao.find(id)).thenReturn(this.staffMemberEntity);
+when(this.beanMapper.map(this.staffMemberEntity, targetClass)).thenReturn(this.staffMemberEto);
+
+//when
+StaffMemberEto resultEto = this.staffmanagementImpl.findStaffMember(id);
+
+//then
+assertThat(resultEto).isNotNull();
+assertThat(resultEto).isEqualTo(this.staffMemberEto);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After the test method call one can verify the expected results. Mockito can check whether a mocked method call was indeed called. This can be done using Mockito <code>verify</code>. Note that it does not generate any value if you check for method calls that are needed to reach the asserted result anyway. Call verification can be useful e.g. when you want to assure that statistics are written out without actually testing them.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_configure_test_specific_beans"><a class="anchor" href="#_configure_test_specific_beans"></a>Configure Test Specific Beans</h3>
+<div class="paragraph">
+<p>Sometimes it can become handy to provide other or differently configured bean implementations via CDI than those available in production. For example, when creating beans using <code>@Bean</code>-annotated methods they are usually configured within those methods. <a href="https://github.com/oasp/oasp4j/blob/master/samples/core/src/main/java/io/oasp/gastronomy/restaurant/general/service/impl/config/WebSecurityBeansConfig.java">WebSecurityBeansConfig</a> shows an example of such methods.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+public class WebSecurityBeansConfig {
+  //...
+  @Bean
+  public AccessControlSchemaProvider accessControlSchemaProvider() {
+    // actually no additional configuration is shown here
+    return new AccessControlSchemaProviderImpl();
+  }
+  //...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>AccessControlSchemaProvider</code> allows to programmatically access data defined in some XML file, e.g. <code>access-control-schema.xml</code>. Now, one can imagine that it would be helpful if <code>AccessControlSchemaProvider</code> would point to some other file than the default within a test class. That file could provide content that differs from the default.
+The question is: how can I change resource path of <code>AccessControlSchemaProviderImpl</code> within a test?</p>
+</div>
+<div class="paragraph">
+<p>One very helpful solution is to use <strong>static inner classes</strong>.
+Static inner classes can contain <code>@Bean</code> -annotated methods, and by placing them in the <code>classes</code> parameter in <code>@SpringBootTest(classes = { /* place class here*/ })</code> annotation the beans returned by these methods are placed in the application context during test execution. Combining this feature with inheritance allows to override methods defined in other configuration classes as shown in the following listing where <code>TempWebSecurityConfig</code> extends <code>WebSecurityBeansConfig</code>. This relationship allows to override <code>public AccessControlSchemaProvider accessControlSchemaProvider()</code>. Here we are able to configure the instance of type <code>AccessControlSchemaProviderImpl</code> before returning it (and, of course, we could also have used a completely different implementation of the <code>AccessControlSchemaProvider</code> interface). By overriding the method the implementation of the super class is ignored, hence, only the new implementation is called at runtime. Other methods defined in <code>WebSecurityBeansConfig</code> which are not overridden by the subclass are still dispatched to <code>WebSecurityBeansConfig</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//... Other testing related annotations
+@SpringBootTest(classes = { TempWebSecurityConfig.class })
+public class SomeTestClass {
+
+  public static class TempWebSecurityConfig extends WebSecurityBeansConfig {
+
+    @Override
+    @Bean
+    public AccessControlSchemaProvider accessControlSchemaProvider() {
+
+      ClassPathResource resource = new ClassPathResource(locationPrefix + "access-control-schema3.xml");
+      AccessControlSchemaProviderImpl accessControlSchemaProvider = new AccessControlSchemaProviderImpl();
+      accessControlSchemaProvider.setAccessControlSchema(resource);
+      return accessControlSchemaProvider;
+    }
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#testcontext-ctx-management-javaconfig">chapter of the Spring framework documentation</a> explains issue, but uses a slightly different way to obtain the configuration.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

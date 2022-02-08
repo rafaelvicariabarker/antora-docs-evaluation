@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/quarkus/guide-beanmapping-quarkus.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_bean_mapping_with_quarkus">Bean mapping with Quarkus</a></li>
+<li><a href="#_mapstruct_dependency">MapStruct Dependency</a></li>
+<li><a href="#_mapstruct_configuration">MapStruct Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_simple_configuration">Simple Configuration</a></li>
+<li><a href="#_mapperconfig_configuration">MapperConfig Configuration</a></li>
+<li><a href="#_configuration_via_annotation_processor_options">Configuration via annotation processor options</a></li>
+</ul>
+</li>
+<li><a href="#_basic_bean_mapper_usage">Basic Bean-Mapper Usage</a></li>
+<li><a href="#_advanced_bean_mapper_usage">Advanced Bean-Mapper Usage</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_bean_mapping_with_quarkus"><a class="anchor" href="#_bean_mapping_with_quarkus"></a>Bean mapping with Quarkus</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide will show bean-mapping in particular for a Quarkus application. We recommend using <a href="https://mapstruct.org/">MapStruct</a> with a Quarkus application because the other bean-mapper frameworks are using Java reflections. They are not supported in GraalVm right now and causes problems building native applications. MapStruct is a code generator that greatly simplifies the implementation of mappings between Java bean types based on a convention over configuration approach. The mapping code will be generated at compile-time and uses plain method invocations and thus is fast, type-safe, and easy to understand. MapStruct has to be configured to not use Java reflections but it will be shown in this guide.</p>
+</div>
+<div class="paragraph">
+<p>You can find the official
+<a href="https://mapstruct.org/documentation/stable/reference/pdf/mapstruct-reference-guide.pdf">MapStruct reference guide</a> and a general introduction to MapStruct from <a href="https://www.baeldung.com/mapstruct">Baeldung</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mapstruct_dependency"><a class="anchor" href="#_mapstruct_dependency"></a>MapStruct Dependency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To get access to MapStruct we have to add the dependency to our POM.xml:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;org.mapstruct&lt;/groupId&gt;
+  &lt;artifactId&gt;mapstruct&lt;/artifactId&gt;
+  &lt;version&gt;1.4.2.Final&lt;/version&gt;
+  &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>MapStruct provides an annotation processor that also has to be added to the POM.xml</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;plugin&gt;
+	&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+	&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+	&lt;version&gt;3.8.1&lt;/version&gt;
+	&lt;configuration&gt;
+		&lt;source&gt;1.8&lt;/source&gt;
+		&lt;target&gt;1.8&lt;/target&gt;
+		&lt;annotationProcessorPaths&gt;
+			&lt;path&gt;
+				&lt;groupId&gt;org.mapstruct&lt;/groupId&gt;
+				&lt;artifactId&gt;mapstruct-processor&lt;/artifactId&gt;
+				&lt;version&gt;1.4.2.Final&lt;/version&gt;
+			&lt;/path&gt;
+		&lt;/path&gt;
+		&lt;/annotationProcessorPaths&gt;
+	&lt;/configuration&gt;
+&lt;/plugin&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>MapStruct takes advantage of generated getters, setters, and constructors from the <a href="https://projectlombok.org/">Lombok</a> library, follow this <a href="../guide-lombok.html#lombok-with-mapstruct" class="xref page">Lombok with Mapstruct guide</a> to get Lombok with Mapstruct working.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mapstruct_configuration"><a class="anchor" href="#_mapstruct_configuration"></a>MapStruct Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We already discussed the benefits of <a href="https://github.com/devonfw/devon4j/blob/master/documentation/guide-dependency-injection.adoc#dependency-injection">dependency injection</a> and MapStruct supports CDI with EJB, spring, and jsr330. The default retrieving method for a mapper is a factory that uses reflections and should be avoided. The component model should be set to CDI, as this will allow us to easily inject the generated mapper implementation. The component model can be configured in multiple ways.</p>
+</div>
+<div class="sect2">
+<h3 id="_simple_configuration"><a class="anchor" href="#_simple_configuration"></a>Simple Configuration</h3>
+<div class="paragraph">
+<p>Add the attribute <strong>componentModel</strong> to the <strong>@Mapper</strong> annotation in the mapper interface.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Mapper(compnentModel = "cdi")
+public interface ProductMapper{
+  ...
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mapperconfig_configuration"><a class="anchor" href="#_mapperconfig_configuration"></a>MapperConfig Configuration</h3>
+<div class="paragraph">
+<p>Create a shared configuration that can be used for multiple mappers. Implement an Interface and use the annotation <strong>@MapperConfig</strong> for the class. You can define all configurations in this interface and pass the generated <code>MapperConfig.class</code> with the <strong>config</strong> attribute to the mapper. The <code>MapperConfig</code> also defines the <strong>InjectionStrategy</strong> and <strong>MappingInheritaceStrategy</strong> both will be explained later.
+A list of all configurations can be found <a href="https://mapstruct.org/documentation/stable/api/org/mapstruct/MapperConfig.html">here</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@MapperConfig(
+  compnentModel = "cdi",
+  mappingInheritanceStrategy = MappingInheritanceStrategy.AUTO_INHERIT_FROM_CONFIG
+  injectionStrategy =InjectionStrategy.CONSTRUCTOR
+)
+public interface MapperConfig{
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Mapper( config = MapperConfig.class )
+public interface ProductMapper{
+  ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Any attributes not given via <strong>@Mapper</strong> will be inherited from the shared configuration <code>MapperConfig.class</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_via_annotation_processor_options"><a class="anchor" href="#_configuration_via_annotation_processor_options"></a>Configuration via annotation processor options</h3>
+<div class="paragraph">
+<p>The MapStruct code generator can be configured using annotation processor options.
+You can pass the options to the compiler while invoking javac directly, or add the parameters to the maven configuration in the POM.xml</p>
+</div>
+<div class="paragraph">
+<p>We are also using the constructor injection strategie to avoid field injections and potential reflections also it will simplify our tests.
+The option to pass the parameter to the annotation processor in the POM.xml is used and can be inspected in our <a href="https://github.com/devonfw-sample/devon4quarkus-reference/blob/master/pom.xml#L220-L228">quarkus reference project</a>.</p>
+</div>
+<div class="paragraph">
+<p>A list of all annotation processor options can be found <a href="https://mapstruct.org/documentation/dev/reference/html/#configuration-options">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_bean_mapper_usage"><a class="anchor" href="#_basic_bean_mapper_usage"></a>Basic Bean-Mapper Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use the mapper we have to implement the mapper interface and the function prototypes with a <strong>@Mapper</strong> annotation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Mapper
+public interface ProductMapper {
+
+  ProductDto map(ProductEntity model);
+
+  ProductEntity create(NewProductDto dto);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The MapStruct annotation processor will generate the implementation for us under <code>/target/generated-sources/</code>, we just need to tell it that we would like to have a method that accepts an <code>ProductEntity</code> entity and returns a new <code>ProductDto</code> DTO.</p>
+</div>
+<div class="paragraph">
+<p>The generated mapper implementation will be marked with the <strong>@ApplicationScoped</strong> annotation and thus can be injected into fields, constructor arguments, etc. using the <strong>@Inject</strong> annotation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class ProductRestService{
+
+  @Inject
+  ProductMapper mapper;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>That is the basic usage of a Mapstruct mapper. In the next chapter, we go a bit into detail and show some more configurations.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_bean_mapper_usage"><a class="anchor" href="#_advanced_bean_mapper_usage"></a>Advanced Bean-Mapper Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Let´s assume our <code>Product</code> entity and the <code>ProductDto</code> has some different named property that should be mapped. Add a mapping annotation to map the property <strong>type</strong> from <code>Product</code> to <strong>kind</strong> from <code>ProductDto</code>. We define the source name of the property and the target name.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Mapper
+public interface ProductMapper {
+  @Mapping(target = "kind", source = "type")
+  ProductDto map(ProductEntity entity);
+
+  @InheritInverseConfiguration(name = "map" )
+  ProductEntity create(ProductDto dto);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For bi-directional mappings, we can indicate that a method shall inherit the inverse configuration of the corresponding method with the <strong>@InheritInverseConfiguration</strong>. You can omit the name parameter if the result type of method A is the same as the
+single-source type of method B and if the single-source type of A is the same as the result type of B. If multiple applies the attribute name is needed. Specific mappings from the inversed method can (optionally) be overridden, ignored, and set to constants or expressions.</p>
+</div>
+<div class="paragraph">
+<p>The mappingInheritanceStrategy can be defined as showed in <a href="#_mapstruct_configuration">MapStruct Configuration</a> the existing options can be found <a href="https://mapstruct.org/documentation/dev/reference/html/#shared-configurations">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>Not always a mapped attribute has the same type in the source and target objects. For instance, an attribute may be of type <code>int</code> in the source bean but of type <code>Long</code> in the target bean.</p>
+</div>
+<div class="paragraph">
+<p>Another example are references to other objects which should be mapped to the corresponding types in the target model. E.g. the class <code>ShoppingCart</code> might have a property <strong>content</strong> of the type <code>Product</code> which needs to be converted into an <code>ProductDto</code> object when mapping a <code>ShoppingCart</code> object to <code>ShoppingCartDto</code>. For these cases, it&#8217;s useful to understand how Mapstruct is <a href="https://mapstruct.org/documentation/dev/reference/html/#datatype-conversions">converting the data types</a> and the <a href="https://mapstruct.org/documentation/dev/reference/html/#mapping-object-references">object references</a>.</p>
+</div>
+<div class="paragraph">
+<p>Also, the Chapter for <a href="https://mapstruct.org/documentation/dev/reference/html/#controlling-nested-bean-mappings">nested bean mappings</a> will help to configure MapStruct to map arbitrary deep object graphs.</p>
+</div>
+<div class="paragraph">
+<p>You can study running MapStruct implementation examples given by <a href="https://github.com/mapstruct/mapstruct-examples">MapStruct</a> or in our <a href="https://github.com/devonfw-sample/devon4quarkus-reference">Quarkus reference project</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

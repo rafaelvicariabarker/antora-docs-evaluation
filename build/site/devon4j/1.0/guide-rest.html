@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Guides</li>
+    <li><a href="guide-rest.html">REST</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-rest.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_rest">REST</a></li>
+<li><a href="#_urls">URLs</a></li>
+<li><a href="#_http_methods">HTTP Methods</a></li>
+<li><a href="#_http_status_codes">HTTP Status Codes</a></li>
+<li><a href="#_jax_rs">JAX-RS</a>
+<ul class="sectlevel2">
+<li><a href="#_service_interface">Service-Interface</a></li>
+<li><a href="#_jax_rs_configuration">JAX-RS Configuration</a></li>
+<li><a href="#_rest_exception_handling">REST Exception Handling</a></li>
+<li><a href="#_pagination_details">Pagination details</a></li>
+</ul>
+</li>
+<li><a href="#_rest_testing">REST Testing</a></li>
+<li><a href="#_security">Security</a>
+<ul class="sectlevel2">
+<li><a href="#_csrf">CSRF</a></li>
+<li><a href="#_json_top_level_arrays">JSON top-level arrays</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_rest"><a class="anchor" href="#_rest"></a>REST</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>REST (<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REpresentational State Transfer</a>) is an inter-operable protocol for <a href="guide-service-layer.html" class="xref page">services</a> that is more lightweight than <a href="guide-soap.html" class="xref page">SOAP</a>.
+However, it is no real standard and can cause confusion (see <a href="https://github.com/devonfw/devon4j/blob/master/documentation/guide-rest-philosophy.adoc">REST philosophy</a>).
+Therefore we define best practices here to guide you.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_urls"><a class="anchor" href="#_urls"></a>URLs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>URLs are not case sensitive. Hence, we follow the best practice to use only lower-case-letters-with-hyphen-to-separate-words.
+For operations in REST we distinguish the following types of URLs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A <em>collection URL</em> is build from the rest service URL by appending the name of a collection. This is typically the name of an entity. Such URL identifies the entire collection of all elements of this type. Example: <code>https://mydomain.com/myapp/services/rest/mycomponent/v1/myentity</code></p>
+</li>
+<li>
+<p>An <em>element URL</em> is build from a collection URL by appending an element ID. It identifies a single element (entity) within the collection. Example: <code>https://mydomain.com/myapp/services/rest/mycomponent/v1/myentity/42</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To follow KISS avoid using plural forms (<code>&#8230;&#8203;/productmanagement/v1/products</code> vs. <code>&#8230;&#8203;/productmanagement/v1/product/42</code>). Always use singular forms and avoid confusions (except for the rare cases where no singular exists).</p>
+</div>
+<div class="paragraph">
+<p>The REST URL scheme fits perfect for <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> operations.
+For business operations (processing, calculation, advanced search, etc.) we simply append a collection URL with the name of the business operation.
+Then we can <code>POST</code> the input for the business operation and get the result back. Example: <code>https://mydomain.com/myapp/services/rest/mycomponent/v1/myentity/search</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_methods"><a class="anchor" href="#_http_methods"></a>HTTP Methods</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following table defines the HTTP methods (verbs) and their meaning:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Usage of HTTP methods</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>HTTP Method</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>GET</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Read data (stateless).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PUT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create or update data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>POST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Process data.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DELETE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delete an entity.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Please also note that for (large) bulk deletions you may be forced to used <code>POST</code> instead of <code>DELETE</code> as according to the HTTP standard <code>DELETE</code> must not have payload and URLs are limited in length.</p>
+</div>
+<div class="paragraph">
+<p>For general recommendations on HTTP methods for collection and element URLs see <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer#Applied_to_web_services">REST@wikipedia</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_status_codes"><a class="anchor" href="#_http_status_codes"></a>HTTP Status Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Further we define how to use the HTTP status codes for REST services properly. In general the 4xx codes correspond to an error on the client side and the 5xx codes to an error on the server side.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Usage of HTTP status codes</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>HTTP Code</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Meaning</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Response</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Comment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requested result</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Result of successful GET</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">204</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>none</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Result of successful POST, DELETE, or PUT with empty result (void return)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bad Request</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error details</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The HTTP request is invalid (parse error, validation failed)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">401</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unauthorized</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>none</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication failed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>none</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authorization failed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>none</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either the service URL is wrong or the requested resource does not exist</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server Error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error code, UUID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Internal server error occurred, in case of an exception, see <a href="#rest-exception-handling">REST exception handling</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jax_rs"><a class="anchor" href="#_jax_rs"></a>JAX-RS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For implementing REST services we use the <a href="https://jax-rs-spec.java.net/">JAX-RS</a> standard.
+As payload encoding we recommend <a href="guide-json.html" class="xref page">JSON</a> bindings using <a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a>.
+To implement a REST service you simply add JAX-RS annotations.
+Here is a simple example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ApplicationScoped
+@Path("/imagemanagement/v1")
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
+public class ImagemanagementRestService {
+
+  @Inject
+  private Imagemanagement imagemanagement;
+
+  @GET
+  @Path("/image/{id}/")
+  public ImageDto getImage(@PathParam("id") long id) {
+
+    return this.imagemanagement.findImage(id);
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here we can see a REST service for the <a href="architecture.html#business-architecture" class="xref page">business component</a> <code>imagemanagement</code>. The method <code>getImage</code> can be accessed via HTTP GET (see <code>@GET</code>) under the URL path <code>imagemanagement/image/{id}</code> (see <code>@Path</code> annotations) where <code>{id}</code> is the ID of the requested table and will be extracted from the URL and provided as parameter <code>id</code> to the method <code>getImage</code>. It will return its result (<code>ImageDto</code>) as <a href="guide-json.html" class="xref page">JSON</a> (see <code>@Produces</code> annotation - you can also extend <code>RestService</code> marker interface that defines these annotations for JSON). As you can see it delegates to the <a href="guide-logic-layer.html" class="xref page">logic</a> component <code>imagemanagement</code> that contains the actual business logic while the service itself only exposes this logic via HTTP. The REST service implementation is a regular CDI bean that can use <a href="guide-dependency-injection.html" class="xref page">dependency injection</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+With JAX-RS it is important to make sure that each service method is annotated with the proper HTTP method (<code>@GET</code>,<code>@POST</code>,etc.) to avoid unnecessary debugging. So you should take care not to forget to specify one of these annotations.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_service_interface"><a class="anchor" href="#_service_interface"></a>Service-Interface</h3>
+<div class="paragraph">
+<p>You may also separate API and implementation in case you want to reuse the API for <a href="guide-service-client.html" class="xref page">service-client</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Path("/imagemanagement/v1")
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
+public interface ImagemanagementRestService {
+
+  @GET
+  @Path("/image/{id}/")
+  ImageEto getImage(@PathParam("id") long id);
+
+}
+
+@Named("ImagemanagementRestService")
+public class ImagemanagementRestServiceImpl implements ImagemanagementRestService {
+
+  @Override
+  public ImageEto getImage(long id) {
+
+    return this.imagemanagement.findImage(id);
+  }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jax_rs_configuration"><a class="anchor" href="#_jax_rs_configuration"></a>JAX-RS Configuration</h3>
+<div class="paragraph">
+<p>Starting from CXF 3.0.0 it is possible to enable the auto-discovery of JAX-RS roots.</p>
+</div>
+<div class="paragraph">
+<p>When the jaxrs server is instantiated all the scanned root and provider beans (beans annotated with <code>javax.ws.rs.Path</code> and <code>javax.ws.rs.ext.Provider</code>) are configured.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rest_exception_handling"><a class="anchor" href="#_rest_exception_handling"></a>REST Exception Handling</h3>
+<div class="paragraph">
+<p>For exceptions a service needs to have an exception façade that catches all exceptions and handles them by writing proper log messages and mapping them to a HTTP response with an according <a href="#http-status-codes">HTTP status code</a>. Therefore the devonfw provides a generic solution via <code>RestServiceExceptionFacade</code>. You need to follow the <a href="guide-exceptions.html" class="xref page">exception guide</a> so that it works out of the box because the façade needs to be able to distinguish between business and technical exceptions.
+Now your service may throw exceptions but the façade with automatically handle them for you.</p>
+</div>
+<div class="paragraph">
+<p>The general format for returning an error to the client is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{
+  "message": "A human-readable message describing the error",
+  "code": "A code identifying the concrete error",
+  "uuid": "An identifier (generally the correlation id) to help identify corresponding requests in logs"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pagination_details"><a class="anchor" href="#_pagination_details"></a>Pagination details</h3>
+<div class="paragraph">
+<p>We recommend to use <a href="guide-repository.html" class="xref page">spring-data repositories</a> for database access that already comes with pagination support.
+Therefore, when performing a search, you can include a <a href="https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html">Pageable</a> object.
+Here is a JSON example for it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{ "pageSize": 20, "pageNumber": 0, "sort": [] }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By increasing the <code>pageNumber</code> the client can browse and page through the hits.</p>
+</div>
+<div class="paragraph">
+<p>As a result you will receive a <a href="https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html">Page</a>.
+It is a container for your search results just like a <code>Collection</code> but additionally contains pagination information for the client.
+Here is a JSON example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{ "totalElements": 1022,
+  pageable: { "pageSize": 20, "pageNumber": 0 },
+  content: [ ... ] }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>totalElements</code> property contains the total number of hits.
+This can be used by the client to compute the total number of pages and render the pagination links accordingly.
+Via the <code>pageable</code> property the client gets back the <code>Pageable</code> properties from the search request.
+The actual hits for the current page are returned as array in the <code>content</code> property.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rest_testing"><a class="anchor" href="#_rest_testing"></a>REST Testing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For testing REST services in general consult the <a href="guide-testing.html" class="xref page">testing guide</a>.</p>
+</div>
+<div class="paragraph">
+<p>For manual testing REST services there are browser plugins:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Firefox: <a href="https://addons.mozilla.org/de/firefox/addon/rested/">rested</a></p>
+</li>
+<li>
+<p>Chrome: <a href="http://www.getpostman.com/">postman</a> (<a href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo">advanced-rest-client</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security"><a class="anchor" href="#_security"></a>Security</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your services are the major entry point to your application. Hence security considerations are important here.</p>
+</div>
+<div class="sect2">
+<h3 id="_csrf"><a class="anchor" href="#_csrf"></a>CSRF</h3>
+<div class="paragraph">
+<p>A common security threat is <a href="https://www.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)">CSRF</a> for REST services. Therefore all REST operations that are performing modifications (PUT, POST, DELETE, etc. - all except GET) have to be secured against CSRF attacks. See <a href="guide-csrf.html" class="xref page">CSRF</a> how to do this.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_json_top_level_arrays"><a class="anchor" href="#_json_top_level_arrays"></a>JSON top-level arrays</h3>
+<div class="paragraph">
+<p>OWASP earlier suggested to never return JSON arrays at the top-level, to prevent attacks without rationale.
+We digged deep and found <a href="https://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx/">anatomy-of-a-subtle-json-vulnerability</a>.
+To sum it up the attack is many years old and does not work in any recent or relevant browser.
+Hence it is fine to use arrays as top-level result in a JSON REST service (means you can return <code>List&lt;Foo&gt;</code> in a Java JAX-RS service).</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

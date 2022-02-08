@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Documentation</li>
+    <li><a href="architecture.html">Architecture Overview</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/architecture.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#key-principles">Key Principles</a></li>
+<li><a href="#architecture-principles">Architecture Principles</a></li>
+<li><a href="#application-architecture">Application Architecture</a>
+<ul class="sectlevel2">
+<li><a href="#business-architecture">Business Architecture</a></li>
+<li><a href="#technical-architecture">Technical Architecture</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="architecture"><a class="anchor" href="#architecture"></a>Architecture</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are many different views that are summarized by the term <em>architecture</em>. First, we will introduce the <a href="#key-principles">key principles</a> and <a href="#architecture-principles">architecture principles</a> of devonfw. Then, we will go into details of the the <a href="#application-architecture">architecture of an application</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="key-principles"><a class="anchor" href="#key-principles"></a>Key Principles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For devonfw we follow these fundamental key principles for all decisions about architecture, design, or choosing standards, libraries, and frameworks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>KISS</strong><br>
+Keep it small and simple</p>
+</li>
+<li>
+<p><strong>Open</strong><br>
+Commitment to open standards and solutions (no required dependencies to commercial or vendor-specific standards or solutions)</p>
+</li>
+<li>
+<p><strong>Patterns</strong><br>
+We concentrate on providing patterns, best-practices and examples rather than writing framework code.</p>
+</li>
+<li>
+<p><strong>Solid</strong><br>
+We pick solutions that are established and have been proven to be solid and robust in real-live (business) projects.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="architecture-principles"><a class="anchor" href="#architecture-principles"></a>Architecture Principles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Additionally we define the following principles that our architecture is based on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Component Oriented Design</strong><br>
+We follow a strictly component oriented design to address the following sub-principles:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://en.wikipedia.org/wiki/Separation_of_concerns">Separation of Concerns</a></p>
+</li>
+<li>
+<p><a href="http://en.wikipedia.org/wiki/Reusability">Reusability</a> and avoiding <a href="http://en.wikipedia.org/wiki/Redundant_code">redundant code</a></p>
+</li>
+<li>
+<p><a href="http://en.wikipedia.org/wiki/Information_hiding">Information Hiding</a> via component API and its exchangeable implementation treated as secret.</p>
+</li>
+<li>
+<p><em>Design by Contract</em> for self-contained, descriptive, and stable component APIs.</p>
+</li>
+<li>
+<p><a href="#technical-architecture">Layering</a> as well as separation of business logic from technical code for better maintenance.</p>
+</li>
+<li>
+<p><em>Data Sovereignty</em> (and <em>high cohesion with low coupling</em>) says that a component is responsible for its data and changes to this data shall only happen via the component. Otherwise, maintenance problems will arise to ensure that data remains consistent. Therefore, interfaces of a component that may be used by other components are designed <em>call-by-value</em> and not <em>call-by-reference</em>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Homogeneity</strong><br>
+Solve similar problems in similar ways and establish a uniform <a href="coding-conventions.html" class="xref page">code-style</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As an architect you should be prepared for the future by reading the <a href="https://www.capgemini.com/de-de/wp-content/uploads/sites/5/2020/07/TechnoVision-2020-Report.pdf">TechnoVision</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="application-architecture"><a class="anchor" href="#application-architecture"></a>Application Architecture</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For the architecture of an application we distinguish the following views:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <a href="#business-architecture">Business Architecture</a> describes an application from the business perspective. It divides the application into business components and with full abstraction of technical aspects.</p>
+</li>
+<li>
+<p>The <a href="#technical-architecture">Technical Architecture</a> describes an application from the technical implementation perspective. It divides the application into technical layers and defines which technical products and frameworks are used to support these layers.</p>
+</li>
+<li>
+<p>The Infrastructure Architecture describes an application from the operational infrastructure perspective. It defines the nodes used to run the application including clustering, load-balancing and networking. This view is not explored further in this guide.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="business-architecture"><a class="anchor" href="#business-architecture"></a>Business Architecture</h3>
+<div class="paragraph">
+<p>The <em>business architecture</em> divides the application into <em>business components</em>. A business component has a well-defined responsibility that it encapsulates. All aspects related to that responsibility have to be implemented within that business component. Further, the business architecture defines the dependencies between the business components. These dependencies need to be free of cycles. A business component exports its functionality via well-defined interfaces as a self-contained API. A business component may use another business component via its API and compliant with the dependencies defined by the business architecture.</p>
+</div>
+<div class="paragraph">
+<p>As the business domain and logic of an application can be totally different, the devonfw can not define a standardized business architecture. Depending on the business domain it has to be defined from scratch or from a domain reference architecture template. For very small systems it may be suitable to define just a single business component containing all the code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="technical-architecture"><a class="anchor" href="#technical-architecture"></a>Technical Architecture</h3>
+<div class="paragraph">
+<p>The <em>technical architecture</em> divides the application into technical <em>layers</em> based on the <a href="http://en.wikipedia.org/wiki/Multilayered_architecture">multilayered architecture</a>. A layer is a unit of code with the same category such as a service or presentation logic. So, a layer is often supported by a technical framework. Each business component can therefore be split into <em>component parts</em> for each layer. However, a business component may not have component parts for every layer (e.g. only a presentation part that utilized logic from other components).</p>
+</div>
+<div class="paragraph">
+<p>An overview of the technical reference architecture of the devonfw is given by <a href="#img-t-architecture">figure "Technical Reference Architecture"</a>.
+It defines the following layers visualized as horizontal boxes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="guide-client-layer.html" class="xref page">client layer</a> for the front-end (GUI).</p>
+</li>
+<li>
+<p><a href="guide-service-layer.html" class="xref page">service layer</a> for the services used to expose functionality of the
+back-end to the client or other consumers.</p>
+</li>
+<li>
+<p><a href="guide-batch-layer.html" class="xref page">batch layer</a> for exposing functionality in batch-processes (e.g. mass imports).</p>
+</li>
+<li>
+<p><a href="guide-logic-layer.html" class="xref page">logic layer</a> for the business logic.</p>
+</li>
+<li>
+<p><a href="guide-domain-layer.html" class="xref page">domain layer</a> for the data access, especially persistence (in the <a href="guide-structure-classic.html" class="xref page">classic project structure</a> this layer is named <a href="guide-dataaccess-layer.html" class="xref page">data-access layer</a>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Also, you can see the (business) components as vertical boxes (e.g. <em>A</em> and <em>X</em>) and how they are composed out of component parts each one assigned to one of the technical layers.</p>
+</div>
+<div class="paragraph">
+<p>Further, there are technical components for cross-cutting aspects grouped by the gray box on the left. Here is a complete list:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="guide-security.html" class="xref page">Security</a></p>
+</li>
+<li>
+<p><a href="guide-logging.html" class="xref page">Logging</a></p>
+</li>
+<li>
+<p><a href="guide-monitoring.html" class="xref page">Monitoring</a></p>
+</li>
+<li>
+<p><a href="guide-transactions.html" class="xref page">Transaction-Handling</a></p>
+</li>
+<li>
+<p><a href="guide-exceptions.html" class="xref page">Exception-Handling</a></p>
+</li>
+<li>
+<p><a href="guide-i18n.html" class="xref page">Internationalization</a></p>
+</li>
+<li>
+<p><a href="guide-dependency-injection.html" class="xref page">Dependency-Injection</a></p>
+</li>
+</ul>
+</div>
+<div id="img-t-architecture" class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://devonfw.com/website/pages/docs/images/T-Architecture.svg"><img src="_images/images/T-Architecture.png" alt="devonfw architecture blueprint"></a>
+</div>
+<div class="title">Figure 1. Technical Reference Architecture</div>
+</div>
+<div class="paragraph">
+<p>Please click on the architecture image to open it as SVG and click on the layers and cross-cutting topics to open the according documentation guide.</p>
+</div>
+<div class="paragraph">
+<p>We reflect this architecture in our code as described in our <a href="coding-conventions.html#packages" class="xref page">coding conventions</a> allowing a traceability of business components, use-cases, layers, etc. into the code and giving
+developers a sound orientation within the project.</p>
+</div>
+<div class="paragraph">
+<p>Further, the architecture diagram shows the allowed dependencies illustrated by the dark green connectors.
+Within a business component a component part can call the next component part on the layer directly below via a dependency on its API (vertical connectors).
+While this is natural and obvious, it is generally forbidden to have dependencies upwards the layers
+or to skip a layer by a direct dependency on a component part two or more layers below.
+The general dependencies allowed between business components are defined by the <a href="#business-architecture">business architecture</a>.
+In our reference architecture diagram we assume that the business component <code>A1</code> is allowed to depend
+on component <code>A2</code>. Therefore, a use-case within the logic component part of <code>A1</code> is allowed to call a
+use-case from <code>A2</code> via a dependency on the component API. The same applies for dialogs on the client layer.
+This is illustrated by the horizontal connectors. Please note that <a href="guide-jpa.html#entity" class="xref page">persistence entities</a> are part of the API of the data-access component part so only the logic component part of the same
+business component may depend on them.</p>
+</div>
+<div class="paragraph">
+<p>The technical architecture has to address non-functional requirements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>scalability</strong><br>
+is established by keeping state in the client and making the server state-less (except for login session). Via load-balancers new server nodes can be added to improve performance (horizontal scaling).</p>
+</li>
+<li>
+<p><strong>availability</strong> and <strong>reliability</strong><br>
+are addressed by clustering with redundant nodes avoiding any single-point-of failure. If one node fails the system is still available. Further, the software has to be robust so there are no dead-locks or other bad effects that can make the system unavailable or not reliable.</p>
+</li>
+<li>
+<p><strong>security</strong><br>
+is archived in the devonfw by the right templates and best-practices that avoid vulnerabilities. See <a href="guide-security.html" class="xref page">security guidelines</a> for further details.</p>
+</li>
+<li>
+<p><strong>performance</strong><br>
+is obtained by choosing the right products and proper configurations. While the actual implementation of the application matters for performance a proper design is important as it is the key to allow performance-optimizations (see e.g. <a href="guide-caching.html" class="xref page">caching</a>).</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="technology-stack"><a class="anchor" href="#technology-stack"></a>Technology Stack</h4>
+<div class="paragraph">
+<p>The technology stack of the devonfw is illustrated by the following table.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Technology Stack of devonfw</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Topic</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Detail</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Standard</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Suggested implementation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">runtime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">language &amp; VM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oracle JDK</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">runtime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">servlet-container</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JEE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://tomcat.apache.org/">tomcat</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-dependency-injection.html" class="xref page">component management</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dependency injection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://jcp.org/en/jsr/detail?id=330">JSR330</a> &amp; <a href="https://jcp.org/en/jsr/detail?id=250">JSR250</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://spring.io/">spring</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-configuration.html" class="xref page">configuration</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">framework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://projects.spring.io/spring-boot/">spring-boot</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-domain-layer.html" class="xref page">persistence</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OR-mapper</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html">JPA</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://hibernate.org/orm/">hibernate</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-batch-layer.html" class="xref page">batch</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">framework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://jcp.org/en/jsr/detail?id=352">JSR352</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://projects.spring.io/spring-batch/">spring-batch</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-service-layer.html" class="xref page">service</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-service-layer.html#soap" class="xref page">SOAP services</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://jcp.org/en/jsr/detail?id=224">JAX-WS</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://cxf.apache.org/">CXF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-service-layer.html" class="xref page">service</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-service-layer.html#rest" class="xref page">REST services</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://jax-rs-spec.java.net/">JAX-RS</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://cxf.apache.org/">CXF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-logging.html" class="xref page">logging</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">framework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.slf4j.org/">slf4j</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://logback.qos.ch/">logback</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-validation.html" class="xref page">validation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">framework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://beanvalidation.org/">beanvalidation/JSR303</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://hibernate.org/validator/">hibernate-validator</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-security.html" class="xref page">security</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication &amp; Authorization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.oracle.com/technetwork/java/javase/jaas/index.html">JAAS</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://projects.spring.io/spring-security/">spring-security</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-monitoring.html" class="xref page">monitoring</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">framework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html">JMX</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://spring.io/">spring</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-monitoring.html" class="xref page">monitoring</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTTP Bridge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTTP &amp; JSON</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.jolokia.org">jolokia</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-aop.html" class="xref page">AOP</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">framework</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy.html">dynamic proxies</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://docs.spring.io/autorepo/docs/spring/3.0.6.RELEASE/spring-framework-reference/html/aop.html">spring AOP</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

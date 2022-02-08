@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/spring/guide-jwt-spring.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_jwt_spring_starter">JWT Spring-Starter</a></li>
+<li><a href="#_keystore">Keystore</a></li>
+<li><a href="#_jwt_dependency">JWT Dependency</a></li>
+<li><a href="#_configuration">Configuration</a></li>
+<li><a href="#_authentication_with_jwt_via_oauth">Authentication with JWT via OAuth</a></li>
+<li><a href="#_login_with_username_and_password_to_get_jwt">Login with Username and Password to get JWT</a></li>
+<li><a href="#_authentication_with_kafka">Authentication with Kafka</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_jwt_spring_starter"><a class="anchor" href="#_jwt_spring_starter"></a>JWT Spring-Starter</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_keystore"><a class="anchor" href="#_keystore"></a>Keystore</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A KeyStore is a repository of certificates and keys (public key, private key, or secret key). They can be used for TSL transportation, for encryption and decryption as well as for signing.
+For demonstration you might create a keystore with openssl, with the following commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
+openssl pkcs12 -export -in cert.pem -inkey key.pem -out example.p12</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For Java tooling you may also try the following instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>keytool -genkeypair -alias devonfw -keypass "password" -storetype PKCS12 -keyalg RSA -keysize 4096 -storepass "password" -keystore keystore.pkcs</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please use reasonable passwords instead of <code>password</code> what should be obvious. Also for the alias the value <code>devonfw</code> is just an example.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jwt_dependency"><a class="anchor" href="#_jwt_dependency"></a>JWT Dependency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use JWT support from devon4j with spring-boot you have to add following required dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-security-jwt&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following properties need to be configured in your <code>application.properties</code> file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties"># location of the keystore file, can be any spring resource (such as file or classpath URIs)
+security.keystore.location=classpath:config/keystore.pkcs
+# type of keystore e.g. "PKCS12" (recommended), "JKS", or "JCEKS"
+security.keystore.type=PKCS12
+# password the keystore is secured with. Consider using password encryption as described in devon4j configuration guide
+security.keystore.password=password
+# the algorithm for encryption/decryption and signing - see io.jsonwebtoken.SignatureAlgorithm
+security.authentication.jwt.algorithm=RS256
+# alias of public/private key in keystore (for validation only public key is used, for creation private key is required)
+security.authentication.jwt.alias=devonfw
+# the following properties are used if you are validating JWTs (e.g. via JwtAuthenticationFilter)
+security.authentication.jwt.validation.expiration-required=false
+security.authentication.jwt.validation.max-validity=42h
+security.authentication.jwt.validation.not-before-required=false
+# the following properties are only used if you are issuing JWTs (e.g. via JwtLoginFilter)
+security.authentication.jwt.creation.add-issued-at=true
+security.authentication.jwt.creation.validity=4h
+security.authentication.jwt.creation.not-before-delay=1m
+# the following properties enable backward compatiblity for devon4j &lt;= 2021.04.002
+# after microprofile JWT is used by default since 2021.04.003
+#security.authentication.jwt.claims.access-controls-name=roles
+#security.authentication.jwt.claims.access-controls-array=false</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See also <a href="https://github.com/devonfw/devon4j/blob/master/modules/security-jwt/src/main/java/com/devonfw/module/security/jwt/common/impl/JwtConfigProperties.java">JwtConfigProperties</a> for details about configuration.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authentication_with_jwt_via_oauth"><a class="anchor" href="#_authentication_with_jwt_via_oauth"></a>Authentication with JWT via OAuth</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The authentication with JWT via OAuth (HTTP header), will happen via <code>JwtAuthenticationFilter</code> that is automatically added by <code>devon4j-starter-security-jwt</code> via <code>JwtAutoConfiguration</code>.
+With the starter and auto-configuration we want to make it as easy as possible for you.
+In case you would like to build a server app that e.g. wants to issue JWTs but does not allow authentication via JWT itself, you can use <code>devon4j-security-jwt</code> as dependency instead of the starter and do the spring config yourself (pick and choose from <code>JwtAutoConfiguration</code>).</p>
+</div>
+<div class="paragraph">
+<p>To do this, you need to add the following changes in your <code>BaseWebSecurityConfig</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @Bean
+  public JwtAuthenticationFilter getJwtAuthenticationFilter() {
+    return new JwtAuthenticationFilter();
+  }
+
+  @Override
+  public void configure(HttpSecurity http) throws Exception {
+    // ...
+    // add this line to the end of this existing method
+    http.addFilterBefore(getJwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+  }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_login_with_username_and_password_to_get_jwt"><a class="anchor" href="#_login_with_username_and_password_to_get_jwt"></a>Login with Username and Password to get JWT</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To allow a client to login with username and password to get a JWT for sub-sequent requests, you need to do the following changes in your <code>BaseWebSecurityConfig</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @Bean
+  public JwtLoginFilter getJwtLoginFilter() throws Exception {
+
+    JwtLoginFilter jwtLoginFilter = new JwtLoginFilter("/login");
+    jwtLoginFilter.setAuthenticationManager(authenticationManager());
+    jwtLoginFilter.setUserDetailsService(this.userDetailsService);
+    return jwtLoginFilter;
+  }
+
+  @Override
+  public void configure(HttpSecurity http) throws Exception {
+    // ...
+    // add this line to the end of this existing method
+    http.addFilterBefore(getJwtLoginFilter(), UsernamePasswordAuthenticationFilter.class);
+  }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authentication_with_kafka"><a class="anchor" href="#_authentication_with_kafka"></a>Authentication with Kafka</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Authentication with JWT and Kafka is explained in the <a href="../guide-kafka.html" class="xref page">Kafka guide</a>.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

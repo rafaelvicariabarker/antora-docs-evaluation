@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/spring/guide-kafka-spring.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_kafka">Kafka</a></li>
+<li><a href="#_how_to_use">How to use?</a></li>
+<li><a href="#_property_parameters">Property Parameters</a></li>
+<li><a href="#_naming_convention_for_topics">Naming convention for topics</a></li>
+<li><a href="#_send_messages">Send Messages</a></li>
+<li><a href="#_receive_messages">Receive Messages</a></li>
+<li><a href="#_retry">Retry</a>
+<ul class="sectlevel2">
+<li><a href="#_handling_retry_in_devon4j_kafka">Handling retry in devon4j-kafka</a></li>
+<li><a href="#_retry_configuration_and_naming_convention_of_redelivery_topics">Retry configuration and naming convention of redelivery topics.</a></li>
+<li><a href="#_retry_topics">Retry topics</a></li>
+<li><a href="#_handling_retry_finally_failed">Handling retry finally failed</a></li>
+</ul>
+</li>
+<li><a href="#_tracer">Tracer</a>
+<ul class="sectlevel2">
+<li><a href="#_how_devon4j_kafka_handles_tracer">How devon4j-kafka handles tracer ?</a></li>
+</ul>
+</li>
+<li><a href="#_logging">Logging</a></li>
+<li><a href="#_kafka_health_check_using_spring_acutator">Kafka Health check using Spring acutator</a></li>
+<li><a href="#_authentication">Authentication</a>
+<ul class="sectlevel2">
+<li><a href="#_json_web_token_jwt">JSON Web Token (JWT)</a></li>
+</ul>
+</li>
+<li><a href="#_using_kafka_for_internal_parallel_processing">Using Kafka for internal parallel processing</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_kafka"><a class="anchor" href="#_kafka"></a>Kafka</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide explains how Spring Kafka is used in devonfw applications. It focuses on aspects which are special to devonfw if you want to learn about spring-kafka you should adhere to springs references documentation.</p>
+</div>
+<div class="paragraph">
+<p>There is an example of simple Kafka implementation in the <a href="https://github.com/devonfw-sample/devon4j-kafka-employeeapp">devon4j-kafka-employeeapp</a>.</p>
+</div>
+<div class="paragraph">
+<p>The devon4j-kafka library consists of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Custom message processor with retry pattern</p>
+</li>
+<li>
+<p>Monitoring support</p>
+</li>
+<li>
+<p>Tracing support</p>
+</li>
+<li>
+<p>Logging support</p>
+</li>
+<li>
+<p>Configuration support for Kafka Producers, Consumers, brave tracer and message retry processing including defaults</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_use"><a class="anchor" href="#_how_to_use"></a>How to use?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use devon4j-kafka you have to add required starter dependencies which is "starter-kafka-sender" or "starter-kafka-receiver" from devon4j. These 2 starters are responsible for taking care of the required spring configuration. If you only want to produce messages "starter-kafka-sender" is enough. For consuming messages you need "starter-kafka-receiver" which also includes "starter-kafka-sender".</p>
+</div>
+<div class="paragraph">
+<p>To use devon4j-kafka message sender add the below dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-kafka-sender&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It includes the Tracer implementations from Spring cloud sleuth.</p>
+</div>
+<div class="paragraph">
+<p>To use the devon4j-kafka message receiver configurations, loggers and message retry processor for processing message, add the below dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-kafka-receiver&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_property_parameters"><a class="anchor" href="#_property_parameters"></a>Property Parameters</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As written before kafka-producer and listener-specific configuration is done via properties classes. These classes provide useful defaults, at a minimum the following parameters have to be configured:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">messaging.kafka.common.bootstrap-servers=kafka-broker:9092
+messaging.kafka.consumer.group-id=&lt;e.g. application name&gt;
+messaging.kafka.listener.container.concurrency=&lt;Number of listener threads for each listener container&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All the configuration beans for devon4j-kafka are annotated with <code>@ConfigurationProperties</code> and use common prefixes to read the property values from <code>application.properties</code> or <code>application.yml</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"> @Bean
+  @ConfigurationProperties(prefix = "messaging.kafka.producer")
+  public KafkaProducerProperties messageKafkaProducerProperties() {
+    return new KafkaProducerProperties();
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For producer and consumer the prefixes are <code>messaging.kafka.producer&#8230;&#8203;</code> and <code>message.kafka.consumer&#8230;&#8203;</code> and for retry the prefix is <code>messaging.retry&#8230;&#8203;</code></p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/devonfw-sample/devon4j-kafka-employeeapp/blob/master/core/src/main/resources/application.properties">devon4j-kafka-employeeapp&#8217;s application.properties</a> file for an example.</p>
+</div>
+<div class="paragraph">
+<p>We use the same properties defined by Apache Kafka or Spring Kafka. They are simply "mapped" to the above prefixes to allow easy access from your application properties. The java docs provided in each of the devon4j-kafka property classes which explains their use and what value has to be passed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code><a href="https://github.com/devonfw/devon4j/blob/develop/modules/kafka/src/main/java/com/devonfw/module/kafka/common/messaging/api/config/KafkaProducerProperties.java/">Devon4j-Kafka-Producer properties</a></code> are defined from <code><a href="https://kafka.apache.org/documentation/#producerconfigs/">kafka prodcuer config</a></code>.</p>
+</li>
+<li>
+<p>The <code><a href="https://github.com/devonfw/devon4j/blob/develop/modules/kafka/src/main/java/com/devonfw/module/kafka/common/messaging/api/config/KafkaConsumerProperties.java/">Devon4j-Kafka-Consumer properties</a></code> are defined from <code><a href="https://kafka.apache.org/documentation/#consumerconfigs/">kafka consumer config</a></code>.</p>
+</li>
+<li>
+<p>The <code><a href="https://github.com/devonfw/devon4j/blob/develop/modules/kafka/src/main/java/com/devonfw/module/kafka/common/messaging/api/config/KafkaListenerContainerProperties.java/">Devon4j-Kafka-Listener container properties</a></code> are defined from <code><a href="https://docs.spring.io/spring-kafka/api/org/springframework/kafka/listener/ContainerProperties.html">Spring kafka listener properties</a></code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_naming_convention_for_topics"><a class="anchor" href="#_naming_convention_for_topics"></a>Naming convention for topics</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For better managing of several Kafka topics in your application portfolio we strongly advice to introduce a naming scheme for your topics. The schema may depend on the actual usage pattern of Kafka. For context where Kafka is used
+in a 1-to-1-communication-scheme (not publish/subscribe) the following schema has been proven useful in practice:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">&lt;application name&gt;-&lt;service name&gt;-&lt;version&gt;-&lt;service-operation&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To keep things easy and prevent problems we suggest to use only small letters, hyphens but no other special characters.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_send_messages"><a class="anchor" href="#_send_messages"></a>Send Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As mentioned above the 'starter-kafka-sender' is required to be added as a dependency to use MessageSender from Kafka.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-kafka-sender&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows how to use MessageSender and its method to send messages to Kafka broker:</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @Inject
+  private MessageSender messageSender;
+  private ProducerRecord&lt;K,V&gt; producerRecord;
+
+  public void sendMessageToKafka(){
+  producerRecord=new ProducerRecord&lt;&gt;("topic-name","message");
+  messageSender.sendMessage(this.producerRecord);
+  //Alternative
+  messageSender.sendMessageAndWait(this.producerRecord,10);
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There are multiple methods available from MessageSender of devon4j-kafka. The ProducerListener will log the message sent to the Kafka broker.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_receive_messages"><a class="anchor" href="#_receive_messages"></a>Receive Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To receive messages you have to define a listener. The listener is normally part of the service layer.</p>
+</div>
+<div id="img-t-architecture" class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://devonfw.com/website/pages/docs/images/kafka-architecture-service.svg"><img src="../_images/images/kafka-architecture-service.png" alt="Architecture for Kafka services"></a>
+</div>
+<div class="title">Figure 1. Architecture for Kafka services</div>
+</div>
+<div class="paragraph">
+<p>Import the following <code>starter-kafka-receiver</code> dependency to use the listener configurations and loggers from devon4j-kafka.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-kafka-receiver&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The listener
+is defined by implementing and annotating a method like in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @KafkaListener(topics = "employeeapp-employee-v1-delete", groupId = "${messaging.kafka.consumer.groupId}", containerFactory = "kafkaListenerContainerFactory")
+  public void consumer(ConsumerRecord&lt;Object, Object&gt; consumerRecord, Acknowledgment acknowledgment) {
+  //user operation
+  //To acknowledge listener after processing
+  acknowledgement.acknowledge();
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The group id can be mentioned in <code>application.properties</code> as listener properties.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">messaging.kafka.consumer.groupId=default</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If there are multiple topics and multiple listeners then we suggest to specify the topic names directly on each listener instead reading from the property file.
+The container factory mentioned in the <code>@KafkaListener</code> is provided in the <a href="https://github.com/devonfw/devon4j/blob/develop/modules/kafka/src/main/java/com/devonfw/module/kafka/common/messaging/api/config/KafkaListenerContainerProperties.java/">KafkaListenerContainerProperties.java</a> to create a default container factory with acknowledgement.</p>
+</div>
+<div class="paragraph">
+<p>The default ack-mode is <code>manual_immediate</code> . It can be overridden by below example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">messaging.kafka.listener.container.ackMode=&lt;ack-mode&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The other ack-mode values can be referred from
+<a href="https://docs.spring.io/spring-kafka/api/org/springframework/kafka/listener/ContainerProperties.AckMode.html">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_retry"><a class="anchor" href="#_retry"></a>Retry</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The retry pattern in devon4j-kafka is invoked when a particular exception(described by user in application.properties file) is thrown while processing the consumed message and it is configured in application.properties file. The general idea is to separate messages which could not be processed into dedicated retry-topics to allow fine control on how processing of the messages is retried and to not block newly arriving messages.
+Let us see more about handling retry in the below topics.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://devonfw.com/website/pages/docs/images/kafka-retry.svg"><img src="../_images/images/kafka-retry.png" alt="Retry pattern in devon4j-kafka"></a>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_handling_retry_in_devon4j_kafka"><a class="anchor" href="#_handling_retry_in_devon4j_kafka"></a>Handling retry in devon4j-kafka</h3>
+<div class="paragraph">
+<p>The retry pattern is included in the starter dependency of "starter-kafka-receiver".</p>
+</div>
+<div class="paragraph">
+<p>The retryPattern method is used by calling the method processMessageWithRetry(ConsumerRecord&lt;K, V&gt; consumerRecord,MessageProcessor&lt;K, V&gt; processor). Please find the below Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Inject
+private MessageRetryOperations&lt;K, V&gt; messageRetryOperations;
+@Inject
+private DeleteEmployeeMessageProcessor&lt;K, V&gt; deleteEmployeeMessageProcessor;
+@KafkaListener(topics = "employeeapp-employee-v1-delete", groupId = "${messaging.kafka.consumer.groupId}",containerFactory = "kafkaListenerContainerFactory")
+public void consumer(ConsumerRecord&lt;K, V&gt; consumerRecord, Acknowledgment acknowledgment) {
+this.messageRetryOperations.processMessageWithRetry(consumerRecord, this.deleteEmployeeMessageProcessor);
+// Acknowledge the listener.
+acknowledgment.acknowledge();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The implementation for MessageProcessor from devon4j-kafka is required to provide the implementation to process the ConsumedRecord from Kafka broker. The implementation for MessageProcessor interface can look as below example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">import com.devonfw.module.kafka.common.messaging.retry.api.client.MessageProcessor;
+@Named
+public class DeleteEmployeeMessageProcessor&lt;K, V&gt; implements MessageProcessor&lt;K, V&gt; {
+ @Override
+  public void processMessage(ConsumerRecord&lt;K, V&gt; message) {
+  //process message
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It works as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The application gets a message from the topic.</p>
+</li>
+<li>
+<p>During the processing of the message an error occurs, the message will be written to the redelivery topic.</p>
+</li>
+<li>
+<p>The message is acknowledged in the topic.</p>
+</li>
+<li>
+<p>The message will be processed from the re-delivery topic after a delay.</p>
+</li>
+<li>
+<p>Processing of the message fails again. It retires until the retry count gets over.</p>
+</li>
+<li>
+<p>When the retry fails in all the retry then the message is logged and payload in the ProducerRecord is deleted for log
+compaction which is explained below.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_retry_configuration_and_naming_convention_of_redelivery_topics"><a class="anchor" href="#_retry_configuration_and_naming_convention_of_redelivery_topics"></a>Retry configuration and naming convention of redelivery topics.</h3>
+<div class="paragraph">
+<p>The following properties should be added in the <code>application.properties</code> or <code>application.yml</code> file.</p>
+</div>
+<div class="paragraph">
+<p>The retry pattern in devon4j-kafka will perform for specific topic of a message. So its mandatory to specify the properties for each topic. Below properties are example,</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties"># Back off policy properties for employeeapp-employee-v1-delete
+messaging.retry.back-off-policy.retryReEnqueueDelay.employeeapp-employee-v1-delete=1000
+messaging.retry.back-off-policy.retryDelay.employeeapp-employee-v1-delete=600000
+messaging.retry.back-off-policy.retryDelayMultiplier.employeeapp-employee-v1-delete=1.0
+messaging.retry.back-off-policy.retryMaxDelay.employeeapp-employee-v1-delete=600000
+messaging.retry.back-off-policy.retryCount.employeeapp-employee-v1-delete=2
+
+# Retry policy properties for employeeapp-employee-v1-delete
+messaging.retry.retry-policy.retryPeriod.employeeapp-employee-v1-delete=1800
+messaging.retry.retry-policy.retryableExceptions.employeeapp-employee-v1-delete=&lt;Class names of exceptions for which a retry should be performed&gt;
+messaging.retry.retry-policy.retryableExceptionsTraverseCauses.employeeapp-employee-v1-delete=true
+
+# Back off policy properties for employeeapp-employee-v1-add
+messaging.retry.back-off-policy.retryReEnqueueDelay.employeeapp-employee-v1-add=1000
+messaging.retry.back-off-policy.retryDelay.employeeapp-employee-v1-add=600000
+messaging.retry.back-off-policy.retryDelayMultiplier.employeeapp-employee-v1-add=2.0
+messaging.retry.back-off-policy.retryMaxDelay.employeeapp-employee-v1-add=600000
+messaging.retry.back-off-policy.retryCount.employeeapp-employee-v1-add=4
+
+# Retry policy properties for employeeapp-employee-v1-add
+messaging.retry.retry-policy.retryPeriod.employeeapp-employee-v1-add=3000
+messaging.retry.retry-policy.retryableExceptions.employeeapp-employee-v1-add=&lt;Class names of exceptions for which a retry should be performed&gt;
+messaging.retry.retry-policy.retryableExceptionsTraverseCauses.employeeapp-employee-v1-add=true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you notice the above properties, the <code>retry-policy</code> and <code>back-off policy</code> properties are repeated twice as i have 2 topics for the retry to be performed with different level of values. The topic name should be added at the last of attribute.</p>
+</div>
+<div class="paragraph">
+<p>So, the retry will be performed for each topic according to their configuration values.</p>
+</div>
+<div class="paragraph">
+<p>If you want to provide same/default values for all the topics, then its required to add <code>default</code> in the place of topic on the above properties example.</p>
+</div>
+<div class="paragraph">
+<p>For example,</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties"># Default back off policy properties
+messaging.retry.back-off-policy.retryReEnqueueDelay.default=1000
+messaging.retry.back-off-policy.retryDelay.default=600000
+messaging.retry.back-off-policy.retryDelayMultiplier.default=1.0
+messaging.retry.back-off-policy.retryMaxDelay.default=600000
+messaging.retry.back-off-policy.retryCount.default=2
+
+# Default retry policy properties
+messaging.retry.retry-policy.retryPeriod.default=1800
+messaging.retry.retry-policy.retryableExceptions.default=&lt;Class names of exceptions for which a retry should be performed&gt;
+messaging.retry.retry-policy.retryableExceptionsTraverseCauses.default=true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By giving properties like above, the same values will be passed for all the topics and the way of processing retry for all the topics are same.</p>
+</div>
+<div class="paragraph">
+<p>All these above property values are mapped to the classes <code>DefaultBackOffPolicyProperties.java</code> and <code>DefaultRetryPolicyProperties.java</code> and configured by the class <code>MessageDefaultRetryConfig.java</code>.</p>
+</div>
+<div class="paragraph">
+<p>The MessageRetryContext in devon kafka is used to perform the retry pattern with the properties from DefaultBackOffPolicyProperties and DefaultRetryPolicyProperties.</p>
+</div>
+<div class="paragraph">
+<p>The 2 main properties of MessageRetryContext are nextRetry and retryUntil which is a <code>Instant</code> date format and it is calculated internally using the properties given in DefaultBackOffPolicyProperties and DefaultRetryPolicyProperties.</p>
+</div>
+<div class="paragraph">
+<p>You may change the behavior of this date calculation by providing your own implementation classes for <code>MessageBackOffPolicy.java</code> and <code>MessageRetryPolicy.java</code>.</p>
+</div>
+<div class="paragraph">
+<p>The naming convention for retry topic is the same topic name which you have given to publish the message and we add suffix <code>-retry</code> to it once it is consumed and given to process with retry.</p>
+</div>
+<div class="paragraph">
+<p>If there is no topic found in the consumed record the default retry topic will be added which is <code>default-message-retry</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_retry_topics"><a class="anchor" href="#_retry_topics"></a>Retry topics</h3>
+<div class="paragraph">
+<p>Devon4j-kafka uses a separate retry topic for each topic where retries occur. By default this topic is named <code>&lt;topic name&gt;-retry</code>. You may change this behavior by providing your own implementation for <code>DefaultKafkaRecordSupport</code> which is a default implementation from devon4j-kafka for <code>KafkaRecordSupport</code>.</p>
+</div>
+<div class="paragraph">
+<p>Devon4j-kafka enqueues a new message for each retry attempt. It is very important to configure your retry tropics with <a href="https://kafka.apache.org/documentation/#compaction">log compaction</a> enabled. More or less simplified, if log compaction is enabled Kafka keeps only one message per message key. Since each retry message has the same key, in fact only one message per retry attempt is stored. After the last retry attempt the message payload is removed from the message so, you do not keep unnecessary data in your topics.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_handling_retry_finally_failed"><a class="anchor" href="#_handling_retry_finally_failed"></a>Handling retry finally failed</h3>
+<div class="paragraph">
+<p>Per default when the retry fails with final attempt we just log the message and delete the payload of ProducerRecord which comes to proceed the retry pattern.</p>
+</div>
+<div class="paragraph">
+<p>You can change this behavior by providing the implementation class for the interface <code>MessageRetryHandler.java</code>
+which has two methods <code>retryTimeout</code> and <code>retryFailedFinal</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tracer"><a class="anchor" href="#_tracer"></a>Tracer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We leverage <a href="https://spring.io/projects/spring-cloud-sleuth">Spring Cloud Sleuth</a> for tracing in devon4j-kafka
+This is used to trace the asynchronous process of Kafka producing and consuming. In an asynchronous process it is important to maintain an id which will be same for all asynchronous process.
+However, devon uses its own correlation-id(UUID) to track the process. But devon4j-kafka uses an additional tracing protocol which is <a href="https://github.com/openzipkin/brave">Brave Tracer</a>.</p>
+</div>
+<div class="paragraph">
+<p>This is a part of both starter dependencies <code>starter-kafka-receiver</code> and <code>starter-kafka-sender</code>.</p>
+</div>
+<div class="paragraph">
+<p>There are 2 important properties which will be automatically logged which are trace-id and spain-id.
+The trace-id is same for all the asynchronous process and span-id is unique for each asynchronous process.</p>
+</div>
+<div class="sect2">
+<h3 id="_how_devon4j_kafka_handles_tracer"><a class="anchor" href="#_how_devon4j_kafka_handles_tracer"></a>How devon4j-kafka handles tracer ?</h3>
+<div class="paragraph">
+<p>We inject the trace-id and span-id in to the ProducerRecord headers which comes to publish into the Kafka broker.
+It&#8217;s injected in the headers with the key <code>traceId</code> for trace-id and <code>spanId</code> for span-id.
+Along with these, the correlation-id(UUID) is also injected in the headers of record with the key <code>correlationId</code>.</p>
+</div>
+<div class="paragraph">
+<p>So, when you consume record from Kafka broker, these values can be found in the consumed record&#8217;s headers with these keys.</p>
+</div>
+<div class="paragraph">
+<p>So, it is very helpful to track the asynchronous process of consuming the messages.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logging"><a class="anchor" href="#_logging"></a>Logging</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>devon4j-kafka provides multiple support classes to log the published message and the consumed message.
+* The class <code>ProducerLoggingListener</code> which implements ProducerListener&lt;K,V&gt; from Spring Kafka uses to log the message as soon as it is published in the Kafka broker.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The aspect class <code>MessageListenerLoggingAspect</code> which is annotated with <code>@Aspect</code> and has a method <code>logMessageprocessing</code> which is annotated with <code>@Around("@annotation(org.springframework.kafka.annotation.KafkaListener)&amp;&amp;args(kafkaRecord,..)")</code>
+is used to listen to the classes which is annotated with <code>@KafkaListener</code> and logs the message as soon as it is consumed.</p>
+</li>
+<li>
+<p>The class <code>MessageLoggingSupport</code> has multiple methods to log different types of events like MessageReceived, MessageSent, MessageProcessed, MessageNotProcessed.</p>
+</li>
+<li>
+<p>The class <code>LoggingErrorHandler</code> which implements <code>ErrorHandler</code> from spring-kafka which logs the message when an error occurred while consuming messages. You may change this behavior by creating your own implementation class for the ErrorHandler.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kafka_health_check_using_spring_acutator"><a class="anchor" href="#_kafka_health_check_using_spring_acutator"></a>Kafka Health check using Spring acutator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The spring config class MessageCommonConfig automatically provides a spring health indicator bean for kafka if
+the property endpoints. The health indicator will check for all topics listed in <code>messaging.kafka.health.topics-tocheck</code>
+if a leader is available. If this property is missing only the broker connection will be checked. The timeout for
+the check (default 60s) maybe changed via the property <code>messaging.kafka.health.timeout</code>.
+If an application uses multiple broker(-clusters) for each broker(-cluster) a dedicated health indicator bean has to be
+configured in the spring config.</p>
+</div>
+<div class="paragraph">
+<p>The properties for the devon kafka health check should be given like below example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">management.endpoint.health.enabled=&lt;true or false&gt;
+messaging.kafka.health.timeout=&lt;the health check timeout seconds&gt;
+messaging.kafka.health.topicsToCheck=employeeapp-employee-v1-delete,employeeapp-employee-v1-add</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These properties are provided with default values except the topicsToCheck and health check will do happen only when the property is <code>management.endpoint.health.enabled=true</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_authentication"><a class="anchor" href="#_authentication"></a>Authentication</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_json_web_token_jwt"><a class="anchor" href="#_json_web_token_jwt"></a>JSON Web Token (JWT)</h3>
+<div class="paragraph">
+<p>devon4j-kafka supports authentication via JSON Web Tokens (JWT) out-of-the-box.
+To use it add a dependency to the devon4j-starter-security-jwt:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-security-jwt&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The authentication via JWT needs some configuration, e.g. a keystore to verify the token signature. This is explained in the <a href="../guide-jwt.html" class="xref page">JWT  documentation</a>.</p>
+</div>
+<div class="paragraph">
+<p>To secure a message listener with jwt add the <code>@JwtAuthentication</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @JwtAuthentication
+  @KafkaListener(topics = "employeeapp-employee-v1-delete", groupId = "${messaging.kafka.consumer.groupId}")
+  public void consumer(ConsumerRecord&lt;K, V&gt; consumerRecord, Acknowledgment acknowledgment) {
+...
+    }
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With this annotation in-place each message will be checked for a valid JWT in a message header with the name <code>Authorization</code>. If a valid annotation is found the spring security context will be initialized with the user roles and "normal" authorization e.g. with <code>@RolesAllowed</code> may be used. This is also demonstrated in the kafka sample application.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_kafka_for_internal_parallel_processing"><a class="anchor" href="#_using_kafka_for_internal_parallel_processing"></a>Using Kafka for internal parallel processing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Apart from the use of Kafka as "communication channel", it is sometimes helpful to use Kafka internally to do parallel processing:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<a class="image" href="https://devonfw.com/website/pages/docs/images/kafka-architecture-internal.svg"><img src="../_images/images/kafka-architecture-internal.png" alt="Architecture for internal parallel processing with Kafka"></a>
+</div>
+<div class="title">Figure 2. Architecture for internal parallel processing with Kafka</div>
+</div>
+<div class="paragraph">
+<p>This examples shows a payment service which allows to submit a list of receipt IDs for payment.
+We assume that the payment itself takes a long time and should be done asynchronously and in parallel.
+The general idea is to put a message for each receipt to pay into a topic. This is done in the use case implementation in a first step, if a rest call arrives.
+Also part of the use case is a listener which consumes the messages. For each message (e.g. payment to do) a processor is called, which actually does the payment via the use case.
+Since Kafka supports concurrency for the listeners easily the payment will also be done in parallel.
+All features of devon4j-kafka, like retry handling could also be used.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
