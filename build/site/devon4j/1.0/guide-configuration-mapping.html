@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-configuration-mapping.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_mapping_configuration_to_your_code">Mapping configuration to your code</a></li>
+<li><a href="#_naming_conventions_for_configuration_properties">Naming conventions for configuration properties</a></li>
+<li><a href="#_mapping_advanced_configuration">Mapping advanced configuration</a></li>
+<li><a href="#_generate_configuration_metadata">Generate configuration metadata</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_mapping_configuration_to_your_code"><a class="anchor" href="#_mapping_configuration_to_your_code"></a>Mapping configuration to your code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are using <code>spring-boot</code> as suggested by <code>devon4j</code> your application can be configured by <code>application.properties</code> file as described in <a href="guide-configuration.html" class="xref page">configuration</a>.
+To get a single configuration option into your code for flexibility, you can use</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Value("${my.property.name}")
+private String myConfigurableField;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, in your <code>application.properties</code> you can add the property:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">my.property.name=my-property-value</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You may even use <code>@Value("${my.property.name:my-default-value}")</code> to make the property optional.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_naming_conventions_for_configuration_properties"><a class="anchor" href="#_naming_conventions_for_configuration_properties"></a>Naming conventions for configuration properties</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As a best practice your configruation properties should follow these naming conventions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>build the property-name as a path of segments separated by the dot character (<code>.</code>)</p>
+</li>
+<li>
+<p>segments should get more specific from left to right</p>
+</li>
+<li>
+<p>a property-name should either be a leaf value or a tree node (prefix of other property-names) but never both! So never have something like <code>foo.bar=value</code> and <code>foo.bar.child=value2</code>.</p>
+</li>
+<li>
+<p>start with a segment namespace unique to your context or application</p>
+</li>
+<li>
+<p>a good example would be <code>«myapp».billing.service.email.sender</code> for the sender address of billing service emails send by <code>«myapp»</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mapping_advanced_configuration"><a class="anchor" href="#_mapping_advanced_configuration"></a>Mapping advanced configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>However, in many scenarios you will have features that require more than just one property.
+Injecting those via <code>@Value</code> is not leading to good code quality.
+Instead we create a class with the suffix <code>ConfigProperties</code> containing all configuration properties for our aspect that is annotated with <code>@ConfigurationProperties</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ConfigurationProperties(prefix = "myapp.billing.service")
+public class BillingServiceConfigProperties {
+
+  private final Email email = new Email();
+  private final Smtp smtp = new Smtp();
+
+  public Email getEmail() { return this.email; }
+  public Email getSmtp() { return this.smtp; }
+
+  public static class Email {
+
+    private String sender;
+    private String subject;
+
+    public String getSender() { return this.sender; }
+    public void setSender(String sender) { this.sender = sender; }
+    public String getSubject() { return this.subject; }
+    public void setSubject(String subject) { this.subject = subject; }
+  }
+
+  public static class Smtp {
+
+    private String host;
+    private int port = 25;
+
+    public String getHost() { return this.host; }
+    public void setHost(String host) { this.host = host; }
+    public int getPort() { return this.port; }
+    public void setPort(int port) { this.port = port; }
+  }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Of course this is just an example to demonstrate this feature of <code>spring-boot</code>.
+In order to send emails you would typically use the existing <a href="https://www.baeldung.com/spring-email">spring-email</a> feature.
+But as you can see this allows us to define and access our configuration in a very structured and comfortable way.
+The annotation <code>@ConfigurationProperties(prefix = "myapp.billing.service")</code> will automatically map spring configuration properties starting with <code>myapp.billing.service</code> via the according getters and setters into our <code>BillingServiceConfigProperties</code>.
+We can easily define defaults (e.g. <code>25</code> as default value for <code>myapp.billing.service.smtp.port</code>).
+Also <code>Email</code> or <code>Smtp</code> could be top-level classes to be reused in multiple configurations.
+Of course you would also add helpful <code>JavaDoc</code> comments to the <code>getters</code> and classes to document your configuration options.
+Further to access this configuration, we can use standard <a href="guide-dependency-injection.html" class="xref page">dependency-injection</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Inject
+private BillingServiceConfigProperties config;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For very generic cases you may also use <code>Map&lt;String, String&gt;</code> to map any kind of property in an untyped way.
+An example for generic configuration from <code>devon4j</code> can be found in
+<a href="https://github.com/devonfw/devon4j/blob/9b8f9461997bb5d8048a9fec42bec3625652eec3/modules/service/src/main/java/com/devonfw/module/service/common/base/config/ServiceConfigProperties.java">ServiceConfigProperties</a>.</p>
+</div>
+<div class="paragraph">
+<p>For further details about this feature also consult <a href="https://www.baeldung.com/configuration-properties-in-spring-boot">Guide to @ConfigurationProperties in Spring Boot</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generate_configuration_metadata"><a class="anchor" href="#_generate_configuration_metadata"></a>Generate configuration metadata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You should further add this <code>dependency</code> to your module containing the <code>*ConfigProperties</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+      &lt;artifactId&gt;spring-boot-configuration-processor&lt;/artifactId&gt;
+      &lt;optional&gt;true&lt;/optional&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will generate configuration metadata so projects using your code can benefit from autocompletion and getting your JavaDoc as tooltip when editing <code>application.properites</code> what makes this approach very powerful.
+For further details about this please read <a href="https://www.baeldung.com/spring-boot-configuration-metadata">A Guide to Spring Boot Configuration Metadata</a>.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

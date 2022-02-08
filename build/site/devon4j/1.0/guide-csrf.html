@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-csrf.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_cross_site_request_forgery_csrf">Cross-site request forgery (CSRF)</a></li>
+<li><a href="#_secure_devon4j_server_against_csrf">Secure devon4j server against CSRF</a>
+<ul class="sectlevel2">
+<li><a href="#_dependency">Dependency</a></li>
+<li><a href="#_pluggable_web_security">Pluggable web-security</a></li>
+<li><a href="#_custom_csrfrequestmatcher">Custom CsrfRequestMatcher</a></li>
+<li><a href="#_csrfrestservice">CsrfRestService</a></li>
+<li><a href="#_how_it_works">How it works</a></li>
+</ul>
+</li>
+<li><a href="#_configure_devon4ng_client_for_csrf">Configure devon4ng client for CSRF</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_cross_site_request_forgery_csrf"><a class="anchor" href="#_cross_site_request_forgery_csrf"></a>Cross-site request forgery (CSRF)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CSRF is a type of malicious exploit of a web application that allows an attacker to induce users to perform actions that they do not intend to perform.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/jwt_flow.png"><img src="_images/images/csrf.png" alt="csrf" width="450"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>More details about csrf can be found at <a href="https://owasp.org/www-community/attacks/csrf" class="bare">https://owasp.org/www-community/attacks/csrf</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_secure_devon4j_server_against_csrf"><a class="anchor" href="#_secure_devon4j_server_against_csrf"></a>Secure devon4j server against CSRF</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In case your devon4j server application is not accessed by browsers or the web-client is using <a href="guide-jwt.html" class="xref page">JWT based authentication</a>, you are already safe according to CSRF.
+However, if your application is accessed from a browser and you are using <em>form based authentication</em> (with session coockie) or <em>basic authentication</em>, you need to enable CSRF protection.
+This guide will tell you how to do this.</p>
+</div>
+<div class="sect2">
+<h3 id="_dependency"><a class="anchor" href="#_dependency"></a>Dependency</h3>
+<div class="paragraph">
+<p>To secure your devon4j application against CSRF attacks, you only need to add the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+  &lt;artifactId&gt;devon4j-starter-security-csrf&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Starting with devon4j version <code>2020.12.001</code> application template, this is all you need to do.
+However, if you have started from an older version or you want to understand more, please read on.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pluggable_web_security"><a class="anchor" href="#_pluggable_web_security"></a>Pluggable web-security</h3>
+<div class="paragraph">
+<p>To enable pluggable security via devon4j security starters you need to apply <code>WebSecurityConfigurer</code> to your <code>BaseWebSecurityConfig</code> (your class extending spring-boot&#8217;s <code>WebSecurityConfigurerAdapter</code>) as following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  @Inject
+  private WebSecurityConfigurer webSecurityConfigurer;
+
+  public void configure(HttpSecurity http) throws Exception {
+    // disable CSRF protection by default, use csrf starter to override.
+	  http = http.csrf().disable();
+	  // apply pluggable web-security from devon4j security starters
+    http = this.webSecurityConfigurer.configure(http);
+    .....
+  }</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_custom_csrfrequestmatcher"><a class="anchor" href="#_custom_csrfrequestmatcher"></a>Custom CsrfRequestMatcher</h3>
+<div class="paragraph">
+<p>If you want to customize which HTTP requests will require a CSRF token, you can implement your own <code>CsrfRequestMatcher</code> and provide it to the devon4j CSRF protection via qualified injection as following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Named("CsrfRequestMatcher")
+public class CsrfRequestMatcher implements RequestMatcher {
+  @Override
+  public boolean matches(HttpServletRequest request) {
+    .....
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Please note that the exact name (<code>@Named("CsrfRequestMatcher")</code>) is required here to ensure your custom implementation will be injected properly.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_csrfrestservice"><a class="anchor" href="#_csrfrestservice"></a>CsrfRestService</h3>
+<div class="paragraph">
+<p>With the <code>devon4j-starter-security-csrf</code> the <code>CsrfRestService</code> gets integrated into your app.
+It provides an operation to get the CSRF token via an HTTP <code>GET</code> request.
+The URL path to retrieve this CSRF token is <code>services/rest/csrf/v1/token</code>.
+As a result you will get a JSON like the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{
+  "token":"3a8a5f66-c9eb-4494-81e1-7cc58bc3a519",
+  "parameterName":"_csrf",
+  "headerName":"X-CSRF-TOKEN"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>token</code> value is a strong random value that will differ for each user session.
+It has to be send with subsequent HTTP requests (when method is other than <code>GET</code>) in the specified header (<code>X-CSRF-TOKEN</code>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_it_works"><a class="anchor" href="#_how_it_works"></a>How it works</h3>
+<div class="paragraph">
+<p>Putting it all together, a browser client should call the <code>CsrfRestService</code> after successfull login to receive the current CSRF token.
+With every subsequent HTTP request (other than <code>GET</code>) the client has to send this token in the according HTTP header.
+Otherwise the server will reject the request to prevent CSRF attacks.
+Therefore, an attacker might make your browser perform HTTP requests towards your devon4j application backend via <code>&lt;image&gt;</code> elements, <code>&lt;iframes&gt;</code>, etc.
+Your browser will then still include your session coockie if you are already logged in (e.g. from another tab).
+However, in case he wants to trigger <code>DELETE</code> or <code>POST</code> requests trying your browser to make changes in the application (delete or update data, etc.) this will fail without CSRF token.
+The attacker may make your browser retrieve the CSRF token but he will not be able to retrieve the result and put it into the header of other requests due to the same-origin-policy.
+This way your application will be secured against CSRF attacks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_devon4ng_client_for_csrf"><a class="anchor" href="#_configure_devon4ng_client_for_csrf"></a>Configure devon4ng client for CSRF</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Devon4ng client configuration for CSRF is described <a href="https://github.com/devonfw/devon4ng/blob/develop/documentation/guide-consuming-rest-services.adoc">here</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

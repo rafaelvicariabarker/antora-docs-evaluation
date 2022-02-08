@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Guides</li>
+    <li><a href="guide-security.html">Security</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-security.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_security">Security</a></li>
+<li><a href="#_vulnerabilities_and_protection">Vulnerabilities and Protection</a></li>
+<li><a href="#_advanced_security">Advanced Security</a></li>
+<li><a href="#_tools">Tools</a>
+<ul class="sectlevel2">
+<li><a href="#_dependency_check">Dependency Check</a></li>
+<li><a href="#_penetration_testing">Penetration Testing</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_security"><a class="anchor" href="#_security"></a>Security</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Security is todays most important cross-cutting concern of an application and an enterprise IT-landscape. We seriously care about security and give you detailed guides to prevent pitfalls, vulnerabilities, and other disasters. While many mistakes can be avoided by following our guidelines you still have to consider security and think about it in your design and implementation. The security guide will not only automatically prevent you from any harm, but will provide you hints and best practices already used in different software products.</p>
+</div>
+<div class="paragraph">
+<p>An important aspect of security is proper authentication and authorization as described in <a href="guide-access-control.html" class="xref page">access-control</a>. In the following we discuss about potential vulnerabilities and protection to prevent them.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vulnerabilities_and_protection"><a class="anchor" href="#_vulnerabilities_and_protection"></a>Vulnerabilities and Protection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Independent from classical authentication and authorization mechanisms there are many common pitfalls that can lead to vulnerabilities and security issues in your application such as XSS, CSRF, SQL-injection, log-forging, etc. A good source of information about this is the <a href="https://www.owasp.org">OWASP</a>.
+We address these common threats individually in <em>security</em> sections of our technological guides as a concrete solution to prevent an attack typically depends on the according technology. The following table illustrates common threats and contains links to the solutions and protection-mechanisms provided by the devonfw:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Security threats and protection-mechanisms</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Threat</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Protection</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Link to details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection.html">A1 Injection</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">validate input, escape output, use proper frameworks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-jpa.html#security" class="xref page">SQL Injection</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication.html">A2 Broken Authentication</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">encrypt all channels, use a central identity management with strong password-policy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-access-control.html#authentication" class="xref page">Authentication</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure.html">A3 Sensitive Data Exposure</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use secured exception facade, design your data model accordingly</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-service-layer.html#rest-exception-handling" class="xref page">REST exception handling</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A4-XML_External_Entities_(XXE).html">A4 XML External Entities</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prefer JSON over XML, ensure <a href="https://docs.oracle.com/en/java/javase/11/security/java-api-xml-processing-jaxp-security-guide.html">FSP</a> when parsing (external) XML</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-xml.html" class="xref page">XML guide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A5-Broken_Access_Control.html">A5 Broken Access Control</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ensure proper authorization for all use-cases, use <code>@DenyAll</code> as default to enforce</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-access-control.html" class="xref page">Access-control guide</a> especially <a href="guide-access-control.html#configuration-on-java-method-level" class="xref page">method authorization</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration.html">A6 Security Misconfiguration</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use devon4j application template and guides to avoid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="tutorial-newapp.html" class="xref page">tutorial-newapp</a> and <a href="guide-configuration.html#security" class="xref page">sensitive configuration</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A7-Cross-Site_Scripting_(XSS).html">A7 Cross-Site Scripting</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prevent injection (see A1) for HTML, JavaScript and CSS and understand same-origin-policy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-client-layer.html#security" class="xref page">client-layer</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A8-Insecure_Deserialization.html">A8 Insecure Deserialization</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use simple and established serialization formats such as JSON, prevent generic deserialization (for polymorphic types)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-json.html" class="xref page">JSON guide</a> especially <a href="guide-json.html#json-and-inheritance" class="xref page">inheritence</a>, <a href="guide-xml.html" class="xref page">XML guide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities.html">A9 Using Components with Known Vulnerabilities</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subscribe to security newsletters, recheck products and their versions continuously, use devonfw dependency management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cve.mitre.org/news/newsletter.html">CVE newsletter</a> and <a href="#dependency-check">dependency check</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%252526Monitoring.html">A10 Insufficient_Logging &amp; Monitoring</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ensure to log all security related events (login, logout, errors), establish effective monitoring</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-logging.html" class="xref page">Logging guide</a> and <a href="guide-monitoring.html" class="xref page">monitoring guide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-chapter-ghana/assets/slides/IDOR.pdf">Insecure Direct Object References</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Using direct object references (IDs) only with appropriate authorization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-logic-layer.html#direct-object-references" class="xref page">logic-layer</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-community/attacks/csrf">Cross-Site Request Forgery (CSRF)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">secure mutable service operations with an explicit CSRF security token sent in HTTP header and verified on the server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-csrf.html" class="xref page">CSRF guide</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-community/attacks/Log_Injection">Log-Forging</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Escape newlines in log messages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-logging.html#security" class="xref page">logging security</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://owasp.org/www-pdf-archive//OWASP_LA_New_OWASP_Top_10_David_Caissy_2017_07.pdf">Unvalidated Redirects and Forwards</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avoid using redirects and forwards, in case you need them do a security audit on the solution.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">devonfw proposes to use rich-clients (SPA/RIA). We only use redirects for login in a safe way.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_security"><a class="anchor" href="#_advanced_security"></a>Advanced Security</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While OWASP Top 10 covers the basic aspects of application security, there are advanced standards such as <code>AVS</code>.
+In devonfw we address this in the <a href="https://github.com/devonfw/security/wiki">
+Application Security Quick Solution Guide</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tools"><a class="anchor" href="#_tools"></a>Tools</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_dependency_check"><a class="anchor" href="#_dependency_check"></a>Dependency Check</h3>
+<div class="paragraph">
+<p>To address the thread <code>Using Components with Known Vulnerabilities</code> we recomment to use <a href="https://www.owasp.org/index.php/OWASP_Dependency_Check">OWASP dependency check</a> that ships with a maven plugin and can analyze your dependencies for known <a href="https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures">CVE</a>s.
+In order to run this check, you can simply call this command on any maven project:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mvn org.owasp:dependency-check-maven:6.1.5:aggregate</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The version is just for completeness. You should check yourself for using a recent version of the plugin.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you build an devon4j spring application from our <a href="tutorial-newapp.html" class="xref page">app-template</a> you can activate the dependency check even easier with the <code>security</code> profile:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mvn clean install -P security</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This does not run by default as it causes some overhead for the build performance. However, consider to build this in your CI at least nightly.
+After the dependency check is performed, you will find the results in <code>target/dependency-check-report.html</code> of each module. The report will also be generated when the site is build (<code>mvn site</code>) even without the profile.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_penetration_testing"><a class="anchor" href="#_penetration_testing"></a>Penetration Testing</h3>
+<div class="paragraph">
+<p>For penetration testing (testing for vulnerabilities) of your web application, we recommend the following tools:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">ZAP</a> (OWASP Zed Attack Proxy Project)</p>
+</li>
+<li>
+<p><a href="http://sqlmap.org/">sqlmap</a> (or <a href="https://github.com/PaulSec/HQLmap">HQLmap</a>)</p>
+</li>
+<li>
+<p><a href="https://nmap.org/">nmap</a></p>
+</li>
+<li>
+<p>See the marvelous presentation <a href="https://jaxenter.com/security-open-source-toolbox-video-151314.html">Toolbox of a security professional</a> from <a href="https://www.Christian-Schneider.net">Christian Schneider</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

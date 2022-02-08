@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_devon4j"><a class="anchor" href="#_devon4j"></a>devon4j</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Devon4j is the Java stack of <a href="http://devonfw.com">devonfw</a>. It allows you to build business applications (backends) using Java technology in a highly efficient and standardized way based on established best-practices. To build web-clients as frontend for a devon4j backend we recommend <a href="https://github.com/devonfw/devon4ng">devon4ng</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="https://github.com/devonfw/devon4j/blob/develop/LICENSE.txt"><img src="https://img.shields.io/github/license/devonfw/devon4j.svg?label=License" alt="Apache License, Version 2.0"></a></span>
+<span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-basic.svg?label=Maven%20Central" alt="Maven Central"></a></span>
+<span class="image"><a class="image" href="https://github.com/devonfw/devon4j/actions/workflows/build.yml"><img src="https://github.com/devonfw/devon4j/actions/workflows/build.yml/badge.svg" alt="Build Status"></a></span></p>
+</div>
+<div class="paragraph">
+<p>For details see <a href="#modules">modules</a> below.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="documentation/guide-jee.adoc">JEE</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_tutorials"><a class="anchor" href="#_tutorials"></a>Tutorials</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="documentation/tutorial-newapp.adoc">Start a new application</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modules"><a class="anchor" href="#_modules"></a>Modules</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here you can see a list of all provided modules with their JavaDoc and Artifacts</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>basic <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-basic"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-basic/javadoc.svg" alt="basic JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-basic"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-basic.svg?label=Maven%20Central" alt="basic artifact"></a></span></p>
+</li>
+<li>
+<p>batch <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-batch"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-batch/javadoc.svg" alt="batch JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-batch"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-batch.svg?label=Maven%20Central" alt="batch artifact"></a></span></p>
+</li>
+<li>
+<p>batch-tool <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-batch-tool"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-batch-tool/javadoc.svg" alt="batch-tool JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-batch-tool"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-batch-tool.svg?label=Maven%20Central" alt="batch-tool artifact"></a></span></p>
+</li>
+<li>
+<p>beanmapping <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-beanmapping"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-beanmapping/javadoc.svg" alt="beanmapping JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-beanmapping"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-beanmapping.svg?label=Maven%20Central" alt="beanmapping artifact"></a></span></p>
+</li>
+<li>
+<p>beanmapping-dozer <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-beanmapping-dozer"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-beanmapping-dozer/javadoc.svg" alt="beanmapping-dozer JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-beanmapping-dozer"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-beanmapping-dozer.svg?label=Maven%20Central" alt="beanmapping-dozer artifact"></a></span></p>
+</li>
+<li>
+<p>beanmapping-orika <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-beanmapping-orika"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-beanmapping-orika/javadoc.svg" alt="beanmapping-orika JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-beanmapping-orika"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-beanmapping-orika.svg?label=Maven%20Central" alt="beanmapping-orika artifact"></a></span></p>
+</li>
+<li>
+<p>cxf-client <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-cxf-client"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-cxf-client/javadoc.svg" alt="cxf-client JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-cxf-client"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-cxf-client.svg?label=Maven%20Central" alt="cxf-client artifact"></a></span></p>
+</li>
+<li>
+<p>cxf-client-rest <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-cxf-client-rest"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-cxf-client-rest/javadoc.svg" alt="cxf-client-rest JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-cxf-client-rest"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-cxf-client-rest.svg?label=Maven%20Central" alt="cxf-client-rest artifact"></a></span></p>
+</li>
+<li>
+<p>cxf-client-ws <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-cxf-client-ws"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-cxf-client-ws/javadoc.svg" alt="cxf-client-ws JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-cxf-client-ws"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-cxf-client-ws.svg?label=Maven%20Central" alt="cxf-client-ws artifact"></a></span></p>
+</li>
+<li>
+<p>cxf-server <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-cxf-server"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-cxf-server/javadoc.svg" alt="cxf-server JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-cxf-server"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-cxf-server.svg?label=Maven%20Central" alt="cxf-server artifact"></a></span></p>
+</li>
+<li>
+<p>cxf-server-rest <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-cxf-server-rest"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-cxf-server-rest/javadoc.svg" alt="cxf-server-rest JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-cxf-server-rest"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-cxf-server-rest.svg?label=Maven%20Central" alt="cxf-server-rest artifact"></a></span></p>
+</li>
+<li>
+<p>cxf-server-ws <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-cxf-server-ws"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-cxf-server-ws/javadoc.svg" alt="cxf-server-ws JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-cxf-server-ws"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-cxf-server-ws.svg?label=Maven%20Central" alt="cxf-server-ws artifact"></a></span></p>
+</li>
+<li>
+<p>jpa-basic <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-jpa-basic"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-jpa-basic/javadoc.svg" alt="jpa-basic JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-jpa-basic"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-jpa-basic.svg?label=Maven%20Central" alt="jpa-basic artifact"></a></span></p>
+</li>
+<li>
+<p>jpa-dao <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-jpa-dao"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-jpa-dao/javadoc.svg" alt="jpa-dao JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-jpa-dao"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-jpa-dao.svg?label=Maven%20Central" alt="jpa-dao artifact"></a></span></p>
+</li>
+<li>
+<p>jpa-envers <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-jpa-envers"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-jpa-envers/javadoc.svg" alt="jpa-envers JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-jpa-envers"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-jpa-envers.svg?label=Maven%20Central" alt="jpa-envers artifact"></a></span></p>
+</li>
+<li>
+<p>jpa-spring-data <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-jpa-spring-data"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-jpa-spring-data/javadoc.svg" alt="jpa-spring-data JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-jpa-spring-data"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-jpa-spring-data.svg?label=Maven%20Central" alt="jpa-spring-data artifact"></a></span></p>
+</li>
+<li>
+<p>json <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-json"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-json/javadoc.svg" alt="json JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-json"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-json.svg?label=Maven%20Central" alt="json artifact"></a></span></p>
+</li>
+<li>
+<p>kafka <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-kafka"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-kafka/javadoc.svg" alt="kafka JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-kafka"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-kafka.svg?label=Maven%20Central" alt="kafka artifact"></a></span></p>
+</li>
+<li>
+<p>logging <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-logging"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-logging/javadoc.svg" alt="logging JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-logging"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-logging.svg?label=Maven%20Central" alt="logging artifact"></a></span></p>
+</li>
+<li>
+<p>rest <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-rest"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-rest/javadoc.svg" alt="rest JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-rest"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-rest.svg?label=Maven%20Central" alt="rest artifact"></a></span></p>
+</li>
+<li>
+<p>security <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-security"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-security/javadoc.svg" alt="security JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-security"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-security.svg?label=Maven%20Central" alt="security artifact"></a></span></p>
+</li>
+<li>
+<p>security-jwt <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-security-jwt"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-security-jwt/javadoc.svg" alt="security-jwt JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-security-jwt"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-security-jwt.svg?label=Maven%20Central" alt="security-jwt artifact"></a></span></p>
+</li>
+<li>
+<p>security-keystore <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-security-keystore"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-security-keystore/javadoc.svg" alt="security-keystore JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-security-keystore"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-security-keystore.svg?label=Maven%20Central" alt="security-keystore artifact"></a></span></p>
+</li>
+<li>
+<p>service <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-service"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-service/javadoc.svg" alt="service JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-service"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-service.svg?label=Maven%20Central" alt="service artifact"></a></span></p>
+</li>
+<li>
+<p>test <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-test"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-test/javadoc.svg" alt="test JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-test"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-test.svg?label=Maven%20Central" alt="test artifact"></a></span></p>
+</li>
+<li>
+<p>test-jpa <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-test-jpa"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-test-jpa/javadoc.svg" alt="test-jpa JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-test-jpa"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-test-jpa.svg?label=Maven%20Central" alt="test-jpa artifact"></a></span></p>
+</li>
+<li>
+<p>web <span class="image"><a class="image" href="https://javadoc.io/doc/com.devonfw.java.modules/devon4j-web"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-web/javadoc.svg" alt="web JavaDoc"></a></span> <span class="image"><a class="image" href="https://search.maven.org/search?q=g:com.devonfw.java.modules+a:devon4j-web"><img src="https://img.shields.io/maven-central/v/com.devonfw.java.modules/devon4j-web.svg?label=Maven%20Central" alt="web artifact"></a></span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Guides</li>
+    <li><a href="guide-json.html">JSON</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-json.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_json">JSON</a></li>
+<li><a href="#_configure_json_mapping">Configure JSON Mapping</a></li>
+<li><a href="#_json_and_inheritance">JSON and Inheritance</a></li>
+<li><a href="#_custom_mapping">Custom Mapping</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_json"><a class="anchor" href="#_json"></a>JSON</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/JSON">JSON</a> (JavaScript Object Notation) is a popular format to represent and exchange data especially for modern web-clients. For mapping Java objects to JSON and vice-versa there is no official standard API. We use the established and powerful open-source solution <a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a>.
+Due to problems with the wiki of fasterxml you should try this alternative link: <a href="https://github.com/FasterXML/jackson#jackson-project-home-github">Jackson/AltLink</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_json_mapping"><a class="anchor" href="#_configure_json_mapping"></a>Configure JSON Mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to avoid polluting business objects with proprietary Jackson annotations (e.g. <code>@JsonTypeInfo</code>, <code>@JsonSubTypes</code>, <code>@JsonProperty</code>) we propose to create a separate configuration class. Every devonfw application (sample or any app created from our <a href="tutorial-newapp.html" class="xref page">app-template</a>) therefore has a class called <code>ApplicationObjectMapperFactory</code> that extends ObjectMapperFactory from the devon4j-rest module. It looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Named("ApplicationObjectMapperFactory")
+public class ApplicationObjectMapperFactory extends ObjectMapperFactory {
+
+  public RestaurantObjectMapperFactory() {
+    super();
+    // JSON configuration code goes here
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_json_and_inheritance"><a class="anchor" href="#_json_and_inheritance"></a>JSON and Inheritance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are using inheritance for your objects mapped to JSON then polymorphism can not be supported out-of-the box. So in general avoid polymorphic objects in JSON mapping. However, this is not always possible.
+Have a look at the following example from our sample application:</p>
+</div>
+<div id="img-rest-inheritance" class="imageblock text-center">
+<div class="content">
+<img src="_images/images/REST-Inheritance.png" alt="inheritance class diagram">
+</div>
+<div class="title">Figure 1. Transfer-Objects using Inheritance</div>
+</div>
+<div class="paragraph">
+<p>Now assume you have a <a href="guide-service-layer.html#rest" class="xref page">REST service operation</a> as Java method that takes a ProductEto as argument. As this is an abstract class the server needs to know the actual sub-class to instantiate.
+We typically do not want to specify the classname in the JSON as this should be an implementation detail and not part of the public JSON format (e.g. in case of a service interface). Therefore we use a symbolic name for each polymorphic subtype that is provided as virtual attribute @type within the JSON data of the object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{ "@type": "Drink", ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Therefore you add configuration code to the constructor of <a href="#configure-json-mapping">ApplicationObjectMapperFactory</a>. Here you can see an example from the sample application:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">setBaseClasses(ProductEto.class);
+addSubtypes(new NamedType(MealEto.class, "Meal"), new NamedType(DrinkEto.class, "Drink"),
+  new NamedType(SideDishEto.class, "SideDish"));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We use <code>setBaseClasses</code> to register all top-level classes of polymorphic objects. Further we declare all concrete polymorphic sub-classes together with their symbolic name for the JSON format via <code>addSubtypes</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_custom_mapping"><a class="anchor" href="#_custom_mapping"></a>Custom Mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to map custom <a href="guide-datatype.html" class="xref page">datatypes</a> or other types that do not follow the Java bean conventions, you need to define a custom mapping. If you create objects dedicated for the JSON mapping you can easily avoid such situations. When this is not suitable follow these instructions to define the mapping:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>As an example, the use of JSR354 (<code>javax.money</code>) is appreciated in order to process monetary amounts properly. However, without custom mapping, the default mapping of Jackson will produce the following JSON for a <code>MonetaryAmount</code>:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"currency": {"defaultFractionDigits":2, "numericCode":978, "currencyCode":"EUR"},
+"monetaryContext": {...},
+"number":6.99,
+"factory": {...}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As clearly can be seen, the JSON contains too much information and reveals implementation secrets that do not belong here. Instead the JSON output expected and desired would be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"currency":"EUR","amount":"6.99"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Even worse, when we send the JSON data to the server, Jackson will see that <code>MonetaryAmount</code> is an interface and does not know how to instantiate it so the request will fail.
+Therefore we need a customized <a href="https://github.com/FasterXML/jackson-docs/wiki/JacksonHowToCustomSerializers">Serializer</a>.</p>
+</div>
+</li>
+<li>
+<p>We implement <code>MonetaryAmountJsonSerializer</code> to define how a <code>MonetaryAmount</code> is serialized to JSON:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public final class MonetaryAmountJsonSerializer extends JsonSerializer&lt;MonetaryAmount&gt; {
+
+  public static final String NUMBER = "amount";
+  public static final String CURRENCY = "currency";
+
+  public void serialize(MonetaryAmount value, JsonGenerator jgen, SerializerProvider provider) throws ... {
+    if (value != null) {
+      jgen.writeStartObject();
+      jgen.writeFieldName(MonetaryAmountJsonSerializer.CURRENCY);
+      jgen.writeString(value.getCurrency().getCurrencyCode());
+      jgen.writeFieldName(MonetaryAmountJsonSerializer.NUMBER);
+      jgen.writeString(value.getNumber().toString());
+      jgen.writeEndObject();
+    }
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For composite datatypes it is important to wrap the info as an object (<code>writeStartObject()</code> and <code>writeEndObject()</code>). <code>MonetaryAmount</code> provides the information we need by the <code>getCurrency()</code> and <code>getNumber()</code>. So that we can easily write them into the JSON data.</p>
+</div>
+</li>
+<li>
+<p>Next, we implement <code>MonetaryAmountJsonDeserializer</code> to define how a <code>MonetaryAmount</code> is deserialized back as Java object from JSON:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public final class MonetaryAmountJsonDeserializer extends AbstractJsonDeserializer&lt;MonetaryAmount&gt; {
+  protected MonetaryAmount deserializeNode(JsonNode node) {
+    BigDecimal number = getRequiredValue(node, MonetaryAmountJsonSerializer.NUMBER, BigDecimal.class);
+    String currencyCode = getRequiredValue(node, MonetaryAmountJsonSerializer.CURRENCY, String.class);
+    MonetaryAmount monetaryAmount =
+        MonetaryAmounts.getAmountFactory().setNumber(number).setCurrency(currencyCode).create();
+    return monetaryAmount;
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For composite datatypes we extend from <a href="https://github.com/devonfw/devon4j/blob/develop/modules/rest/src/main/java/com/devonfw/module/rest/service/impl/json/AbstractJsonDeserializer.java"><code>AbstractJsonDeserializer</code></a> as this makes our task easier. So we already get a <code>JsonNode</code> with the parsed payload of our datatype. Based on this API it is easy to retrieve individual fields from the payload without taking care of their order, etc.
+<code>AbstractJsonDeserializer</code> also provides methods such as <code>getRequiredValue</code> to read required fields and get them converted to the desired basis datatype. So we can easily read the amount and currency and construct an instance of <code>MonetaryAmount</code> via the official factory API.</p>
+</div>
+</li>
+<li>
+<p>Finally we need to register our custom (de)serializers with the following configuration code in the constructor of <a href="#configure-json-mapping">ApplicationObjectMapperFactory</a>:+</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>  SimpleModule module = getExtensionModule();
+  module.addDeserializer(MonetaryAmount.class, new MonetaryAmountJsonDeserializer());
+  module.addSerializer(MonetaryAmount.class, new MonetaryAmountJsonSerializer());</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now we can read and write <code>MonetaryAmount</code> from and to JSON as expected.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

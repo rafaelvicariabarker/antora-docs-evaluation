@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devon4j" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Devon4j</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Documentation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="architecture.html">Architecture Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-domain-layer.html">Domain Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logic-layer.html">Logic Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-layer.html">Service Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-batch-layer.html">Batch Layer</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-client-layer.html">Client Layer (GUI)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Coding</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-conventions.html">Coding Conventions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="coding-tools.html">Development Tools</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dependency-injection.html">Bean Dependency Injection</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-logging.html">Logging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-exceptions.html">Exception Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-i18n.html">Internationalization (I18N)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transferobject.html">Transferobjects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-beanmapping.html">Bean-Mapping</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-datatype.html">Datatypes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-xml.html">XML</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-json.html">JSON</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-rest.html">REST</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-soap.html">SOAP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-service-client.html">Service Client</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-kafka.html">Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-validation.html">Validation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-access-control.html">Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-testing.html">Testing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-transactions.html">Transaction Handling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-aop.html">AOP</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa.html">JPA</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="guide-repository.html">Repository</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-dao.html">DAO</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-query.html">Queries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-jpa-performance.html">JPA Performance</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-auditing.html">Auditing</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-database-migration.html">Database Migration</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-accessibility.html">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-cors-support.html">CORS support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-blob-support.html">BLOB support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-sql.html">SQL</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="guide-apm.html">Application Performance Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Devon4j</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Devon4j</a></li>
+    <li>Guides</li>
+    <li><a href="guide-repository.html">Repository</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/master/modules/ROOT/pages/guide-repository.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_spring_data">Spring Data</a></li>
+<li><a href="#_motivation">Motivation</a></li>
+<li><a href="#_dependency">Dependency</a></li>
+<li><a href="#_repository">Repository</a></li>
+<li><a href="#_custom_method_implementation">Custom method implementation</a>
+<ul class="sectlevel2">
+<li><a href="#_example">Example</a></li>
+<li><a href="#_integration_of_spring_data_in_devon4j_spring">Integration of Spring Data in devon4j-spring</a></li>
+</ul>
+</li>
+<li><a href="#_drawbacks">Drawbacks</a></li>
+<li><a href="#_limitations_in_quarkus">Limitations in Quarkus</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_spring_data"><a class="anchor" href="#_spring_data"></a>Spring Data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://projects.spring.io/spring-data-jpa/">Spring Data JPA</a> is supported by both Spring and Quarkus. However, in Quarkus this approach still has some limitations. For detailed information, see the official <a href="https://quarkus.io/guides/spring-data-jpa">Quarkus Spring Data guide</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_motivation"><a class="anchor" href="#_motivation"></a>Motivation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The benefits of Spring Data are (for examples and explanations see next sections):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>All you need is one single repository interface for each entity. No need for a separate implementation or other code artifacts like XML descriptors, <code>NamedQueries</code> class, etc.</p>
+</li>
+<li>
+<p>You have all information together in one place (the repository interface) that actually belong together (where as in the classic approach you have the static <a href="guide-jpa-query.html" class="xref page">queries</a> in an XML file, constants to them in <code>NamedQueries</code> class and referencing usages in DAO implementation classes).</p>
+</li>
+<li>
+<p>Static <a href="guide-jpa-query.html" class="xref page">queries</a> are most simple to realize as you do not need to write any method body. This means you can develop faster.</p>
+</li>
+<li>
+<p>Support for paging is already build-in. Again for static <a href="guide-jpa-query.html" class="xref page">query</a> method the is nothing you have to do except using the paging objects in the signature.</p>
+</li>
+<li>
+<p>Still you have the freedom to write custom implementations via default methods within the repository interface (e.g. for dynamic queries).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency"><a class="anchor" href="#_dependency"></a>Dependency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In case you want to switch to or add Spring Data support to your Spring or Quarkus application, all you need is to add the respective maven dependency:</p>
+</div>
+<div class="listingblock">
+<div class="title"><strong>spring</strong></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+  &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title"><strong>quarkus</strong></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;io.quarkus&lt;/groupId&gt;
+  &lt;artifactId&gt;quarkus-spring-data-jpa&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_repository"><a class="anchor" href="#_repository"></a>Repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For each entity <code>«Entity»Entity</code> an interface is created with the name <code>«Entity»Repository</code> extending <a href="https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html">JpaRepository</a>.
+Such repository is the analogy to a <a href="guide-dao.html" class="xref page">Data-Access-Object (DAO)</a> used in the classic approach or when Spring Data is not an option.</p>
+</div>
+<div class="listingblock">
+<div class="title"><strong>Repository</strong></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ProductRepository extends JpaRepository&lt;ProductEntity, Long&gt; {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Spring Data repository provides some basic implementations for accessing data, e.g. returning all instances of a type (<code>findAll</code>) or returning an instance by its ID (<code>findById</code>).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_custom_method_implementation"><a class="anchor" href="#_custom_method_implementation"></a>Custom method implementation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition, repositories can be enriched with additional functionality, e.g. to add QueryDSL functionality or to override the default implementations, by using so called repository fragments:</p>
+</div>
+<div class="sect2">
+<h3 id="_example"><a class="anchor" href="#_example"></a>Example</h3>
+<div class="paragraph">
+<p>The following example shows how to write such a repository:</p>
+</div>
+<div class="listingblock">
+<div class="title"><strong>Repository</strong></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ProductRepository extends JpaRepository&lt;ProductEntity, Long&gt;, ProductFragment {
+
+  @Query("SELECT product FROM ProductEntity product" //
+      + " WHERE product.title = :title")
+  List&lt;ProductEntity&gt; findByTitle(@Param("title") String title);
+
+  @Query("SELECT product FROM ProductEntity product" //
+      + " WHERE product.title = :title")
+  Page&lt;ProductEntity&gt; findByTitlePaginated(@Param("title") String title, Pageable pageable);
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title"><strong>Repository fragment</strong></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ProductFragment {
+  Page&lt;ProductEntity&gt; findByCriteria(ProductSearchCriteriaTo criteria);
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title"><strong>Fragment implementation</strong></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class ProductFragmentImpl implements ProductFragment {
+  @Inject
+  EntityManager entityManager;
+
+  public Page&lt;ProductEntity&gt; findByCriteria(ProductSearchCriteriaTo criteria) {
+    QProductEntity product = QProductEntity.productEntity;
+    JPAQuery&lt;ProductEntity&gt; query = new JPAQuery&lt;ProductEntity&gt;(this.entityManager);
+    query.from(product);
+
+    String title = criteria.getTitle();
+    if ((title != null) &amp;&amp; !title.isEmpty()) {
+      query.where(product.title.eq(title));
+    }
+
+    List&lt;ProductEntity&gt; products = query.fetch();
+    return new PageImpl&lt;&gt;(products, PageRequest.of(criteria.getPageNumber(), criteria.getPageSize()), products.size());
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This <code>ProductRepository</code> has the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CRUD support from Spring Data (see <a href="https://docs.spring.io/spring-data/data-jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html">JavaDoc</a> for details).</p>
+</li>
+<li>
+<p>Support for <a href="https://github.com/devonfw/devon4j/blob/develop/modules/jpa-spring-data/src/main/java/com/devonfw/module/jpa/dataaccess/api/data/QueryDslSupport.java">QueryDSL integration</a>, <a href="https://github.com/devonfw/devon4j/blob/develop/modules/jpa-basic/src/main/java/com/devonfw/module/jpa/dataaccess/api/QueryUtil.java">paging and more</a>.</p>
+</li>
+<li>
+<p>A static <a href="guide-jpa-query.html" class="xref page">query</a> method <code>findByTitle</code> to find all <code>ProductEntity</code> instances from DB that have the given title. Please note the <code>@Param</code> annotation that links the method parameter with the variable inside the query (<code>:title</code>).</p>
+</li>
+<li>
+<p>The same with pagination support via findByTitlePaginated method.</p>
+</li>
+<li>
+<p>A dynamic <a href="guide-jpa-query.html" class="xref page">query</a> method <code>findByCriteria</code> showing the QueryDSL and paging integration into Spring via a fragment implementation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can find an implementation of this <code>ProductRepository</code> in our <a href="https://github.com/devonfw-sample/devon4quarkus-reference/tree/master/src/main/java/com/devonfw/quarkus/productmanagement/domain/repo">Quarkus reference application</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In Quarkus, native and named queries via the <code>@Query</code> annotation are currently not supported
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integration_of_spring_data_in_devon4j_spring"><a class="anchor" href="#_integration_of_spring_data_in_devon4j_spring"></a>Integration of Spring Data in devon4j-spring</h3>
+<div class="paragraph">
+<p>For Spring applications, devon4j offers a proprietary solution that integrates seamlessly with QueryDSL and uses default methods instead of the fragment approach. A separate guide for this can be found <a href="spring/guide-devon4j-spring-repository.html" class="xref page">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_drawbacks"><a class="anchor" href="#_drawbacks"></a>Drawbacks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring Data also has some drawbacks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Some kind of magic behind the scenes that are not so easy to understand. So in case you want to extend all your repositories without providing the implementation via a default method in a parent repository interface you need to deep-dive into Spring Data. We assume that you do not need that and hope what Spring Data and devon already provides out-of-the-box is already sufficient.</p>
+</li>
+<li>
+<p>The Spring Data magic also includes guessing the query from the method name. This is not easy to understand and especially to debug. Our suggestion is not to use this feature at all and either provide a <code>@Query</code> annotation or an implementation via default method.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_limitations_in_quarkus"><a class="anchor" href="#_limitations_in_quarkus"></a>Limitations in Quarkus</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Native and named queries are not supported using <code>@Query</code> annotation. You will receive something like: <em>Build step io.quarkus.spring.data.deployment.SpringDataJPAProcessor#build threw an exception: java.lang.IllegalArgumentException: Attribute nativeQuery of @Query is currently not supported</em></p>
+</li>
+<li>
+<p>Customizing the base repository for all repository interfaces in the code base, which is done in Spring Data by registering a class the extends <code>SimpleJpaRepository</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
