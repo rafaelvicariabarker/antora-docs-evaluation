@@ -5,6 +5,8 @@ content:
   sources:
   - url: https://github.com/rafaelvicariabarker/devon4j.git
     branches: HEAD
+  - url: https://github.com/rafaelvicariabarker/cobigen.git
+    branches: HEAD
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable

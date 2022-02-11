@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Troubleshooting for Developers :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="cobigen" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="Home.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="Home.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="Home.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../devon4j/1.0/index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../devon4j/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../devon4j/1.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="Home.html">Cobigen</a></li>
+    <li><a href="guide_dev_troubleshooting.html">Troubleshooting for Developers</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/master/modules/ROOT/pages/guide_dev_troubleshooting.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Troubleshooting for Developers</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_cobigen_eclipse_or_cobigen_eclipse_test_has_build_errors_after_git_clone_or_pull">cobigen-eclipse or cobigen-eclipse-test has build errors after git clone or pull</a>
+<ul class="sectlevel3">
+<li><a href="#_solution">Solution</a></li>
+</ul>
+</li>
+<li><a href="#_getting_not_authorized_reasonphrase_unauthorized">Getting Not authorized , ReasonPhrase: Unauthorized</a>
+<ul class="sectlevel3">
+<li><a href="#_solution_2">Solution</a></li>
+</ul>
+</li>
+<li><a href="#_testing_changes_on_the_cobigen_core">Testing changes on the cobigen-core</a></li>
+<li><a href="#_issues_with_workspace_when_oomph_automatic_updates_dont_work_especially_for_indian_colleagues">Issues with workspace when Oomph automatic updates don&#8217;t work (especially for Indian colleagues)</a>
+<ul class="sectlevel3">
+<li><a href="#_solution_3">Solution</a></li>
+</ul>
+</li>
+<li><a href="#_issue_when_testing_eclipse_plugin_by_running_as_eclipse_application">Issue when testing Eclipse plugin by Running as Eclipse Application.</a>
+<ul class="sectlevel3">
+<li><a href="#_solution_4">Solution</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_cobigen_eclipse_or_cobigen_eclipse_test_has_build_errors_after_git_clone_or_pull"><a class="anchor" href="#_cobigen_eclipse_or_cobigen_eclipse_test_has_build_errors_after_git_clone_or_pull"></a>cobigen-eclipse or cobigen-eclipse-test has build errors after git clone or pull</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This might be caused as of the fact, that the <code>cobigen-eclipse*/lib</code> folder is not available after initial cloning or the contents of the lib folder are not in sync with the dependencies specified in the pom.xml respectively with the classpath inclusions in the <code>plugin.xml</code> (tab runtime).</p>
+</div>
+<div class="sect3">
+<h4 id="_solution"><a class="anchor" href="#_solution"></a>Solution</h4>
+<div class="paragraph">
+<p>In any of these cases you can fix the issue by running a <code>mvn clean package -Pp2-build-photon</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getting_not_authorized_reasonphrase_unauthorized"><a class="anchor" href="#_getting_not_authorized_reasonphrase_unauthorized"></a>Getting Not authorized , ReasonPhrase: Unauthorized</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You are facing an error like</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] Unresolveable build extension: Plugin org.apache.maven.wagon:wagon-ftp:1.0-beta-6 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.wagon:wagon-ftp:jar:1.0-beta-6 @@
+[ERROR] The build could not read 1 project -&gt; [Help 1]
+[ERROR]
+[ERROR]   The project com.capgemini:cobigen-htmlplugin:1.1.0 (D:\toolscobigen\tools-cobigen2\cobigen\cobigen\cobigen-htmlplugin\pom.xml) has 1 error
+[ERROR]     Unresolveable build extension: Plugin org.apache.maven.wagon:wagon-ftp:1.0-beta-6 or one of its dependencies could not be resolved: Failed to read a
+rtifact descriptor for org.apache.maven.wagon:wagon-ftp:jar:1.0-beta-6: Could not transfer artifact org.apache.maven.wagon:wagon-ftp:pom:1.0-beta-6 from/to publ
+ic (https://devon.s2-eu.capgemini.com/nexus/content/groups/public/): Not authorized , ReasonPhrase: Unauthorized. -&gt; [Help 2]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/PluginManagerException</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_solution_2"><a class="anchor" href="#_solution_2"></a>Solution</h4>
+<div class="paragraph">
+<p>Please note the message Not authorized , ReasonPhrase: Unauthorized. &#8594; [Help 2]!</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Please check, that you run the command by using the console.bat or a similar console initialized with the IDE environment variables.</p>
+</li>
+<li>
+<p>Please check your corporate login in the variables-customized.bat to be correct (<code>DEVON_NEXUS_USER</code> and <code>DEVON_NEXUS_PASSWD</code>). Make sure, that you restart the console.bat you are working in after changing the variables-customized.bat. Same holds for eclipse instances running. Please restart to make the new values accessible.</p>
+</li>
+<li>
+<p>Please check your password to <a href="http://www.robvanderwoude.com/escapechars.php">escape special characters</a>.</p>
+</li>
+<li>
+<p>Please check whether you are able to login to <a href="https://devon.s2-eu.capgemini.com" class="bare">https://devon.s2-eu.capgemini.com</a> and Nexus is up and running. If you cannot login, contact one of the main developers.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_testing_changes_on_the_cobigen_core"><a class="anchor" href="#_testing_changes_on_the_cobigen_core"></a>Testing changes on the cobigen-core</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To test changes implemented on the <code>cobigen-core</code> you have to follow the next process:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a console and step into <code>cobigen/cobigen-core-parent</code>. Run <code>mvn clean install</code> and remember the jar version you have just installed.</p>
+</li>
+<li>
+<p>On Eclipse, go to <code>cobigen/cobigen-eclipse</code> pom.xml and change the <code>&lt;version&gt;</code> of your cobigen-core.</p>
+</li>
+<li>
+<p>Also check on the <code>cobigen/cobigen-core-parent</code> pom-xml that it is using the just installed version.</p>
+</li>
+<li>
+<p>Open a console and step into <code>cobigen/cobigen-eclipse</code>. Run <code>mvn clean package -Pp2-build-photon,p2-build-stable,p2-build-experimental</code>.</p>
+</li>
+<li>
+<p>On Eclipse, go to <code>cobigen/cobigen-eclipse</code> and double-click 'plugins.xml'. On the bottom, click on 'runtime' tab. On 'classpath', add a new library and choose the jars you have just installed.</p>
+</li>
+<li>
+<p>Refresh on Eclipse, press F5 on the <code>cobigen-eclipse</code> inside Eclipse.</p>
+</li>
+<li>
+<p>If you still see compilation errors: On Eclipse, right-click <code>cobigen/cobigen-eclipse</code> &#8594; Maven &#8594; Update projects.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issues_with_workspace_when_oomph_automatic_updates_dont_work_especially_for_indian_colleagues"><a class="anchor" href="#_issues_with_workspace_when_oomph_automatic_updates_dont_work_especially_for_indian_colleagues"></a>Issues with workspace when Oomph automatic updates don&#8217;t work (especially for Indian colleagues)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Executing eclipse-cobigen-development.bat file will open Eclipse with all the projects automatically imported. Oomph creates 'Working Sets' and set 'Top Level Elements' pointing to that working set. For Countries where proxy restricts Oomph to execute, we see no projects imported into project explorer/Navigator. Rather than trying manual import which later can give build issues we should follow below solution.
+Build Issues could be like:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[ERROR] Cannot resolve project dependencies:
+[ERROR]   You requested to install 'com.capgemini.cobigen-htmlplugin 0.0.0' but it could not be found
+[ERROR]
+[ERROR] See http://wiki.eclipse.org/Tycho/Dependency_Resolution_Troubleshooting for help.
+[ERROR] Cannot resolve dependencies of MavenProject: com.capgemini:com.capgemini.cobigen.eclipse.test:3.0.1 @</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_solution_3"><a class="anchor" href="#_solution_3"></a>Solution</h4>
+<div class="paragraph">
+<p>In Eclipse, you can click the small downward arrow in the upper right corner of the Navigator/Project Explorer view and go to 'Top Level Elements' and point them to 'Projects'. This should show all the projects inside Project Explorer View. Also, Each plugin should point to respective branch.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_when_testing_eclipse_plugin_by_running_as_eclipse_application"><a class="anchor" href="#_issue_when_testing_eclipse_plugin_by_running_as_eclipse_application"></a>Issue when testing Eclipse plugin by Running as Eclipse Application.</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Error message will be like:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">1) Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.devonfw.cobigen.eclipse
+2) org.osgi.framework.BundleException: Error starting module.
+3) org.eclipse.core.runtime.CoreException: Plug-in com.devonfw.cobigen.eclipse was unable to load class com.devonfw.cobigen.eclipse.workbenchcontrol.handler.XXXXHandler.</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_solution_4"><a class="anchor" href="#_solution_4"></a>Solution</h4>
+<div class="paragraph">
+<p>Delete or rename the runtime-<code>EclipseApplication</code> inside workspaces folder. Re- run and try setting up workspace in that environment again. It should work!!</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">1) Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle com.devonfw.cobigen.eclipse
+2) org.osgi.framework.BundleException: Error starting module.
+3) org.eclipse.core.runtime.CoreException: Plug-in com.devonfw.cobigen.eclipse was unable to load class com.devonfw.cobigen.eclipse.workbenchcontrol.handler.XXXXHandler.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

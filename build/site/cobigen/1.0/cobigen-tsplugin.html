@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="cobigen" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="Home.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="Home.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="Home.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../devon4j/1.0/index.html">Devon4j</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../devon4j/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../devon4j/1.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/master/modules/ROOT/pages/cobigen-tsplugin.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_typescript_plug_in">TypeScript Plug-in</a>
+<ul class="sectlevel1">
+<li><a href="#_trigger_extensions">Trigger Extensions</a></li>
+<li><a href="#_merger_extensions">Merger extensions</a></li>
+<li><a href="#_input_reader">Input reader</a>
+<ul class="sectlevel2">
+<li><a href="#_object_model">Object model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- toc disabled -->
+<h1 id="_typescript_plug_in" class="sect0"><a class="anchor" href="#_typescript_plug_in"></a>TypeScript Plug-in</h1>
+<div class="paragraph">
+<p>The TypeScript Plug-in enables merging result TS files to existing ones. This plug-in is used at the moment for generate an Angular2 client with all CRUD functionalities enabled. The plug-in also generates i18n functionality just appending at the end of the word the <code>ES</code> or <code>EN</code> suffixes, to put into the developer knowledge that this words must been translated to the correspondent language. Currently, the generation of Angular2 client requires an <code>ETO</code> java object as input so, there is no need to implement an input reader for ts artifacts for the moment.</p>
+</div>
+<div class="sect1">
+<h2 id="_trigger_extensions"><a class="anchor" href="#_trigger_extensions"></a>Trigger Extensions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As for the Angular2 generation the input is a java object, the trigger expressions (including matchers and variable assignments) are implemented as <a href="https://github.com/devonfw/cobigen/wiki/cobigen-javaplugin#trigger-extension">Java</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_merger_extensions"><a class="anchor" href="#_merger_extensions"></a>Merger extensions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This plugin uses the <a href="https://github.com/devonfw/ts-merger">TypeScript Merger</a> to merge files. There are currently two merge strategies:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>merge strategy <code>tsmerge</code> (add the new code respecting the existing is case of conflict)</p>
+</li>
+<li>
+<p>merge strategy <code>tsmerge_override</code> (add the new code overwriting the existent in case of conflict)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+The merge algorithm mainly handles the following <code>AST</code> nodes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><code>ImportDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Will add non existent imports whatever the merge strategy is.</p>
+</li>
+<li>
+<p>For different imports from same module, the import clauses will be merged.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-ts hljs" data-lang="ts">import { a } from 'b';
+import { c } from 'b';
+//Result
+import { a, c } from 'b';</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><code>ClassDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Adds non existent base properties from patch based on the name property.</p>
+</li>
+<li>
+<p>Adds non existent base methods from patch based on the name signature.</p>
+</li>
+<li>
+<p>Adds non existent annotations to class, properties and methods.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><code>PropertyDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Adds non existent decorators.</p>
+</li>
+<li>
+<p>Merge existent decorators.</p>
+</li>
+<li>
+<p>With override strategy, the value of the property will be replaced by the patch value.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><code>MethodDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>With override strategy, the body will be replaced.</p>
+</li>
+<li>
+<p>The parameters will be merged.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><code>ParameterDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Replace type and modifiers with override merge strategy, adding non existent from patch into base.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><code>ConstructorDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Merged in the same way as Method is.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong><code>FunctionDeclaration</code></strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Merged in the same way as Method is.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_input_reader"><a class="anchor" href="#_input_reader"></a>Input reader</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The TypeScript input reader is based on the one that the <a href="https://github.com/devonfw/ts-merger">TypeScript merger</a> uses. The current extensions are additional module fields giving from which library any entity originates.
+<code>module: null</code> specifies a standard entity or type as <code>string</code> or <code>number</code>.</p>
+</div>
+<div class="sect2">
+<h3 id="_object_model"><a class="anchor" href="#_object_model"></a>Object model</h3>
+<div class="paragraph">
+<p>To get a first impression of the created object after parsing, let us start with analyzing a small example, namely the parsing of a simple <a href="https://typeorm.io/#/">type-orm</a> model written in TypeScript.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-Typescript hljs" data-lang="Typescript">import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
+
+@Entity()
+export class User {
+
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    firstName: string;
+
+    @Column()
+    lastName: string;
+
+    @Column()
+    age: number;
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The returned object has the following structure</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-JSON hljs" data-lang="JSON">{
+  "importDeclarations": [
+    {
+      "module": "typeorm",
+      "named": [
+        "Entity",
+        "PrimaryGeneratedColumn",
+        "Column"
+      ],
+      "spaceBinding": true
+    }
+  ],
+  "classes": [
+    {
+      "identifier": "User",
+      "modifiers": [
+        "export"
+      ],
+      "decorators": [
+        {
+          "identifier": {
+            "name": "Entity",
+            "module": "typeorm"
+          },
+          "isCallExpression": true
+        }
+      ],
+      "properties": [
+        {
+          "identifier": "id",
+          "type": {
+            "name": "number",
+            "module": null
+          },
+          "decorators": [
+            {
+              "identifier": {
+                "name": "PrimaryGeneratedColumn",
+                "module": "typeorm"
+              },
+              "isCallExpression": true
+            }
+          ]
+        },
+        {
+          "identifier": "firstName",
+          "type": {
+            "name": "string",
+            "module": null
+          },
+          "decorators": [
+            {
+              "identifier": {
+                "name": "Column",
+                "module": "typeorm"
+              },
+              "isCallExpression": true
+            }
+          ]
+        },
+        {
+          "identifier": "lastName",
+          "type": {
+            "name": "string",
+            "module": null
+          },
+          "decorators": [
+            {
+              "identifier": {
+                "name": "Column",
+                "module": "typeorm"
+              },
+              "isCallExpression": true
+            }
+          ]
+        },
+        {
+          "identifier": "age",
+          "type": {
+            "name": "number",
+            "module": null
+          },
+          "decorators": [
+            {
+              "identifier": {
+                "name": "Column",
+                "module": "typeorm"
+              },
+              "isCallExpression": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If we only consider the first level of the JSON response, we spot two lists of <code>imports</code> and <code>classes</code>, providing information about the only import statement and the only <strong>User</strong> class, respectively. Moving one level deeper we observe that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Every import statement is translated to an import declaration entry in the declarations list, containing the module name, as well as a list of entities imported from the given module.</p>
+</li>
+<li>
+<p>Every class entry provides besides the class identifier, its decoration(s), modifier(s), as well as a list of properties that the original class contains.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that, for each given type, the module from which it is imported is also given as in</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-JSON hljs" data-lang="JSON">  "identifier": {
+    "name": "Column",
+    "module": "typeorm"
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Returning to the general case, independently from the given TypeScript file, an object having the following Structure will be created.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><code>importDeclarations</code></strong>: A list of import statement as described above</p>
+</li>
+<li>
+<p><strong><code>exportDeclarations</code></strong>: A list of export declarations</p>
+</li>
+<li>
+<p><strong>classes</strong>: A list of classes extracted from the given file, where each entry is full of class specific fields, describing its properties and decorator for example.</p>
+</li>
+<li>
+<p><strong>interfaces</strong>: A list of interfaces.</p>
+</li>
+<li>
+<p><strong>variables</strong>: A list of variables.</p>
+</li>
+<li>
+<p><strong>functions</strong>: A list of functions.</p>
+</li>
+<li>
+<p><strong>enums</strong>: A list of enumerations.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
