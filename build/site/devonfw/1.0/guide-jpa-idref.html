@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-jpa-idref.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_idref">IdRef</a></li>
+<li><a href="#_motivation">Motivation</a></li>
+<li><a href="#_idref_and_mapping">IdRef and Mapping</a></li>
+<li><a href="#_jpahelper_and_entitymanager_access">JpaHelper and EntityManager access</a>
+<ul class="sectlevel2">
+<li><a href="#_jpahelper_and_spring_test">JpaHelper and spring-test</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_idref"><a class="anchor" href="#_idref"></a>IdRef</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IdRef can be used to reference other entities in TOs in order to make them type-safe and semantically more expressive.
+It is an optional concept in devon4j for more complex applications that make intensive use of relations and foreign keys.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_motivation"><a class="anchor" href="#_motivation"></a>Motivation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Assuming you have a method signature like the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Long approve(Long cId, Long cuId);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So what are the paremeters? What is returned?</p>
+</div>
+<div class="paragraph">
+<p><code>IdRef</code> is just a wrapper for a Long used as foreign key. This makes our signature much more expressive and self-explanatory:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">IdRef&lt;Contract&gt; approve(IdRef&lt;Contract&gt; cId, IdRef&lt;Customer&gt; cuId);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now we can easily see, that the result and the parameters are foreign-keys and which entity they are referring to via their generic type.
+We can read the javadoc of these entities from the generic type and understand the context.
+Finally, when passing <code>IdRef</code> objects to such methods, we get compile errors in case we accidentally place parameters in the wrong order.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_idref_and_mapping"><a class="anchor" href="#_idref_and_mapping"></a>IdRef and Mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to easily map relations from entities to <a href="guide-transferobject.html" class="xref page">transfer-objects</a> and back, we can easily also put according getters and setters into our entities:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class ContractEntity extends ApplicationPersistenceEntity implements Contract {
+
+  private CustomerEntity customer;
+
+  ...
+
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "CUSTOMER_ID")
+  public CustomerEntity getCustomer() {
+    return this.customer;
+  }
+
+  public void setCustomer(CustomerEntity customer) {
+    this.customer = customer;
+  }
+
+  @Transient
+  public IdRef&lt;Customer&gt; getCustomerId() {
+    return IdRef.of(this.customer);
+  }
+
+  public void setCustomerId(IdRef&lt;Customer&gt; customerId) {
+    this.customer = JpaHelper.asEntity(customerId, CustomerEntity.class);
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, ensure that you have the same getters and setters for <code>customerId</code> in your <code>Eto</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class ContractEto extends AbstractEto implements Contract {
+
+  private IdRef&lt;Customer&gt; customerId;
+
+  ...
+
+  public IdRef&lt;Customer&gt; getCustomerId() {
+    return this.customerId;
+  }
+
+  public void setCustomerId(IdRef&lt;Customer&gt; customerId) {
+    this.customerId = customerId;
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This way the bean-mapper can automatically map from your entity (<code>ContractEntity</code>) to your Eto (<code>ContractEto</code>) and vice-versa.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jpahelper_and_entitymanager_access"><a class="anchor" href="#_jpahelper_and_entitymanager_access"></a>JpaHelper and EntityManager access</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the above example we used <code>JpaHelper.asEntity</code> to convert the foreign key (<code>IdRef&lt;Customer&gt;</code>) to the according entity (<code>CustomerEntity</code>).
+This will internally use <code>EntityManager.getReference</code> to properly create a JPA entity.
+The alternative "solution" that may be used with <code>Long</code> instead of <code>IdRef</code> is typically:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  public void setCustomerId(IdRef&lt;Customer&gt; customerId) {
+    Long id = null;
+    if (customerId != null) {
+      id = customerId.getId();
+    }
+    if (id == null) {
+      this.customer = null;
+    } else {
+      this.customer = new CustomerEntity();
+      this.customer.setId(id);
+    }
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>While this "solution" works is most cases, we discovered some more complex cases, where it fails with very strange hibernate exceptions.
+When cleanly creating the entity via <code>EntityManager.getReference</code> instead it is working in all cases.
+So how can <code>JpaHelper.asEntity</code> as a static method access the <code>EntityManager</code>?
+Therefore we need to initialize this as otherwise you may see this exception:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">java.lang.IllegalStateException: EntityManager has not yet been initialized!
+	at com.devonfw.module.jpa.dataaccess.api.JpaEntityManagerAccess.getEntityManager(JpaEntityManagerAccess.java:38)
+	at com.devonfw.module.jpa.dataaccess.api.JpaHelper.asEntity(JpaHelper.java:49)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For main usage in your application we assume that there is only one instance of <code>EntityManager</code>.
+Therefore we can initialize this instance during the spring boot setup.
+This is what we provide for you in <a href="https://github.com/devonfw/devon4j/blob/master/modules/jpa-basic/src/main/java/com/devonfw/module/jpa/dataaccess/api/JpaInitializer.java">JpaInitializer</a> for you
+when <a href="tutorial-newapp.html" class="xref page">creating a devon4j app</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_jpahelper_and_spring_test"><a class="anchor" href="#_jpahelper_and_spring_test"></a>JpaHelper and spring-test</h3>
+<div class="paragraph">
+<p>Further, you also want your code to work in integration tests.
+Spring-test provides a lot of magic under the hood to make integration testing easy for you.
+To boost the performance when running multiple tests, spring is smart and avoids creating the same spring-context multiple times.
+Therefore it stores these contexts so that if a test-case is executed with a specific spring-configuration that has already been setup before,
+the same spring-context can be reused instead of creating it again.
+However, your tests may have multiple spring configurations leading to multiple spring-contexts.
+Even worse these tests can run in any order leading to switching between spring-contexts forth and back.
+Therefore, a static initializer during the spring boot setup can lead to strange errors as you can get the wrong <code>EntityManager</code> instance.
+In order to fix such problems, we provide a solution pattern via <a href="https://github.com/devonfw/devon4j/blob/master/modules/test-jpa/src/main/java/com/devonfw/module/test/common/base/DbTest.java#L32">DbTest</a> ensuring for every test,
+that the proper instance of <code>EntityManager</code> is initialized.
+Therefore you should derive directly or indirectly (e.g. via <code>ComponentDbTest</code> and <code>SubsystemDbTest</code>) from <code>DbTesT</code> or adopt your own way to apply this pattern to your tests, when using <code>JpaHelper</code>.
+This already happens if you are extending <code>ApplicationComponentTest</code> or <code>ApplicationSubsystemTest</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/refactorForAntora/modules/ROOT/pages/howto_ionic-client-generation.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_ionic_client_generation">Ionic client generation</a>
+<ul class="sectlevel1">
+<li><a href="#_prerequisites">Prerequisites</a></li>
+<li><a href="#_generation">Generation</a></li>
+<li><a href="#_running_it_on_android">Running it on Android</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- toc disabled -->
+<h1 id="_ionic_client_generation" class="sect0"><a class="anchor" href="#_ionic_client_generation"></a>Ionic client generation</h1>
+<div class="paragraph">
+<p>We are going to show you <strong>how to</strong> generate a CRUD Ionic application from an <strong>ETO</strong>
+using CobiGen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is a short introduction to the Ionic generation. For a deeper tutorial including the generation of the backend, we strongly recommend you to follow <a href="files/HOW-TO-devonfw-ide-CobiGen-PoC-E2E_v3.2.pdf">this document</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before starting, make sure you already have in your computer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://ionicframework.com/docs/installation/cli">Ionic</a>: by following the steps defined on that page.
+It includes installing:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://nodejs.org/en/">NodeJS</a>: We have to use "NPM" for downloading packages.</p>
+</li>
+<li>
+<p>Ionic CLI.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="https://capacitor.ionicframework.com/docs/getting-started/">Capacitor</a>: Necessary to access to native device features.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If <em>CobiGen_Templates</em> are not already downloaded, follow the next steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Right click on any file of your workspace <em>CobiGen &gt; Update Templates</em> and now you are able to start the generation.</p>
+</li>
+<li>
+<p>If you want to adapt them, click <em>Adapt Templates</em> and you should have the <em>CobiGen_Templates</em> as a new project in Eclipse&#8217;s workspace.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After following those steps correctly, you should have the latest version of the templates ready to use.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generation"><a class="anchor" href="#_generation"></a>Generation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We are going to generate the CRUD into a <strong>sample application</strong> that we have developed for
+testing this functionality. It is present on your <code>workspaces/examples</code> folder (devon4ng-ionic-application-template). If you do not see it, you can clone or download it from <a href="https://github.com/devonfw/devon4ng-ionic-application-template">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>After having that sample app, please create an <a href="https://github.com/devonfw/devon4ng/wiki/tutorial-newapp">devon4j project</a> and then start implementing the ETO: You will find an example <a href="https://github.com/devonfw/devon4j/blob/develop/samples/core/src/main/java/io/devonfw/gastronomy/restaurant/tablemanagement/logic/api/to/TableEto.java">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>As you can see, <code>TableEto</code> contains 3 attributes: 2 of them are <code>Long</code> and the third one <code>TableState</code> is an enum that you will find
+<a href="https://github.com/devonfw/devon4j/blob/develop/samples/core/src/main/java/io/devonfw/gastronomy/restaurant/tablemanagement/common/api/datatype/TableState.java">here</a>.
+The Ionic generation works fine for any Java primitive attribute (Strings, floats, chars, boolean&#8230;&#8203;) and enums. However, if you want to use your own objects, you should
+override the <code>toString()</code> method, as explained <a href="https://stackoverflow.com/questions/35361482/typescript-override-tostring">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>The attributes explained above will be used for generating a page that shows a list. Each item of that list
+will show the values of those attributes.</p>
+</div>
+<div class="paragraph">
+<p>For generating the files:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Right click your ETO file and click on <em>CobiGen &gt; Generate</em> as shown on the figure below.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/rightClick.png"><img src="_images/images/howtos/ionic-gen/rightClick.png" alt="Eclipse CobiGen generation" width="500"></a>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the Ionic increments for generating as shown below. <em>Increments group a set of templates for generating
+different projects</em>.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong><code>Ionic List</code></strong> used for generating the page containing the list.</p>
+</li>
+<li>
+<p><strong><code>Ionic devon4ng environments</code></strong>  is for stating the server path.</p>
+</li>
+<li>
+<p><strong><code>Ionic i18n</code></strong> used for generating the different language translations for the <em>`translationService`</em> (currently English and Spanish).</p>
+</li>
+<li>
+<p><strong><code>Ionic routing</code></strong> adds an app-routing.module.ts file to allow navigation similar to the one available in Angular.</p>
+</li>
+<li>
+<p><strong><code>Ionic theme</code></strong> generates the <code>variables.scss</code> file which contains variables to style the application.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/wizardCobiGen.png"><img src="_images/images/howtos/ionic-gen/wizardCobiGen.png" alt="CobiGen Ionic Wizard" width="500"></a>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+By default, the generated files will be placed inside "devon4ng-ionic-application-template", next to the root of your project&#8217;s folder.
+See the image below to know where they are generated. For <strong>changing the generation path</strong> and the name of the application go to <em>CobiGen_Templates/crud_ionic_client_app/cobigen.properties</em>.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/pathOfGeneration.png"><img src="_images/images/howtos/ionic-gen/pathOfGeneration.png" alt="Generation path" width="500"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>Now that we have generated the files, lets start testing them:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>First change the <strong>SERVER_URL</strong> of your application. For doing that, modify <em>src/environments/environments.ts</em>, also modify <em>src/environments/environments.android.ts</em> (android) and <em>src/environments/environments.prod.ts</em> (production) if you want to test in different environments.</p>
+</li>
+<li>
+<p>Check that there are no duplicated imports. Sometimes there are duplicated imports in <em>src/app/app.module.ts</em>.
+This happens because the merger of CobiGen prefers to duplicate rather than to delete.</p>
+</li>
+<li>
+<p>Run <code>npm install</code> to install all the required dependencies.</p>
+</li>
+<li>
+<p>Run <code>`ionic serve</code> on your console.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After following all these steps your application should start. However, remember that you will need your <strong>server</strong> to be running for access to the list page.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_it_on_android"><a class="anchor" href="#_running_it_on_android"></a>Running it on Android</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To run the application in an android emulated device, it is necessary to have Android Studio and Android SDK. After its installation, the following commands have to be run on your console:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>npx cap init "name-for-the-app (between quotes)" "id-for-the-app (between quotes)"</code></p>
+</li>
+<li>
+<p><code>ionic build --configuration=android</code>. To use this command, you must add an android build configuration at angular.json</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>    "build": {
+      ...
+      "configurations": {
+        ...
+        "android": {
+          "fileReplacements": [
+            {
+              "replace": "src/environments/environment.ts",
+              "with": "src/environments/environment.android.ts"
+            }
+          ]
+        },
+      }
+    }</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>npx cap add android</code></p>
+</li>
+<li>
+<p><code>npx cap copy</code></p>
+</li>
+<li>
+<p><code>npx cap open android</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The last steps are done in Android studio: make the project, make the app, build and APK and run in a device.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/and-vsc-make.png"><img src="_images/images/howtos/ionic-gen/and-vsc-make.png" alt="Click on make project" width="500"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/and-vsc-make-app.png"><img src="_images/images/howtos/ionic-gen/and-vsc-make-app.png" alt="click on make app" width="500"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/and-vsc-build-apk.png"><img src="_images/images/howtos/ionic-gen/and-vsc-build-apk.png" alt="click on build APK" width="500"></a>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="images/howtos/ionic-gen/and-vsc-build-run.png"><img src="_images/images/howtos/ionic-gen/and-vsc-build-run.png" alt="click on running device" width="500"></a>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

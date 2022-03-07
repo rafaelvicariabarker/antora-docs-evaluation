@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/refactorForAntora/modules/ROOT/pages/cobigen-usecases.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_general_use_cases">General use cases</a>
+<ul class="sectlevel1">
+<li><a href="#_devon4j">devon4j</a>
+<ul class="sectlevel2">
+<li><a href="#_crud_server_application_for_devon4j">CRUD server application for devon4j</a></li>
+<li><a href="#_crud_client_application_for_devon4ng">CRUD client application for devon4ng</a></li>
+<li><a href="#_testdata_builder_for_devon4j">Testdata Builder for devon4j</a></li>
+</ul>
+</li>
+<li><a href="#_register_factory">Register Factory</a>
+<ul class="sectlevel2">
+<li><a href="#_crud_server_application">CRUD server application</a></li>
+<li><a href="#_testdata_builder">Testdata Builder</a></li>
+<li><a href="#_test_documentation">Test documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- toc disabled -->
+<h1 id="_general_use_cases" class="sect0"><a class="anchor" href="#_general_use_cases"></a>General use cases</h1>
+<div class="paragraph">
+<p>In addition to the <a href="Home#selection-of-current-and-past-cobigen-applications">selection of CobiGen applications</a> introduced before, this chapter provides a more detailed overview about the currently implemented and maintained general use cases. These can be used by any project following a supported reference architecture as e.g. the <a href="https://github.com/devonfw">devonfw</a> or <a href="http://www.bva.bund.de/SharedDocs/Downloads/DE/BIT/RegisterFactory/Whitepaper_Register_Factory.html">Register Factory</a>.</p>
+</div>
+<div class="sect1">
+<h2 id="_devon4j"><a class="anchor" href="#_devon4j"></a>devon4j</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With our templates for <a href="https://github.com/devonfw/devon4j">devon4j</a>, you can generate a whole CRUD application from a single Entity class. You save the effort for creating, DAOs, Transfer Objects, simple CRUD use cases with REST services and even the client application can be generated.</p>
+</div>
+<div class="sect2">
+<h3 id="_crud_server_application_for_devon4j"><a class="anchor" href="#_crud_server_application_for_devon4j"></a>CRUD server application for devon4j</h3>
+<div class="paragraph">
+<p>For the server, the required files for all architectural layers (Data access, logic, and service layer) can be created based on your Entity class. After the generation, you have CRUD functionality for the entity from bottom to top which can be accessed via a RESTful web service. Details are provided in the <a href="https://github.com/devonfw/devon/wiki/tutorial-devon-generator">Devon wiki</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_crud_client_application_for_devon4ng"><a class="anchor" href="#_crud_client_application_for_devon4ng"></a>CRUD client application for devon4ng</h3>
+<div class="paragraph">
+<p>Based on the REST services on the server, you can also generate an <a href="https://angularjs.org/">Angular</a> client based on <a href="https://github.com/devonfw/devon4ng">devon4ng</a>. With the help of <a href="https://nodejs.org/">Node.js</a>, you have a working client application for displaying your entities within minutes!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testdata_builder_for_devon4j"><a class="anchor" href="#_testdata_builder_for_devon4j"></a>Testdata Builder for devon4j</h3>
+<div class="paragraph">
+<p>Generating a builder pattern for POJOs to easily create test data in your tests. CobiGen is not only able to generate a plain builder pattern but rather builder, which follow a specific concept to minimize test data generation efforts in your unit tests. The following <code>Person</code> class as an example:</p>
+</div>
+<div class="listingblock">
+<div class="title">Person class</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Person {
+
+    private String firstname;
+    private String lastname;
+    private int birthyear;
+    @NotNull
+    private Address address;
+
+    @NotNull
+    public String getFirstname() {
+        return this.firstname;
+    }
+
+    // additional default setter and getter
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It is a simple POJO with a validation annotation, to indicate, that <code>firstname</code> should never be <code>null</code>. Creating this object in a test would imply to call every setter, which is kind of nasty. Therefore, the Builder Pattern has been introduced for quite a long time in software engineering, allowing to easily create POJOs with a fluent API. See below.</p>
+</div>
+<div class="listingblock">
+<div class="title">Builder pattern example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Person person = new PersonBuilder()
+                .firstname("Heinz")
+                .lastname("Erhardt")
+                .birthyear(1909)
+                .address(
+                    new AddressBuilder().postcode("22222")
+                        .city("Hamburg").street("Luebecker Str. 123")
+                        .createNew())
+                .addChild(
+                    new PersonBuilder()[...].createNew()).createNew();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Builder API generated by CobiGen allows you to set any setter accessible field of a POJO in a fluent way. But in addition lets assume a test, which should check the birth year as precondition for any business operation. So specifying all other fields of <code>Person</code>, especially <code>firstname</code> as it is mandatory to enter business code, would not make sense. The test behavior should just depend on the specification of the birth year and on no other data. So we would like to just provide this data to the test.</p>
+</div>
+<div class="paragraph">
+<p>The Builder classes generated by CobiGen try to tackle this inconvenience by providing the ability to declare default values for any mandatory field due to validation or database constraints.</p>
+</div>
+<div class="listingblock">
+<div class="title">Builder Outline</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class PersonBuilder {
+
+    private void fillMandatoryFields() {
+        firstname("lasdjfaöskdlfja");
+        address(new AddressBuilder().createNew());
+    };
+    private void fillMandatoryFields_custom() {...};
+
+    public PersonBuilder firstname(String value);
+    public PersonBuilder lastname(String value);
+    ...
+
+    public Person createNew();
+    public Person persist(EntityManager em);
+    public List&lt;Person&gt; persistAndDuplicate(EntityManager em, int count);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Looking at the plotted builder API generated by CobiGen, you will find two <code>private</code> methods. The method <code>fillMandatoryFields</code> will be generated by CobiGen and regenerated every time CobiGen generation will be triggered for the <code>Person</code> class. This method will set every automatically detected field with not <code>null</code> constraints to a default value. However, by implementing <code>fillMandatoryFields_custom</code> on your own, you can reset these values or even specify more default values for any other field of the object. Thus, running <code>new PersonBuilder().birthyear(1909).createNew();</code> will create a valid object of <code>Person</code>, which is already pre-filled such that it does not influence the test execution besides the fact that it circumvents database and validation issues.</p>
+</div>
+<div class="paragraph">
+<p>This even holds for complex data structures as indicated by <code>address(new AddressBuilder().createNew());</code>. Due to the use of the <code>AddressBuilder</code> for setting the default value for the field <code>address</code>, also the default values for <code>Address</code> will be set automatically.</p>
+</div>
+<div class="paragraph">
+<p>Finally, the builder API provides different methods to create new objects.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>createNew()</code> just creates a new object from the builder specification and returns it.</p>
+</li>
+<li>
+<p><code>persist(EntityManager)</code> will create a new object from the builder specification and persists it to the database.</p>
+</li>
+<li>
+<p><code>persistAndDuplicate(EntityManager, int)</code> will create the given amount of objects form the builder specification and persists all of these. After the initial generation of each builder, you might want to adapt the method body as you will most probably not be able to persist more than one object with the same field assignments to the database due to <code>unique</code> constraints. Thus, please see the generated comment in the method to adapt <code>unique</code> fields accordingly before persisting to the database.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_custom_builder_for_business_needs"><a class="anchor" href="#_custom_builder_for_business_needs"></a>Custom Builder for Business Needs</h4>
+<div class="paragraph">
+<p>CobiGen just generates basic builder for any POJO. However, for project needs you probably would like to have even more complex builders, which enable the easy generation of more complex test data which are encoded in a large object hierarchy. Therefore, the generated builders can just be seen as a tool to achieve this. You can define your own business driven builders in the same way as the generated builders, but explicitly focusing on your business needs. Just take this example as a demonstration of that idea:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  University uni = new ComplexUniversityBuilder()
+    .withStudents(200)
+    .withProfessors(4)
+    .withExternalStudent()
+    .createNew();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>E.g. the method <code>withExternalStudent()</code> might create a person, which is a student and is flagged to be an external student. Basing this implementation on the generated builders will even assure that you would benefit from any default values you have set before. In addition, you can even imagine any more complex builder methods setting values driven your reusable testing needs based on the specific business knowledge.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_register_factory"><a class="anchor" href="#_register_factory"></a>Register Factory</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_crud_server_application"><a class="anchor" href="#_crud_server_application"></a>CRUD server application</h3>
+<div class="paragraph">
+<p>Generates a CRUD application with persistence entities as inputs. This includes DAOs, TOs, use cases, as well as a CRUD JSF user interface if needed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testdata_builder"><a class="anchor" href="#_testdata_builder"></a>Testdata Builder</h3>
+<div class="paragraph">
+<p>Analogous to <a href="#testdata-builder-for-devon4j">Testdata Builder for devon4J</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_documentation"><a class="anchor" href="#_test_documentation"></a>Test documentation</h3>
+<div class="paragraph">
+<p>Generate test documentation from test classes. The input are the doclet tags of several test classes, which e.g. can specify a description, a cross-reference, or a test target description. The result currently is a csv file, which lists all tests with the corresponding meta-information. Afterwards, this file might be styled and passed to the customer if needed and it will be up-to-date every time!</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

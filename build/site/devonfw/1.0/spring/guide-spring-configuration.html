@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/spring/guide-spring-configuration.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_configuration">Configuration</a></li>
+<li><a href="#_internal_application_configuration">Internal Application Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_spring_boot_application">Spring Boot Application</a></li>
+<li><a href="#_standard_beans_configuration">Standard beans configuration</a></li>
+<li><a href="#_beanmapper_configuration">BeanMapper Configuration</a></li>
+<li><a href="#_security_configuration">Security configuration</a></li>
+<li><a href="#_websocket_configuration">WebSocket configuration</a></li>
+</ul>
+</li>
+<li><a href="#_external_application_configuration">External Application Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_application_properties_files">application.properties files</a></li>
+<li><a href="#_database_configuration">Database Configuration</a></li>
+</ul>
+</li>
+<li><a href="#_security">Security</a>
+<ul class="sectlevel2">
+<li><a href="#_password_encryption">Password Encryption</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_internal_application_configuration"><a class="anchor" href="#_internal_application_configuration"></a>Internal Application Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There usually is a main configuration registered with main Spring Boot App, but differing configurations to support automated test of the application can be defined using profiles (not detailed in this guide).</p>
+</div>
+<div class="sect2">
+<h3 id="_spring_boot_application"><a class="anchor" href="#_spring_boot_application"></a>Spring Boot Application</h3>
+<div class="paragraph">
+<p>For a complete documentation, see the <a href="http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/">Spring Boot Reference Guide</a>.</p>
+</div>
+<div class="paragraph">
+<p>With spring-boot you provide a simple <em>main class</em> (also called starter class) like this:
+com.devonfw.mtsj.application</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication(exclude = { EndpointAutoConfiguration.class })
+@EntityScan(basePackages = { "com.devonfw.mtsj.application" }, basePackageClasses = { AdvancedRevisionEntity.class })
+@EnableGlobalMethodSecurity(jsr250Enabled = true)
+@ComponentScan(basePackages = { "com.devonfw.mtsj.application.general", "com.devonfw.mtsj.application" })
+public class SpringBootApp {
+
+  /**
+   * Entry point for spring-boot based app
+   *
+   * @param args - arguments
+   */
+  public static void main(String[] args) {
+
+    SpringApplication.run(SpringBootApp.class, args);
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In an devonfw application this main class is always located in the <code>&lt;basepackage&gt;</code> of the application package namespace (see <a href="../coding-conventions.html#packages" class="xref page">package-conventions</a>). This is because a spring boot application will automatically do a classpath scan for components (spring-beans) and entities in the package where the application main class is located including all sub-packages. You can use the <code>@ComponentScan</code> and <code>@EntityScan</code> annotations to customize this behaviour.</p>
+</div>
+<div class="paragraph">
+<p>If you want to map spring configuration properties into your custom code please see <a href="../guide-configuration-mapping.html" class="xref page">configuration mapping</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_standard_beans_configuration"><a class="anchor" href="#_standard_beans_configuration"></a>Standard beans configuration</h3>
+<div class="paragraph">
+<p>For basic bean configuration we rely on spring boot using mainly configuration classes and only occasionally XML configuration files. Some key principle to understand Spring Boot auto-configuration features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Spring Boot auto-configuration attempts to automatically configure your Spring application based on the jar dependencies and annotated components found in your source code.</p>
+</li>
+<li>
+<p>Auto-configuration is non-invasive, at any point you can start to define your own configuration to replace specific parts of the auto-configuration by redefining your identically named bean (see also <code>exclude</code> attribute of <code>@SpringBootApplication</code> in example code above).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Beans are configured via annotations in your java code (see <a href="../guide-dependency-injection.html" class="xref page">dependency-injection</a>).</p>
+</div>
+<div class="paragraph">
+<p>For technical configuration you will typically write additional spring config classes annotated with <code>@Configuration</code> that provide bean implementations via methods annotated with <code>@Bean</code>. See <a href="http://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html">spring @Bean documentation</a> for further details. Like in XML you can also use <code>@Import</code> to make a <code>@Configuration</code> class include other configurations.</p>
+</div>
+<div class="paragraph">
+<p>More specific configuration files (as required) reside in an adequately named subfolder of:</p>
+</div>
+<div class="paragraph">
+<p><code>src/main/resources/app</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_beanmapper_configuration"><a class="anchor" href="#_beanmapper_configuration"></a>BeanMapper Configuration</h3>
+<div class="paragraph">
+<p>In case you are still using dozer, you will find further details in <a href="../guide-beanmapping.html#bean-mapper-configuration" class="xref page">bean-mapper configuration</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_security_configuration"><a class="anchor" href="#_security_configuration"></a>Security configuration</h3>
+<div class="paragraph">
+<p>The abstract base class <code>BaseWebSecurityConfig</code> should be extended to configure web application security thoroughly.
+A basic and secure configuration is provided which can be overridden or extended by subclasses.
+Subclasses must use the <code>@Profile</code> annotation to further discriminate between beans used in production and testing scenarios. See the following example:</p>
+</div>
+<div class="listingblock">
+<div class="title">How to extend <code>BaseWebSecurityConfig</code> for Production and Test</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+@EnableWebSecurity
+@Profile(SpringProfileConstants.JUNIT)
+public class TestWebSecurityConfig extends BaseWebSecurityConfig {...}
+
+@Configuration
+@EnableWebSecurity
+@Profile(SpringProfileConstants.NOT_JUNIT)
+public class WebSecurityConfig extends BaseWebSecurityConfig {...}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/devonfw/my-thai-star/blob/develop/java/mtsj/core/src/main/java/com/devonfw/application/mtsj/general/service/impl/config/WebSecurityConfig.java">WebSecurityConfig</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_websocket_configuration"><a class="anchor" href="#_websocket_configuration"></a>WebSocket configuration</h3>
+<div class="paragraph">
+<p>A websocket endpoint is configured within the business package as a Spring configuration class. The annotation <code>@EnableWebSocketMessageBroker</code> makes Spring Boot registering this endpoint.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">package your.path.to.the.websocket.config;
+...
+@Configuration
+@EnableWebSocketMessageBroker
+public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
+...</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_external_application_configuration"><a class="anchor" href="#_external_application_configuration"></a>External Application Configuration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_application_properties_files"><a class="anchor" href="#_application_properties_files"></a>application.properties files</h3>
+<div class="paragraph">
+<p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html">Here</a> is a list of common properties provided by the Spring framework.</p>
+</div>
+<div class="paragraph">
+<p>For a general understanding how spring-boot is loading and boostrapping your <code>application.properties</code> see <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html">spring-boot external configuration</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following properties files are used in devonfw application:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>src/main/resources/application.properties</code> providing a default configuration - bundled and deployed with the application package. It further acts as a template to derive a tailored minimal environment-specific configuration.</p>
+</li>
+<li>
+<p><code>src/main/resources/config/application.properties</code> providing additional properties only used at development time (for all local deployment scenarios). This property file is excluded from all packaging.</p>
+</li>
+<li>
+<p><code>src/test/resources/config/application.properties</code> providing additional properties only used for testing (JUnits based on <a href="../guide-testing.html" class="xref page">spring test</a>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For other environments where the software gets deployed such as <code>test</code>, <code>acceptance</code> and <code>production</code> you need to provide a tailored copy of <code>application.properties</code>. The location depends on the deployment strategy:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>standalone run-able Spring Boot App using embedded tomcat: <code>config/application.properties</code> under the installation directory of the spring boot application.</p>
+</li>
+<li>
+<p>dedicated tomcat (one tomcat per app): <code>$CATALINA_BASE/lib/config/application.properties</code></p>
+</li>
+<li>
+<p>tomcat serving a number of apps (requires expanding the wars): <code>$CATALINA_BASE/webapps/&lt;app&gt;/WEB-INF/classes/config</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In this <code>application.properties</code> you only define the minimum properties that are environment specific and inherit everything else from the bundled <code>src/main/resources/application.properties</code>. In any case, make very sure that the classloader will find the file.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_database_configuration"><a class="anchor" href="#_database_configuration"></a>Database Configuration</h3>
+<div class="paragraph">
+<p>The configuration for spring and Hibernate is already provided by devonfw in our sample application and the application template. So you only need to worry about a few things to customize.</p>
+</div>
+<div class="sect3">
+<h4 id="_database_system_and_access"><a class="anchor" href="#_database_system_and_access"></a>Database System and Access</h4>
+<div class="paragraph">
+<p>Obviously you need to configure which type of database you want to use as well as the location and credentials to access it. The defaults are configured in <code>application.properties</code> that is bundled and deployed with the release of the software. The files should therefore contain the properties as in the given example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">  database.url=jdbc:postgresql://database.enterprise.com/app
+  database.user.login=appuser01
+  database.user.password=************
+  database.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+  database.hibernate.hbm2ddl.auto=validate</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For further details about <code>database.hibernate.hbm2ddl.auto</code> please see <a href="http://docs.jboss.org/hibernate/orm/5.0/manual/en-US/html/ch03.html#configuration-misc-properties">here</a>. For production and acceptance environments we use the value <code>validate</code> that should be set as default. In case you want to use Oracle RDBMS you can find additional hints <a href="#guide-oracle.adoc#driver" class="xref unresolved">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>If your application supports multiples database types, set <code>spring.profiles.active=XXX</code> in <code>src/main/resources/config/application.properties</code> choose database of your choice. Also, one has to set all the active spring profiles in this <code>application.properties</code> and not in any of the other <code>application.properties</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_database_logging"><a class="anchor" href="#_database_logging"></a>Database Logging</h4>
+<div class="paragraph">
+<p>Add the following properties to <code>application.properties</code> to enable logging of database queries for debugging purposes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.use_sql_comments=true
+spring.jpa.properties.hibernate.format_sql=true</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security"><a class="anchor" href="#_security"></a>Security</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_password_encryption"><a class="anchor" href="#_password_encryption"></a>Password Encryption</h3>
+<div class="paragraph">
+<p>In order to support encrypted passwords in spring-boot <code>application.properties</code> all you need to do is to add <a href="https://github.com/ulisesbocchio/jasypt-spring-boot#jasypt-spring-boot">jasypt-spring-boot</a> as dependency in your <code>pom.xml</code> (please check for recent version <a href="https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter">here</a>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.github.ulisesbocchio&lt;/groupId&gt;
+  &lt;artifactId&gt;jasypt-spring-boot-starter&lt;/artifactId&gt;
+  &lt;version&gt;3.0.3&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will smoothly integrate <a href="http://jasypt.org/">jasypt</a> into your <a href="https://projects.spring.io/spring-boot/">spring-boot</a> application. Read this <a href="https://apereo.atlassian.net/wiki/spaces/CASUM/pages/103261428/HOWTO+Use+Jasypt+to+encrypt+passwords+in+configuration+files">HOWTO</a> to learn how to encrypt and decrypt passwords using jasypt.</p>
+</div>
+<div class="paragraph">
+<p>Next, we give a simple example how to encypt and configure a secret value.
+We use the algorithm <code>PBEWITHHMACSHA512ANDAES_256</code> that provides strong encryption and is the default of <code>jasypt-spring-boot-starter</code>.
+However, different algorithms can be used if perferred (e.g. <code>PBEWITHMD5ANDTRIPLEDES</code>).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>java -cp ${M2_REPO}/org/jasypt/jasypt/1.9.3/jasypt-1.9.3.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI password=masterpassword algorithm=PBEWITHHMACSHA512ANDAES_256 input=secret ivGeneratorClassName=org.jasypt.iv.RandomIvGenerator
+
+----ENVIRONMENT-----------------
+
+Runtime: AdoptOpenJDK OpenJDK 64-Bit Server VM 11.0.5+10
+
+
+
+----ARGUMENTS-------------------
+
+input: secret
+password: masterpassword
+ivGeneratorClassName: org.jasypt.iv.RandomIvGenerator
+algorithm: PBEWITHHMACSHA512ANDAES_256
+
+
+
+----OUTPUT----------------------
+
+PoUxkNjY2juQMCyPu6ic5KJy1XfK+bX9vu2/mPj3pmcO4iydG6mhgZRZSw50z/oC</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Of course the master-password (<code>masterpassword</code>) and the actual password to encrypt (<code>secret</code>) are just examples.
+Please replace them with reasonable strong passwords for your environment.
+Further, if you are using <a href="https://github.com/devonfw/ide">devonfw-ide</a> you can make your life much easier and just type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">devon jasypt encrypt</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/devonfw/ide/blob/master/documentation/jasypt.adoc">jasypt commandlet</a> for details.</p>
+</div>
+<div class="paragraph">
+<p>Now the entire line after the <code>OUTPUT</code> block is your encrypted secret.
+It even contains some random salt so that multiple encryption invocations with the same parameters (<code>ARGUMENTS</code>) will produce a different <code>OUTPUT</code>.</p>
+</div>
+<div class="paragraph">
+<p>The master-password can be configured on your target environment via the property <code>jasypt.encryptor.password</code>. As system properties given on the command-line are visible in the process list, we recommend to use an <code>config/application.yml</code> file only for this purpose (as we recommended to use <code>application.properties</code> for regular configs):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">jasypt:
+    encryptor:
+        password: masterpassword</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Again <code>masterpassword</code> is just an example that your replace with your actual master password.
+Now you are able to put encrypted passwords into your <code>application.properties</code> and specify the algorithm.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">spring.datasource.password=ENC(PoUxkNjY2juQMCyPu6ic5KJy1XfK+bX9vu2/mPj3pmcO4iydG6mhgZRZSw50z/oC)
+jasypt.encryptor.algorithm=PBEWITHHMACSHA512ANDAES_256</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This <code>application.properties</code> file can be version controlled (git-opts) and without knowing the masterpassword nobody is able to decrypt this to get the actual secret back.</p>
+</div>
+<div class="paragraph">
+<p>To prevent jasypt to throw an exception in dev or test scenarios you can simply put this in your local config (<code>src/main/config/application.properties</code> and same for <code>test</code>, see above for details):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">jasypt.encryptor.password=none</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

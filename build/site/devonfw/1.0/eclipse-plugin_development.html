@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/refactorForAntora/modules/ROOT/pages/eclipse-plugin_development.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_eclipse_plugin_development">Eclipse Plugin Development</a>
+<ul class="sectlevel1">
+<li><a href="#_configuration">Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_activator_java">Activator java</a></li>
+<li><a href="#_plugin_xml">Plugin xml</a></li>
+</ul>
+</li>
+<li><a href="#_handlers">Handlers</a>
+<ul class="sectlevel2">
+<li><a href="#_update_templates">Update Templates:</a></li>
+<li><a href="#_adapt_templates">Adapt Templates</a></li>
+<li><a href="#_generate_action_handler">Generate Action Handler</a></li>
+<li><a href="#_health_check_action_handler">Health Check Action Handler</a></li>
+</ul>
+</li>
+<li><a href="#_wizard_development">Wizard Development</a>
+<ul class="sectlevel2">
+<li><a href="#_starting_the_wizard">Starting the Wizard</a></li>
+<li><a href="#_select_files_page_and_select_attributes_page">Select Files Page and Select Attributes Page</a></li>
+</ul>
+</li>
+<li><a href="#_finish_and_perform_generation">Finish and perform generation</a>
+<ul class="sectlevel2">
+<li><a href="#_normal_mode">Normal Mode</a></li>
+<li><a href="#_batch_mode">Batch Mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="_eclipse_plugin_development" class="sect0"><a class="anchor" href="#_eclipse_plugin_development"></a>Eclipse Plugin Development</h1>
+<div class="paragraph">
+<p>The Eclipse plugin is where all the other plugins (<code>JavaPlugin</code>, <code>XMLPlugin</code>, <code>PropertyPlugin</code>, <code>TextMerger</code> and the core) are loaded.</p>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_activator_java"><a class="anchor" href="#_activator_java"></a>Activator java</h3>
+<div class="paragraph">
+<p>Activator class is the start point of the plugin. Activator class is loaded initially and it extends the <code><strong>AbstractUIPlugin</strong></code>, which tells the Eclipse Run-time that this Plugin is someway related to the Eclipse Platform <code>UI</code>.
+An <code>ID</code> for the plugin is defined for configuration at <a href="https://github.com/devonfw/cobigen/wiki/Eclipse-Plugin-Development#plugin-xml">Plugin.xml</a> needs.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">/**
+* The plug-in ID
+*/
+public static final String PLUGIN_ID = "com.capgemini.cobigen.eclipseplugin"; //$NON-NLS-1$</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The overrode <code><em>start()</em></code> method starts the plugin and loads all the sub-plugins using the <strong><code>PluginRegistry</code></strong> from the core for each plug-in:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">PluginRegistry.loadPlugin(PluginActivator.class);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>How the <code>loadPlugin</code> works is explained deeply at <a href="https://github.com/devonfw/cobigen/wiki/Core-Development#2-2-loadplugin">core development</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The activator has the listener <strong><em>`ConfigurationProjectListener.java`</em></strong> from the <strong><code>workbenchcontrol</code></strong> package that checks continuously changes on the templates project</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plugin_xml"><a class="anchor" href="#_plugin_xml"></a>Plugin xml</h3>
+<div class="paragraph">
+<p>Plugin.xml file is used to initialize plugin. Here are defined the commands and the handler for each command, and also in which views should be shown the plugin menu with the commands.</p>
+</div>
+<div class="paragraph">
+<p>The command configuration:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;extension point="org.eclipse.ui.commands"&gt;
+    &lt;command
+        id="com.capgemini.cobigen.eclipseplugin.generate"
+        name="Generate"&gt;
+    &lt;/command&gt;
+    &lt;command
+        id="com.capgemini.cobigen.eclipseplugin.healthy_check"
+        name="Healthy Check"&gt;
+    &lt;/command&gt;
+&lt;/extension&gt;
+&lt;extension point="org.eclipse.ui.handlers"&gt;
+    &lt;handler
+        class="com.capgemini.cobigen.eclipse.workbenchcontrol.handler.GenerateHandler"
+        commandId="com.capgemini.cobigen.eclipseplugin.generate"&gt;
+    &lt;/handler&gt;
+    &lt;handler
+        class="com.capgemini.cobigen.eclipse.workbenchcontrol.handler.HealthCheckHandler"
+        commandId="com.capgemini.cobigen.eclipseplugin.health_check"&gt;
+    &lt;/handler&gt;
+&lt;/extension&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As can be seen, to define the commands, the <code><strong>PLUGIN_ID</strong></code> defined at the <strong><em>Activator.java</em></strong> is used followed of the name of the command.  Then, a handler from <strong>workbenchcontrol.handler</strong> package is assigned for each command.</p>
+</div>
+<div class="paragraph">
+<p>After that, is defined the views where we want to show the CobiGen menu as Popup menu.
+(e.g. Project Explorer view)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;extension point="org.eclipse.ui.menus"&gt;
+    &lt;menuContribution
+        allPopups="false"
+        locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu"&gt;
+        &lt;separator
+            name="com.capgemini.cobigen.eclipseplugin.separator3"
+            visible="true"&gt;
+        &lt;/separator&gt;
+        &lt;menu label="CobiGen"&gt;
+            &lt;command
+                commandId="com.capgemini.cobigen.eclipseplugin.generate"
+                label="Generate..."
+                style="push"&gt;
+            &lt;/command&gt;
+            &lt;command
+                commandId="com.capgemini.cobigen.eclipseplugin.health_check"
+                label="Health Check..."
+                style="push"&gt;
+            &lt;/command&gt;
+        &lt;/menu&gt;
+        &lt;separator
+            name="com.capgemini.cobigen.eclipseplugin.separator4"
+            visible="true"&gt;
+        &lt;/separator&gt;
+    &lt;/menuContribution&gt;
+&lt;/extension&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/howtos/eclipse-plugin/eclipse-plugin_sshot1.png"><img src="_images/images/howtos/eclipse-plugin/eclipse-plugin_sshot1.png" alt="CobiGen Menu" width="450"></a></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_handlers"><a class="anchor" href="#_handlers"></a>Handlers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>workbenchcontrol</strong> package provides to the plugin the listener regarding to the templates project, the listener for logging needs and the handler for the two main use cases (Generate and <code>HealthCheck</code>).</p>
+</div>
+<div class="sect2">
+<h3 id="_update_templates"><a class="anchor" href="#_update_templates"></a>Update Templates:</h3>
+<div class="paragraph">
+<p>Update Template: Select Entity file and right click, then select cobigen Update Templates after that click on download then download successfully will be come.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adapt_templates"><a class="anchor" href="#_adapt_templates"></a>Adapt Templates</h3>
+<div class="paragraph">
+<p>Adapt Template: Select Entity file and right click then select cobigen <em>Adapt Template</em> .If cobigen template jar not available then it download automatically. If Cobigen templates is already then it will override existing template in workspace and click on OK then imported template successfully message will come.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_generate_action_handler"><a class="anchor" href="#_generate_action_handler"></a>Generate Action Handler</h3>
+<div class="paragraph">
+<p>The wizard launching is the responsibility of the generate handler (<strong><em>`GenerateHandler.java`</em></strong>). In case of Generate action and depending of the input provided for that, the handler will create a <code>JavaGeneratorWrapper</code> or <code>XMlGeneratorWrapper</code> object.
+For <code>JavaGeneratorWrapper</code>, if the input is a package or a selection of multiple entity files, the wizard will be launched in batch mode calling the <strong><em>`GenerateBatchWizard.java`</em></strong> from the <strong>wizard.generate</strong> package. But if the input is a single entity java class file, it will be launched in normal mode calling the <strong><em>`GenerateWizard.java`</em></strong> from the same package.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For both Wrapper objects, the inputs will be converted to valid inputs for Freemarker using the <strong><em>`Xml/JavaInputConverter.java`</em></strong> from the <strong>generator.xml/java</strong> package.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/howtos/eclipse-plugin/eclipse-plugin_diag1.png"><img src="_images/images/howtos/eclipse-plugin/eclipse-plugin_diag1.png" alt="Diagram 1" width="450"></a></span></p>
+</div>
+<div class="paragraph">
+<p>For <code>XmlGeneratorWrapper</code>, the input must be a single valid XML file. As only has a single file as input, the <strong><em>`GenerateWizard.java`</em></strong> will be called.</p>
+</div>
+<div class="paragraph">
+<p>In summary, this will be the process for the Generate Action before calling the wizard:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/howtos/eclipse-plugin/eclipse-plugin_diag2.png"><img src="_images/images/howtos/eclipse-plugin/eclipse-plugin_diag2.png" alt="diagram 2" width="450"></a></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_health_check_action_handler"><a class="anchor" href="#_health_check_action_handler"></a>Health Check Action Handler</h3>
+<div class="paragraph">
+<p>At the case of Health Check action, a success/error dialog is shown instead of a wizard itself. The <strong><em>`HealtchCheckHandler.java`</em></strong> will call the execute method of <strong><em>`HealthCheck.java`</em></strong> from the <strong>healthcheck</strong> package. That class will test first if the templates project exists at the workspace opening and error dialog if not by throwing and handling the custom exception <strong><em>`GeneratorProjectNotExistentException.java`</em></strong> from the <strong>common.exceptions</strong> package.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">try {
+    // check configuration project existence
+    //That method will throw GeneratorProjectNotExistentException
+    generatorConfProj = ResourcesPluginUtil.getGeneratorConfigurationProject();
+    ...
+    ..
+    .
+ } catch (GeneratorProjectNotExistentException e) {
+     LOG.warn("Configuration project not found!", e);
+     healthyCheckMessage = firstStep + "NOT FOUND!\n"
+                           + "=&gt; Please import the configuration project into your workspace as stated in the "
+                           + "documentation of CobiGen or in the one of your project.";
+     PlatformUIUtil.openErrorDialog(HEALTH_CHECK_DIALOG_TITLE, healthyCheckMessage, null);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the project exists, <code>HealthCheck</code> will test if the <em>context.xml</em> file is valid. In case of invalid, <code>HealthCheck</code> will throw and handle the <strong><code>InvalidConfigurationException</code></strong> from the core and check if it is possible to upgrade the version of the xml file, showing an <em>UPGRADE</em> button at the dialog. If the upgrade is not possible, will show a dialog message telling the user to check the <em>context.xml</em> file for errors.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">try {
+   //The Cobigen constructor will throw the InvalidConfigurationException
+   new CobiGen(generatorConfProj.getLocationURI());
+    ...
+    ..
+    .
+} catch (InvalidConfigurationException e) {
+    healthyCheckMessage = firstStep + "OK.";
+    healthyCheckMessage += secondStep + "INVALID!";
+    if (generatorConfProj != null) {
+        Path configurationProject = Paths.get(generatorConfProj.getLocationURI());
+        ContextConfigurationVersion currentVersion = new ContextConfigurationUpgrader()
+                                                     .resolveLatestCompatibleSchemaVersion(configurationProject);
+        if (currentVersion != null) {
+            // upgrade possible
+            healthyCheckMessage += "\n\nAutomatic upgrade of the context configuration available.\n" + "Detected: "
+                                   + currentVersion + " / Currently Supported: "
+                                   + ContextConfigurationVersion.getLatest();
+            boolean upgraded = openErrorDialogWithContextUpgrade(healthyCheckMessage, configurationProject);
+            if (upgraded) {
+                // re-run Health Check
+                Display.getCurrent().asyncExec(new Runnable() {
+                    @Override
+                    public void run() {
+                        execute();
+                    }
+                });
+            }
+            return;
+        } else {
+            healthyCheckMessage += "\n\nNo automatic upgrade of the context configuration possible. "
+                                   + "Maybe just a mistake in the context configuration?";
+            healthyCheckMessage += "\n\n=&gt; " + e.getLocalizedMessage();
+        }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>At this point, if all is correct, the user can choose to finish the <code>HealtCheck</code> process or run the Advance Health Check running the <strong><em>`AdvancedHealthCheck.java`</em></strong> to check the the validity of template configurations. That check has three steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Get configuration resources</strong><br>
+Will get the template configuration file from the template folder corresponding to the input of the plugin provided by the triggers defined at the <em>context.xml</em> file for that input.</p>
+</li>
+<li>
+<p><strong>Determine current state</strong><br>
+Will check if the template configuration file exists, if it is accessible and if the version is up-to-date allowing upgrading if not.</p>
+</li>
+<li>
+<p><strong>Show current status to the user</strong><br>
+Will call the <strong><em>`AdvancedHealthCheckDialog.java`</em></strong> showing a dialog with the current state of each configuration template, showing an <em>UPGRADE</em> button if the configuration version can be upgraded.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wizard_development"><a class="anchor" href="#_wizard_development"></a>Wizard Development</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_starting_the_wizard"><a class="anchor" href="#_starting_the_wizard"></a>Starting the Wizard</h3>
+<div class="paragraph">
+<p>To open a wizard, use the <strong><code>WizardDialog</code></strong> class from the <strong><code>org.eclipse.jface.wizard</code></strong> package.
+The plugin does that at <strong><em>`GenerateHandler.java`</em></strong> as previously explained <a href="https://github.com/devonfw/cobigen/wiki/Eclipse-Plugin-Development#3-1-generate-action-handler">here</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">if (((IStructuredSelection) sel).size() &gt; 1 || (((IStructuredSelection) sel).size() == 1)
+     &amp;&amp; ((IStructuredSelection) sel).getFirstElement() instanceof IPackageFragment) {
+     WizardDialog wiz = new WizardDialog(HandlerUtil.getActiveShell(event),
+                        new GenerateBatchWizard(generator));
+     wiz.setPageSize(new Point(800, 500));
+     wiz.open();
+     LOG.info("Generate Wizard (Batchmode) opened.");
+} else if (((IStructuredSelection) sel).size() == 1) {
+     WizardDialog wiz = new WizardDialog(HandlerUtil.getActiveShell(event), new GenerateWizard(generator));
+     wiz.setPageSize(new Point(800, 500));
+     wiz.open();
+     LOG.info("Generate Wizard opened.");
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Adapt Template: Select Entity file and right click then select cobigen  Adapt Template.If cobigen template  jar not available then it download automatically.If Cobigen templates is already then it will override existing template in workspace and click on OK then imported template successfully message will come .If Template not available the it automatically
+=== Wizard and <code>WizardPages</code></p>
+</div>
+<div class="paragraph">
+<p>The Wizard class from the <strong><code>org.eclipse.jface.wizard</code></strong> package provides the functionality to build custom wizards. This class controls the navigation between the different pages and provides the base user interface, for example, an area for error and information messages.</p>
+</div>
+<div class="paragraph">
+<p>A wizard contains one or several pages of the type <strong><code>WizardPage</code></strong>. Such a page is added to a Wizard object via the <code><em>addPage()</em></code> method.</p>
+</div>
+<div class="paragraph">
+<p>A <strong><code>WizardPage</code></strong> must create a new Composite in its <code><em>createControl()</em></code> method. This new Composite must use the Composite of the method parameter as parent. It also must call the <code><em>setControl()</em></code> method with this new Composite as parameter. If this is omitted, Eclipse will throw an error.</p>
+</div>
+<div class="paragraph">
+<p>On the CobiGen eclipse-plugin project:
+<span class="image"><a class="image" href="images/howtos/eclipse-plugin/eclipse-plugin_diag3.png"><img src="_images/images/howtos/eclipse-plugin/eclipse-plugin_diag3.png" alt="Diagram 3" width="450"></a></span></p>
+</div>
+<div class="paragraph">
+<p>The <code>WizardPage</code> class defines the <code>canFlipToNextPage()</code> and <code>setPageComplete()</code> methods to control if the <em>NEXT</em> or the <em>FINISH</em> button in the wizard becomes active.</p>
+</div>
+<div class="paragraph">
+<p>The Wizard class defines the <code>canFinish()</code> method in which you can define if the wizard can be completed. This last method is overrode at <code><strong><em>AbstractGenerateWizard.java</em></strong></code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_select_files_page_and_select_attributes_page"><a class="anchor" href="#_select_files_page_and_select_attributes_page"></a>Select Files Page and Select Attributes Page</h3>
+<div class="paragraph">
+<p>In case that has been launched in batch mode, the wizard only will have the select increment and files page (initialized and configured at <strong><em>`SelectFilePage.java`</em></strong> from the package <strong>wizard.common</strong>)</p>
+</div>
+<div class="paragraph">
+<p>In case of normal mode with an entity java class as input, the wizard will have an optional second page provided for <strong><em>`SelectAttributesPage.java`</em></strong> of the package <strong>wizard.generate.common</strong> for selecting attributes of the entity that will be used for the generation. The page is optional because the user can finish the wizard and perform the generation from the first page.</p>
+</div>
+<div class="paragraph">
+<p>The pages of the CobiGen wizard is composed essentially for container. The containers have a <code>CheckBoxTreeViewer</code> object, a content provider object and a listener (that defines the behavior of the wizard when a check box is checked or unchecked)</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/howtos/eclipse-plugin/eclipse-plugin_diag4.png"><img src="_images/images/howtos/eclipse-plugin/eclipse-plugin_diag4.png" alt="Diagram 4" width="450"></a></span></p>
+</div>
+<div class="sect3">
+<h4 id="_select_files_page"><a class="anchor" href="#_select_files_page"></a>Select Files Page</h4>
+<div class="paragraph">
+<p>The first page (<em>`SelectFilesPage`</em>) is composed by two containers:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Left container - Increment Selector</strong><br></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Created as a <strong><code>CustomizedCheckBoxTreeViewer</code></strong></p>
+</li>
+<li>
+<p>The content provider is a <strong><code>SelectIncrementContentProvider</code></strong></p>
+</li>
+<li>
+<p>Setting the input will upgrade the labels to show</p>
+</li>
+<li>
+<p>Set <strong><code>CheckStateListener</code></strong> as listener</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>incrementSelector = new CustomizedCheckboxTreeViewer(containerLeft);
+incrementSelector.setContentProvider(new SelectIncrementContentProvider());
+incrementSelector.setInput(cobigenWrapper.getAllIncrements());
+gd = new GridData(GridData.FILL_BOTH);
+gd.grabExcessVerticalSpace = true;
+incrementSelector.getTree().setLayoutData(gd);
+CheckStateListener checkListener = new CheckStateListener(cobigenWrapper, this, batch);
+incrementSelector.addCheckStateListener(checkListener);incrementSelector.expandAll();</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Right Container - Resources to be generated</strong><br></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Created as <strong><code>SimulatedCheckBoxTreeViewer</code></strong> if the Customize button is not enabled or as <strong><code>CustomizedCheckBoxTreeViewer</code></strong> if it is.</p>
+</li>
+<li>
+<p><strong><code>SelectFileContentProvider</code></strong> as content provider.</p>
+</li>
+<li>
+<p><strong><code>SelectFileLabelProvider</code></strong> as label provider</p>
+</li>
+<li>
+<p>Generation target project as input</p>
+</li>
+<li>
+<p>Set <strong><code>CheckStateListener</code></strong> as listener</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To know how a content provider works check the official documentation <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjface%2Fviewers%2FITreeContentProvider.html">here</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_select_attributes_page"><a class="anchor" href="#_select_attributes_page"></a>Select Attributes Page</h4>
+<div class="paragraph">
+<p>As previously explained, this page is optional, the user can press the Finish button at the previous page. Nevertheless, this page can only be accessed in case of a single entity file as input, never on batch mode.</p>
+</div>
+<div class="paragraph">
+<p>The container is composed by a single <strong><code>CheckBoxTableViewer</code></strong> with a <em>`SelectAttributesContentProvider`</em> as content provider and a <em>`SelectAttributesLabelProvider`</em> as label provider.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_finish_and_perform_generation"><a class="anchor" href="#_finish_and_perform_generation"></a>Finish and perform generation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When the user press the Finish button, the generation process will begin. For that, a generation job will be created using as argument a list of templates to be generated retrieving them from the user selection of the first page (Select Files Page).
+The generate wizard will use the <strong><em>`GenerateSelectionJob.java`</em></strong> or the <strong><em>`GenerateBatchSelectionJob.java`</em></strong> for normal mode or batch mode respectively.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/howtos/eclipse-plugin/eclipse-plugin_diag5.png"><img src="_images/images/howtos/eclipse-plugin/eclipse-plugin_diag5.png" alt="Diagram 5" width="450"></a></span></p>
+</div>
+<div class="sect2">
+<h3 id="_normal_mode"><a class="anchor" href="#_normal_mode"></a>Normal Mode</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Override
+protected void generateContents(ProgressMonitorDialog dialog) {
+    if (cobigenWrapper instanceof JavaGeneratorWrapper) {
+        for (String attr : page2.getUncheckedAttributes()) {
+            ((JavaGeneratorWrapper) cobigenWrapper).removeFieldFromModel(attr);
+        }
+    }
+    //Here are retrieved the templates to use for the generation selected at the first page
+    GenerateSelectionJob job = new GenerateSelectionJob(cobigenWrapper, page1.getTemplatesToBeGenerated());
+    try {
+        dialog.run(true, false, job);
+    } catch (InvocationTargetException e) {
+        LOG.error("An internal error occurred while invoking the generation job.", e);
+    } catch (InterruptedException e) {
+        LOG.warn("The working thread doing the generation job has been interrupted.", e);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>dialog.run(true, false, job)</code> method will call the <code>performGeneration()</code> method from <em>`GenerateSelectionJob.java`</em></p>
+</div>
+<div class="paragraph">
+<p>Calling the <code>generate()</code> method from the <strong><code>CobiGenWrapper</code></strong> will call the method with the same name from the core and the generation will begin.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_batch_mode"><a class="anchor" href="#_batch_mode"></a>Batch Mode</h3>
+<div class="paragraph">
+<p>At batch mode, the generation job will be instantiated depending if the selection was a container or a multiple files selection.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Override
+protected void generateContents(ProgressMonitorDialog dialog) {
+    List&lt;TemplateTo&gt; templatesToBeGenerated = page1.getTemplatesToBeGenerated();
+    List&lt;String&gt; templateIds = Lists.newLinkedList();
+    for (TemplateTo template : templatesToBeGenerated) {
+        templateIds.add(template.getId());
+    }
+    GenerateBatchSelectionJob job;
+    if (container == null) {
+        job = new GenerateBatchSelectionJob(cobigenWrapper, cobigenWrapper.getTemplates(templateIds),
+                  inputTypes);
+    } else {
+        job = new GenerateBatchSelectionJob(cobigenWrapper, cobigenWrapper.getTemplates(templateIds),
+                  container);
+    }
+    try {
+        dialog.run(true, false, job);
+    } catch (InvocationTargetException e) {
+        LOG.error("An internal error occurred while invoking the generation batch job.", e);
+    } catch (InterruptedException e) {
+        LOG.warn("The working thread doing the generation job has been interrupted.", e);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>dialog.run(true, false, job)</code> method will call the <code>performGeneration()</code> method from <em>`GenerateBatchSelectionJob.java`</em></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

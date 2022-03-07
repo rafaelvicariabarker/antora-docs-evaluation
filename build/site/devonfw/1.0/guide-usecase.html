@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-usecase.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_usecase">UseCase</a></li>
+<li><a href="#_find">Find</a></li>
+<li><a href="#_manage">Manage</a></li>
+<li><a href="#_custom">Custom</a></li>
+<li><a href="#_implementation">Implementation</a></li>
+<li><a href="#_internal_use_case">Internal use case</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_usecase"><a class="anchor" href="#_usecase"></a>UseCase</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A use-case is a small unit of the <a href="guide-logic-layer.html" class="xref page">logic layer</a> responsible for an operation on a particular <a href="guide-jpa.html#entity" class="xref page">entity</a> (business object).
+We leave it up to you to decide whether you want to define an interface (API) for each use-case or provide an implementation directly.</p>
+</div>
+<div class="paragraph">
+<p>Following our architecture-mapping (for <a href="guide-structure-classic.html#architecture-mapping" class="xref page">classic</a> and <a href="guide-structure-modern.html#architecture-mapping" class="xref page">modern</a> project), use-cases are named <code>Uc«Operation»«BusinessObject»[Impl]</code>. The prefix <code>Uc</code> stands for use-case and allows to easily find and identify them in your IDE. The <code>«Operation»</code> stands for a verb that is operated on the entity identified by <code>«BusinessObject»</code>.
+For <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> we use the standard operations <code>Find</code> and <code>Manage</code> that can be generated by <a href="https://github.com/devonfw/cobigen">CobiGen</a>. This also separates read and write operations (e.g. if you want to do CQSR, or to configure read-only transactions for read operations).</p>
+</div>
+<div class="paragraph">
+<p>In our example, we choose to define an interface for each use-case. We also use <code>*To</code> to refer to any type of transfer object. Please follow our <a href="guide-transferobject.html" class="xref page">guide</a> to understand more about different types of transfer object e.g. Eto, Dto, Cto</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_find"><a class="anchor" href="#_find"></a>Find</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>UcFind«BusinessObject»</code> defines all read operations to retrieve and search the <code>«BusinessObject»</code>.
+Here is an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface UcFindBooking {
+  //*To = Eto, Dto or Cto
+  Booking*To findBooking(Long id);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manage"><a class="anchor" href="#_manage"></a>Manage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>UcManage«BusinessObject»</code> defines all CRUD write operations (create, update and delete) for the <code>«BusinessObject»</code>.
+Here is an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface UcManageBooking {
+
+  //*To = Eto, Dto or Cto
+  Booking*To saveBooking(Booking*To booking);
+
+  void deleteBooking(Long id);
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_custom"><a class="anchor" href="#_custom"></a>Custom</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Any other non CRUD operation <code>Uc«Operation»«BusinessObject»</code> uses any other custom verb for <code>«Operation»</code>.
+Typically, such custom use-cases only define a single method.
+Here is an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface UcApproveBooking {
+
+  //*To = Eto, Dto or Cto
+  void approveBooking(Booking*To booking);
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The implementation should carry its own name and the suffix <code>Impl</code> and is annotated with <code>@Named</code> and <code>@ApplicationScoped</code>. It will need access to the persistent data which is done by injecting the corresponding repository (or DAO). Furthermore, it shall not expose persistent entities from the data access layer and has to map them to transfer objects using the bean-mapper. Please refer to our <a href="guide-beanmapping.html" class="xref page">bean mapping</a>, <a href="guide-transferobject.html" class="xref page">transfer object</a> and <a href="guide-dependency-injection.html" class="xref page">dependency injection</a> documentation for more information.
+Here is an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@ApplicationScoped
+@Named
+public class UcManageBookingImpl implements UcManageBooking {
+
+  @Inject
+  private BookingRepository bookingRepository;
+
+  @Override
+  public void deleteBooking(Long id) {
+
+    LOG.debug("Delete Booking with id {} from database.", id);
+    this.bookingRepository.deleteById(id);
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The use-cases can then be injected directly into the service.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Named("BookingmanagementRestService")
+@Validated
+public class BookingmanagementRestServiceImpl implements BookingmanagementRestService {
+
+  @Inject
+  private UcFindBooking ucFindBooking;
+
+  @Inject
+  private UcManageBooking ucManageBooking;
+
+  @Inject
+  private UcApproveBooking ucApproveBooking;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_internal_use_case"><a class="anchor" href="#_internal_use_case"></a>Internal use case</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes, a component with multiple related entities and many use-cases needs to reuse business logic internally.
+Of course, this can be exposed as an official use-case API but this will imply using transfer-objects (ETOs) instead of entities. In some cases, this is undesired e.g. for better performance to prevent unnecessary mapping of entire collections of entities.
+In the first place, you should try to use abstract base implementations providing reusable methods the actual use-case implementations can inherit from.
+If your business logic is even more complex and you have multiple aspects of business logic to share and reuse but also run into multi-inheritance issues, you may also just create use-cases that have their interface located in the <code>impl</code> scope package right next to the implementation (or you may just skip the interface). In such a case, you may define methods that directly take or return entity objects.
+To avoid confusion with regular use-cases, we recommend to add the <code>Internal</code> suffix to the type name leading to <code>Uc«Operation»«BusinessObject»Internal[Impl]</code>.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

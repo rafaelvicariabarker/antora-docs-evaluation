@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/refactorForAntora/modules/ROOT/pages/howto-devonfw-adapt_template.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_adapt_templates_from_cobigen">Adapt Templates from Cobigen</a>
+<ul class="sectlevel1">
+<li><a href="#_adapt_cobigen_templates">Adapt CobiGen_Templates</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<!-- toc disabled -->
+</div>
+</div>
+<h1 id="_adapt_templates_from_cobigen" class="sect0"><a class="anchor" href="#_adapt_templates_from_cobigen"></a>Adapt Templates from Cobigen</h1>
+<div class="sect1">
+<h2 id="_adapt_cobigen_templates"><a class="anchor" href="#_adapt_cobigen_templates"></a>Adapt CobiGen_Templates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After following this tutorial, you will have the CobiGen_Templates downloaded on your local machine. To import these templates you need to do the following:</p>
+</div>
+<div class="paragraph">
+<p>Right click in any part of the package explorer, then click on CobiGen &#8594; Adapt templates</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/images/howtos/e2e_gen/image56.png" alt="image56"></span></p>
+</div>
+<div class="paragraph">
+<p>Click <em>Ok</em>:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/images/howtos/e2e_gen/image57.png" alt="image57"></span></p>
+</div>
+<div class="paragraph">
+<p>Now the CobiGen_Templates project will be automatically imported into your workspace, as shown on the image below:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/images/howtos/e2e_gen/image58.png" alt="image58"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/images/howtos/e2e_gen/image59.png" alt="image59"></span></p>
+</div>
+<div class="paragraph">
+<p>Now you just need to change the Java version of the project to JRE 1.8. Right click on the JRE system library, and then on <em>Properties:</em></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/images/howtos/e2e_gen/image60.png" alt="image60"></span></p>
+</div>
+<div class="paragraph">
+<p>Now change the version to Java 1.8
+<span class="image"><img src="_images/images/howtos/e2e_gen/image61.png" alt="image61"></span></p>
+</div>
+<div class="paragraph">
+<p>Now you have successfully imported the CobiGen templates. If you want to edit them, you will find them in the folder <em>src/main/templates.</em> For instance, the Java templates are located here:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/images/howtos/e2e_gen/image62.png" alt="image62"></span></p>
+</div>
+<div class="paragraph">
+<p>Now you can adapt the templates as much as you want. Documentation about this can be found on:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-URL hljs" data-lang="URL">https://github.com/devonfw/tools-cobigen/wiki/Guide-to-the-Reader</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

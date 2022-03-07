@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/refactorForAntora/modules/ROOT/pages/cobigen-core_configuration.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_configuration">Configuration</a>
+<ul class="sectlevel1">
+<li><a href="#_context_configuration">Context Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_trigger_node">Trigger Node</a></li>
+<li><a href="#_matcher_node">Matcher Node</a></li>
+<li><a href="#_variable_assignment_node">Variable Assignment Node</a></li>
+<li><a href="#_container_matcher_node">Container Matcher Node</a></li>
+</ul>
+</li>
+<li><a href="#_templates_configuration">Templates Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_template_node">Template Node</a></li>
+<li><a href="#_template_scan_node">Template Scan Node</a></li>
+<li><a href="#_template_extension_node">Template Extension Node</a></li>
+<li><a href="#_increment_node">Increment Node</a></li>
+</ul>
+</li>
+<li><a href="#_java_template_logic">Java Template Logic</a></li>
+<li><a href="#_template_properties">Template Properties</a>
+<ul class="sectlevel2">
+<li><a href="#_multi_module_support_or_template_target_path_redirects">Multi module support or template target path redirects</a></li>
+</ul>
+</li>
+<li><a href="#_basic_template_model">Basic Template Model</a></li>
+<li><a href="#_plugin_mechanism">Plugin Mechanism</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- toc disabled -->
+<h1 id="_configuration" class="sect0"><a class="anchor" href="#_configuration"></a>Configuration</h1>
+<div class="paragraph">
+<p>CobiGen is maintaining a home directory further referenced in this documentation as <code>$cghome</code>, which is used to maintain temporary or transient data. The home folder is determined with the following location fall-back:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>System environment variable <code>COBIGEN_HOME</code> (e.g. C:\project\ide\conf\cobigen-home)</p>
+</li>
+<li>
+<p><code>.cobigen</code> directory in OS user home (e.g. ~/.cobigen)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The actual configuration of CobiGen is maintained by a single folder or jar. The location can be configured with respect to the implemented configuration fall-back mechanism. CobiGen will search for the location of the configuration in the following order:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A configuration jar or directory, which is passed to CobiGen by the Maven or Eclipse integration or any other program using the CobiGen programming interface:
+1.1. the Maven integration allows to configure a jar dependency to be included in the currently running classpath <em>(of interest for <a href="cobigen-maven_configuration#plugin-injection-since-v3">maven configuration</a></em>
+1.2. the Eclipse integration allows to specify a <code>CobiGen_Templates</code> project in the eclipse workspace</p>
+</li>
+<li>
+<p>The file <code>$cghome/.cobigen</code> exists and the property <code>templates</code> is set to a valid configuration (e.g. <code>templates=C:\project\ide\conf\templates</code> or <code>templates=C:\project\ide\conf\templates.jar</code>) <em>Hint: Check for log entry like <code>Value of property templates in $cghome/.cobigen is invalid</code> to identify an invalid configuration which is not taken up as expected</em></p>
+</li>
+<li>
+<p>The folder <code>$cghome/templates/CobiGen_Templates</code> exists</p>
+</li>
+<li>
+<p>The lexicographical sorted first configuration jar of the following path pattern <code>$cghome/templates/templates-([^-]+)-(\\d+\\.?)+.jar</code> if exists (e.g. <code>templates-devon4j-2020.04.001</code>)</p>
+</li>
+<li>
+<p>CobiGen will automatically download the latest jar configuration from maven central with <code>groupId</code> <code>com.devonfw.cobigen</code> and <code>artifactId</code> <code>templates-devon4j</code> and take it like described in 4.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Within the configuration jar or directory you will find the following structure:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">CobiGen_Templates
+ |- templateFolder1
+    |- templates.xml
+ |- templateFolder2
+    |- templates.xml
+ |- context.xml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Find some examples <a href="https://github.com/devonfw/cobigen/tree/master/cobigen-templates">here</a>.</p>
+</div>
+<div class="sect1">
+<h2 id="_context_configuration"><a class="anchor" href="#_context_configuration"></a>Context Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The context configuration (<code>context.xml</code>) always has the following root structure:</p>
+</div>
+<div class="listingblock">
+<div class="title">Context Configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;contextConfiguration xmlns="http://capgemini.com"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      version="1.0"&gt;
+    &lt;triggers&gt;
+        ...
+    &lt;/triggers&gt;
+&lt;/contextConfiguration&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The context configuration has a <code>version</code> attribute, which should match the XSD version the context configuration is an instance of. It should not state the version of the currently released version of CobiGen. This attribute should be maintained by the context configuration developers. If configured correctly, it will provide a better feedback for the user and thus higher user experience. Currently there is only the version v1.0. For further version there will be a changelog later on.</p>
+</div>
+<div class="sect2">
+<h3 id="_trigger_node"><a class="anchor" href="#_trigger_node"></a>Trigger Node</h3>
+<div class="paragraph">
+<p>As children of the <code>&lt;triggers&gt;</code> node you can define different triggers. By defining a <code>&lt;trigger&gt;</code> you declare a mapping between special inputs and a <code>templateFolder</code>, which contains all templates, which are worth to be generated with the given input.</p>
+</div>
+<div class="listingblock">
+<div class="title">trigger configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;trigger id="..." type="..." templateFolder="..." inputCharset="UTF-8" &gt;
+    ...
+&lt;/trigger&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The attribute <code>id</code> should be unique within an context configuration. It is necessary for efficient internal processing.</p>
+</li>
+<li>
+<p>The attribute <code>type</code> declares a specific <em>trigger interpreter</em>, which might be provided by additional plug-ins. A <em>trigger interpreter</em> has to provide an <em>input reader</em>, which reads specific inputs and creates a template object model out of it to be processed by the FreeMarker template engine later on. Have a look at the plug-in&#8217;s documentation of your interest and see, which trigger types and thus inputs are currently supported.</p>
+</li>
+<li>
+<p>The attribute <code>templateFolder</code> declares the relative path to the template folder, which will be used if the trigger gets activated.</p>
+</li>
+<li>
+<p>The attribute <code>inputCharset</code> <em>(optional)</em> determines the charset to be used for reading any input file.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_matcher_node"><a class="anchor" href="#_matcher_node"></a>Matcher Node</h3>
+<div class="paragraph">
+<p>A trigger will be activated if its matchers hold the following formula:</p>
+</div>
+<div class="paragraph">
+<p><code>!(NOT || &#8230;&#8203; || NOT) &amp;&amp; AND &amp;&amp; &#8230;&#8203; &amp;&amp; AND &amp;&amp; (OR || &#8230;&#8203; || OR)</code></p>
+</div>
+<div class="paragraph">
+<p>Whereas NOT/AND/OR describes the <code>accumulationType</code> of a <em>matcher</em> (see below) and e.g. <code>NOT</code> means 'a <em>matcher</em> with <code>accumulationType</code> NOT matches a given input'. Thus additionally to an <em>input reader</em>, a <em>trigger interpreter</em> has to define at least one set of <em>matchers</em>, which are satisfiable, to be fully functional. A <code>&lt;matcher&gt;</code> node declares a specific characteristics a valid input should have.</p>
+</div>
+<div class="listingblock">
+<div class="title">Matcher Configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;matcher type="..." value="..." accumulationType="..."&gt;
+    ...
+&lt;/matcher&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The attribute <code>type</code> declares a specific type of <em>matcher</em>, which has to be provided by the surrounding <em>trigger interpreter</em>. Have a look at the plug-in&#8217;s documentation, which also provides the used trigger type for more information about valid matcher and their functionalities.</p>
+</li>
+<li>
+<p>The attribute <code>value</code> might contain any information necessary for processing the <em>matcher&#8217;s</em> functionality. Have a look at the relevant plug-in&#8217;s documentation for more detail.</p>
+</li>
+<li>
+<p>The attribute <code>accumulationType</code> <em>(optional)</em> specifies how the matcher will influence the trigger activation. Valid values are:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>OR (default): if any matcher of accumulation type OR <em>matches</em>, the trigger will be activated as long as there are no further matchers with different accumulation types</p>
+</li>
+<li>
+<p>AND: if any matcher with AND accumulation type does <em>not match</em>, the trigger will <em>not</em> be activated</p>
+</li>
+<li>
+<p>NOT: if any matcher with NOT accumulation type <em>matches</em>, the trigger will <em>not</em> be activated</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_variable_assignment_node"><a class="anchor" href="#_variable_assignment_node"></a>Variable Assignment Node</h3>
+<div class="paragraph">
+<p>Finally, a <code>&lt;matcher&gt;</code> node can have multiple <code>&lt;variableAssignment&gt;</code> nodes as children. <em>Variable assignments</em> allow to parametrize the generation by additional values, which will be added to the object model for template processing. The variables declared using <em>variable assignments</em>, will be made accessible in the templates.xml as well in the object model for template processing via the namespace <code>variables.*</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Complete Configuration Pattern</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;contextConfiguration xmlns="http://capgemini.com"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      version="1.0"&gt;
+    &lt;triggers&gt;
+        &lt;trigger id="..." type="..." templateFolder="..."&gt;
+            &lt;matcher type="..." value="..."&gt;
+                &lt;variableAssignment type="..." key="..." value="..." /&gt;
+            &lt;/matcher&gt;
+        &lt;/trigger&gt;
+    &lt;/triggers&gt;
+&lt;/contextConfiguration&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The attribute <code>type</code> declares the type of <em>variable assignment</em> to be processed by the <em>trigger interpreter</em> providing plug-in. This attribute enables <em>variable assignments</em> with different dynamic value resolutions.</p>
+</li>
+<li>
+<p>The attribute <code>key</code> declares the namespace under which the resolved value will be accessible later on.</p>
+</li>
+<li>
+<p>The attribute <code>value</code> might declare a constant value to be assigned or any hint for value resolution done by the <em>trigger interpreter</em> providing plug-in. For instance, if <code>type</code> is <code>regex</code>, then on <code>value</code> you will assign the matched group number by the regex (1, 2, 3&#8230;&#8203;)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_container_matcher_node"><a class="anchor" href="#_container_matcher_node"></a>Container Matcher Node</h3>
+<div class="paragraph">
+<p>The <code>&lt;containerMatcher&gt;</code> node is an additional matcher for matching containers of multiple input objects.
+Such a container might be a package, which encloses multiple types or---more generic---a model, which encloses multiple elements. A container matcher can be declared side by side with other matchers:</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>ContainerMatcher</code> Declaration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;contextConfiguration xmlns="http://capgemini.com"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      version="1.0"&gt;
+    &lt;triggers&gt;
+        &lt;trigger id="..." type="..." templateFolder="..." &gt;
+            &lt;containerMatcher type="..." value="..." retrieveObjectsRecursively="..." /&gt;
+            &lt;matcher type="..." value="..."&gt;
+                &lt;variableAssignment type="..." variable="..." value="..." /&gt;
+            &lt;/matcher&gt;
+        &lt;/trigger&gt;
+    &lt;/triggers&gt;
+&lt;/contextConfiguration&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The attribute <code>type</code> declares a specific type of <em>matcher</em>, which has to be provided by the surrounding <em>trigger interpreter</em>. Have a look at the plug-in&#8217;s documentation, which also provides the used trigger type for more information about valid matcher and their functionalities.</p>
+</li>
+<li>
+<p>The attribute <code>value</code> might contain any information necessary for processing the <em>matcher&#8217;s</em> functionality. Have a look at the relevant plug-in&#8217;s documentation for more detail.</p>
+</li>
+<li>
+<p>The attribute <code>retrieveObjectsRecursively</code> <em>(optional boolean)</em> states, whether the children of the input should be retrieved recursively to find matching inputs for generation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The semantics of a container matchers are the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A <code>&lt;containerMatcher&gt;</code> does not declare any <code>&lt;variableAssignment&gt;</code> nodes</p>
+</li>
+<li>
+<p>A <code>&lt;containerMatcher&gt;</code> matches an input if and only if one of its enclosed elements satisfies a set of <code>&lt;matcher&gt;</code> nodes of the same <code>&lt;trigger&gt;</code></p>
+</li>
+<li>
+<p>Inputs, which match a <code>&lt;containerMatcher&gt;</code> will cause a generation for each enclosed element</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_templates_configuration"><a class="anchor" href="#_templates_configuration"></a>Templates Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The template configuration (<code>templates.xml</code>) specifies, which templates exist and under which circumstances it will be generated. There are two possible configuration styles:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure the template meta-data for each template file by <a href="#template-node">template nodes</a></p>
+</li>
+<li>
+<p><em>(since cobigen-core-v1.2.0)</em>: Configure <a href="#templatescan-node"><code>templateScan</code> nodes</a> to automatically retrieve a default configuration for all files within a configured folder and possibly modify the automatically configured templates using <a href="#templateextension-node"><code>templateExtension</code> nodes</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To get an intuition of the idea, the following will initially describe the first (more extensive) configuration style. Such an configuration root structure looks as follows:</p>
+</div>
+<div class="listingblock">
+<div class="title">Extensive Templates Configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;templatesConfiguration xmlns="http://capgemini.com"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        version="1.0" templateEngine="FreeMarker"&gt;
+    &lt;templates&gt;
+            ...
+    &lt;/templates&gt;
+    &lt;increments&gt;
+            ...
+    &lt;/increments&gt;
+&lt;/templatesConfiguration&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The root node <code>&lt;templatesConfiguration&gt;</code> specifies two attributes. The attribute <code>version</code> provides further usability support and will be handled analogous to the <code>version</code> attribute of the <a href="#context-configuration">context configuration</a>. The optional attribute <code>templateEngine</code> specifies the template engine to be used for processing the templates (<em>since cobigen-core-4.0.0</em>). By default it is set to FreeMarker.</p>
+</div>
+<div class="paragraph">
+<p>The node <code>&lt;templatesConfiguration&gt;</code> allows two different grouping nodes as children. First, there is the <code>&lt;templates&gt;</code> node, which groups all declarations of templates. Second, there is the <code>&lt;increments&gt;</code> node, which groups all declarations about increments.</p>
+</div>
+<div class="sect2">
+<h3 id="_template_node"><a class="anchor" href="#_template_node"></a>Template Node</h3>
+<div class="paragraph">
+<p>The <code>&lt;templates&gt;</code> node groups multiple <code>&lt;template&gt;</code> declarations, which enables further generation. Each template file should be registered at least once as a template to be considered.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example Template Configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;templates&gt;
+    &lt;template name="..." destinationPath="..." templateFile="..." mergeStrategy="..." targetCharset="..." /&gt;
+    ...
+&lt;/templates&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A template declaration consist of multiple information:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The attribute <code>name</code> specifies an unique ID within the templates configuration, which will later be reused in the <a href="#increment-node">increment definitions</a>.</p>
+</li>
+<li>
+<p>The attribute <code>destinationPath</code> specifies the destination path the template will be generated to. It is possible to use all variables defined by <a href="#variableassignment-node">variable assignments</a> within the path declaration using the FreeMarker syntax <code>${variables.*}</code>. While resolving the variable expressions, each dot within the value will be automatically replaced by a slash. This behavior is accounted for by the transformations of Java packages to paths as CobiGen has first been developed in the context of the Java world. Furthermore, the destination path variable resolution provides the following additional built-in operators analogue to the FreeMarker syntax:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>?cap_first</code> analogue to <a href="http://freemarker.org/docs/ref_builtins_string.html#ref_builtin_cap_first">FreeMarker</a></p>
+</li>
+<li>
+<p><code>?uncap_first</code> analogue to <a href="http://freemarker.org/docs/ref_builtins_string.html#ref_builtin_uncap_first">FreeMarker</a></p>
+</li>
+<li>
+<p><code>?lower_case</code> analogue to <a href="http://freemarker.org/docs/ref_builtins_string.html#ref_builtin_lower_case">FreeMarker</a></p>
+</li>
+<li>
+<p><code>?upper_case</code> analogue to <a href="http://freemarker.org/docs/ref_builtins_string.html#ref_builtin_upper_case">FreeMarker</a></p>
+</li>
+<li>
+<p><code>?replace(regex, replacement)</code> - Replaces all occurrences of the regular expression <code>regex</code> in the variable&#8217;s value with the given <code>replacement</code> string. (since cobigen-core v1.1.0)</p>
+</li>
+<li>
+<p><code>?removeSuffix(suffix)</code> - Removes the given <code>suffix</code> in the variable&#8217;s value iff the variable&#8217;s value ends with the given <code>suffix</code>. Otherwise nothing will happen. (since cobigen-core v1.1.0)</p>
+</li>
+<li>
+<p><code>?removePrefix(prefix)</code> - Analogue to <code>?removeSuffix</code> but removes the prefix of the variable&#8217;s value. (since cobigen-core v1.1.0)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The attribute <code>templateFile</code> describes the relative path dependent on the template folder specified in the <a href="#trigger-node">trigger</a> to the template file to be generated.</p>
+</li>
+<li>
+<p>The attribute <code>mergeStrategy</code> <em>(optional)</em> can be <em>optionally</em> specified and declares the type of merge mechanism to be used, when the <code>destinationPath</code> points to an already existing file. CobiGen by itself just comes with a <code>mergeStrategy</code> <code>override</code>, which enforces file regeneration in total. Additional available merge strategies have to be obtained from the different plug-in&#8217;s documentations (see here for <a href="cobigen-javaplugin#merger-extensions">java</a>, <a href="cobigen-xmlplugin#merger-extensions">XML</a>, <a href="cobigen-propertyplugin#merger-extensions">properties</a>, and <a href="cobigen-textmerger#merger-extensions">text</a>). Default: <em>not set</em> (means not mergeable)</p>
+</li>
+<li>
+<p>The attribute <code>targetCharset</code> <em>(optional)</em> can be <em>optionally</em> specified and declares the encoding with which the contents will be written into the destination file. This also includes reading an existing file at the destination path for merging its contents with the newly generated ones. Default: <em>UTF-8</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>(Since version 4.1.0)</em> It is possible to reference external <code>template</code> (templates defined on another trigger), thanks to using <code>&lt;incrementRef &#8230;&#8203;&gt;</code> that are explained <a href="#increment-node">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_template_scan_node"><a class="anchor" href="#_template_scan_node"></a>Template Scan Node</h3>
+<div class="paragraph">
+<p><em>(since cobigen-core-v1.2.0)</em></p>
+</div>
+<div class="paragraph">
+<p>The second configuration style for template meta-data is driven by initially scanning all available templates and automatically configure them with a default set of meta-data. A scanning configuration might look like this:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of Template-scan configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;templatesConfiguration xmlns="http://capgemini.com"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        version="1.2"&gt;
+    &lt;templateScans&gt;
+        &lt;templateScan templatePath="templates" templateNamePrefix="prefix_" destinationPath="src/main/java"/&gt;
+    &lt;/templateScans&gt;
+&lt;/templatesConfiguration&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can specify multiple <code>&lt;templateScan &#8230;&#8203;&gt;</code> nodes for different <code>templatePaths</code> and different <code>templateNamePrefixes</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>name</code> can be specified to later on reference the templates found by a template-scan within an <a href="#increment-node">increment</a>. <em>(since cobigen-core-v2.1.)</em></p>
+</li>
+<li>
+<p>The <code>templatePath</code> specifies the relative path from the <code>templates.xml</code> to the root folder from which the template scan should be performed.</p>
+</li>
+<li>
+<p>The <code>templateNamePrefix</code> <em>(optional)</em> defines a common id prefix, which will be added to all found and automatically configured templates.</p>
+</li>
+<li>
+<p>The <code>destinationPath</code> defines the root folder all found templates should be generated to, whereas the root folder will be a prefix for all found and automatically configured templates.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A <code>templateScan</code> will result in the following <strong>default configuration of templates</strong>. For each file found, new <a href="#template-node">template</a> will be created virtually with the following default values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>id</code>: file name without <code>.ftl</code> extension prefixed by <code>templateNamePrefix</code> from <code>template-scan</code></p>
+</li>
+<li>
+<p><code>destinationPath</code>: relative file path of the file found with the prefix defined by <code>destinationPath</code> from <code>template-scan</code>. Furthermore,</p>
+<div class="ulist">
+<ul>
+<li>
+<p>it is possible to use the syntax for accessing and modifying variables as described for the attribute <code>destinationPath</code> of the <a href="#template-node">template node</a>, besides the only difference, that due to file system restrictions you have to replace all <code>?</code>-signs (for built-ins) with <code>#</code>-signs.</p>
+</li>
+<li>
+<p>the files to be scanned, should provide their final file extension by the following file naming convention: <code>&lt;filename&gt;.&lt;extension&gt;.ftl</code> Thus the file extension <code>.ftl</code> will be removed after generation.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>templateFile</code>: relative path to the file found</p>
+</li>
+<li>
+<p><code>mergeStrategy</code>: <em>(optional)</em> not set means not mergeable</p>
+</li>
+<li>
+<p><code>targetCharset</code>:  <em>(optional)</em> defaults to UTF-8</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>(Since version 4.1.0)</em> It is possible to reference external <code>templateScan</code> (<code>templateScans</code> defined on another trigger), thanks to using <code>&lt;incrementRef &#8230;&#8203;&gt;</code> that are explained <a href="#increment-node">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_template_extension_node"><a class="anchor" href="#_template_extension_node"></a>Template Extension Node</h3>
+<div class="paragraph">
+<p><em>(since cobigen-core-v1.2.0)</em></p>
+</div>
+<div class="paragraph">
+<p>Additionally to the <a href="#templatescan-node"><code>templateScan</code> declaration</a> it is easily possible to rewrite specific attributes for any scanned and automatically configured template.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example Configuration of a <code>TemplateExtension</code></div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;templates&gt;
+    &lt;templateExtension ref="prefix_FooClass.java" mergeStrategy="javamerge" /&gt;
+&lt;/templates&gt;
+
+&lt;templateScans&gt;
+    &lt;templateScan templatePath="foo" templateNamePrefix="prefix_" destinationPath="src/main/java/foo"/&gt;
+&lt;/templateScans&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Lets assume, that the above example declares a <code>template-scan</code> for the folder <code>foo</code>, which contains a file <code>FooClass.java.ftl</code> in any folder depth. Thus the template scan will automatically create a virtual <a href="#template-node">template</a> declaration with <code>id=prefix_FooClass.java</code> and further <a href="#templatescan-node">default configuration</a>.</p>
+</div>
+<div class="paragraph">
+<p>Using the <code>templateExtension</code> declaration above will reference the scanned template by the attribute <code>ref</code> and overrides the <code>mergeStrategy</code> of the automatically configured template by the value <code>javamerge</code>. Thus we are able to minimize the needed templates configuration.</p>
+</div>
+<div class="paragraph">
+<p><em>(Since version 4.1.0)</em> It is possible to reference external <code>templateExtension</code> (<code>templateExtensions</code> defined on another trigger), thanks to using <code>&lt;incrementRef &#8230;&#8203;&gt;</code> that are explained <a href="#increment-node">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_increment_node"><a class="anchor" href="#_increment_node"></a>Increment Node</h3>
+<div class="paragraph">
+<p>The <code>&lt;increments&gt;</code> node groups multiple <code>&lt;increment&gt;</code> nodes, which can be seen as a collection of templates to be generated. An increment will be defined by a unique <code>id</code> and a human readable <code>description</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;increments&gt;
+    &lt;increment id="..." description="..."&gt;
+        &lt;incrementRef ref="..." /&gt;
+        &lt;templateRef ref="..." /&gt;
+        &lt;templateScanRef ref="..." /&gt;
+    &lt;/increment&gt;
+&lt;/increments&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An increment might contain multiple increments and/or templates, which will be referenced using <code>&lt;incrementRef &#8230;&#8203;&gt;</code>, <code>&lt;templateRef &#8230;&#8203;&gt;</code>, resp. <code>&lt;templateScanRef &#8230;&#8203;&gt;</code> nodes. These nodes only declare the attribute <code>ref</code>, which will reference an increment, a template, or a template-scan by its <code>id</code> or <code>name</code>.</p>
+</div>
+<div class="paragraph">
+<p><em>(Since version 4.1.0)</em>  An special case of <code>&lt;incrementRef &#8230;&#8203;&gt;</code> is the external <code>incrementsRef</code>. By default, <code>&lt;incrementRef &#8230;&#8203;&gt;</code> are used to reference increments defined in the same <code>templates.xml</code> file. So for example, we could have:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;increments&gt;
+    &lt;increment id="incA" description="..."&gt;
+        &lt;incrementRef ref="incB" /&gt;
+    &lt;/increment&gt;
+    &lt;increment id="incB" description="..."&gt;
+        &lt;templateRef .... /&gt;
+        &lt;templateScan .... /&gt;
+    &lt;/increment&gt;
+&lt;/increments&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However, if we want to reference an increment that it is not defined inside our <code>templates.xml</code> (an increment defined for another trigger), then we can use external <code>incrementRef</code> as shown below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;increment name="..." description="..."&gt;
+    &lt;incrementRef ref="trigger_id::increment_id"/&gt;
+&lt;/increment&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The ref string is split using as delimiter <code>::</code>. The first part of the string, is the <code>trigger_id</code> to reference. That trigger contains an <code>increment_id</code>. Currently, this functionality only works when both templates use the same kind of input file.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_java_template_logic"><a class="anchor" href="#_java_template_logic"></a>Java Template Logic</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>since cobigen-core-3.0.0 which is included in the Eclipse and Maven Plugin since version 2.0.0</em>
+In addition, it is possible to implement more complex template logic by custom Java code. To enable this feature, you can simply import the the <code>CobiGen_Templates</code> by clicking on <em>Adapt Templates</em>, turn it into a simple maven project (if it is not already) and implement any Java logic in the common maven layout (e.g. in the source folder <code>src/main/java</code>). Each Java class will be instantiated by CobiGen for each generation process. Thus, you can even store any state within a Java class instance during generation. However, there is currently no guarantee according to the template processing order.</p>
+</div>
+<div class="paragraph">
+<p>As a consequence, you have to implement your Java classes with a public default (non-parameter) constructor to be used by any template. Methods of the implemented Java classes can be called within templates by the simple standard FreeMarker expression for calling Bean methods: <code>SimpleType.methodName(param1)</code>. Until now, CobiGen will shadow multiple types with the same simple name non-deterministically. So please prevent yourself from that situation.</p>
+</div>
+<div class="paragraph">
+<p>Finally, if you would like to do some reflection within your Java code accessing any type of the template project or any type referenced by the input, you should load classes by making use of the classloader of the util classes. CobiGen will take care of the correct classloader building including the classpath of the input source as well as of the classpath of the template project. If you use any other classloader or build it by your own, there will be no guarantee, that generation succeeds.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_template_properties"><a class="anchor" href="#_template_properties"></a>Template Properties</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>since cobigen-core-4.0.0</em>
+Using a configuration with <a href="#templatescan-node">template scan</a>, you can make use of properties in templates specified in property files named <code>cobigen.properties</code> next to the templates. The property files are specified as <a href="https://en.wikipedia.org/wiki/.properties">Java property files</a>. Property files can be nested in subfolders. Properties will be resolved including property shading. Properties defined nearest to the template to be generated will take precedence.
+In addition, a <code>cobigen.properties</code> file can be specified in the target folder root (in eclipse plugin, this is equal to the source project root). These properties take precedence over template properties specified in the template folder.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+It is not allowed to override context variables in <code>cobigen.properties</code> specifications as we have not found any interesting use case. This is most probably an error of the template designer, CobiGen will raise an error in this case.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_multi_module_support_or_template_target_path_redirects"><a class="anchor" href="#_multi_module_support_or_template_target_path_redirects"></a>Multi module support or template target path redirects</h3>
+<div class="paragraph">
+<p><em>since cobigen-core-4.0.0</em>
+One special property you can specify in the template properties is the property <code>relocate</code>. It will cause the current folder and its subfolders to be relocated at destination path resolution time. Take the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">folder
+  - sub1
+    Template.java.ftl
+    cobigen.properties</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Let the <code>cobigen.properties</code> file contain the line <code>relocate=../sub2/${cwd}</code>. Given that, the relative destination path of <code>Template.java.ftl</code> will be resolved to <code>folder/sub2/Template.java</code>. Compare <a href="#templatescan-node">template scan</a> configuration for more information about basic path resolution. The <code>relocate</code> property specifies a relative path from the location of the <code>cobigen.properties</code>. The <code>${cwd}</code> placeholder will contain the remaining relative path from the <code>cobigen.properties</code> location to the template file. In this basic example it just contains <code>Template.java.ftl</code>, but it may even be any relative path including subfolders of sub1 and its templates.
+Given the <code>relocate</code> feature, you can even step out of the root path, which in general is the project/maven module the input is located in. This enables template designers to even address, e.g., maven modules located next to the module the input is coming from.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_template_model"><a class="anchor" href="#_basic_template_model"></a>Basic Template Model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to what is served by the different model builders of the different plug-ins, CobiGen provides a minimal model based on context variables as well as CobiGen properties. The following model is independent of the input format and will be served as a template model all the time:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>variables</p>
+<div class="ulist">
+<ul>
+<li>
+<p>all triggered <a href="#variableassignment-node">context variables</a> mapped to its assigned/mapped value</p>
+</li>
+<li>
+<p>all <a href="#template-properties">template properties</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>all simple names of <a href="#java-template-logic">Java template logic</a> implementation classes</p>
+</li>
+<li>
+<p>all full qualified names of <a href="#java-template-logic">Java template logic</a> implementation classes</p>
+</li>
+<li>
+<p>further input related model, e.g. <a href="cobigen-javaplugin#template-object-model">model from Java inputs</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plugin_mechanism"><a class="anchor" href="#_plugin_mechanism"></a>Plugin Mechanism</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Since cobigen-core 4.1.0, we changed the plug-in discovery mechanism. So far it was necessary to register new plugins programmatically, which introduces the need to let every tool integration, i.e. for eclipse or maven, be dependent on every plug-in, which should be released. This made release cycles take long time as all plug-ins have to be integrated into a final release of maven or eclipse integration.</p>
+</div>
+<div class="paragraph">
+<p>Now, plug-ins are automatically discovered by the Java <a href="https://docs.oracle.com/javase/tutorial/ext/basics/spi.html">Service Loader</a> mechanism from the classpath. This also effects the setup of <a href="cobigen-eclipse_installation#upgrading-to-v3">eclipse</a> and <a href="cobigen-maven_configuration#additions-since-v3">maven</a> integration to allow modular releases of CobiGen in future. We are now able to provide faster rollouts of bug-fixes in any of the plug-ins as they can be released completely independently.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

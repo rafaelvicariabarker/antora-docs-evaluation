@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-service-versioning.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_service_versioning">Service-Versioning</a></li>
+<li><a href="#_motivation">Motivation</a></li>
+<li><a href="#_procedure">Procedure</a></li>
+<li><a href="#_versioning_schema">Versioning Schema</a></li>
+<li><a href="#_practice">Practice</a>
+<ul class="sectlevel2">
+<li><a href="#_modularization">Modularization</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_service_versioning"><a class="anchor" href="#_service_versioning"></a>Service-Versioning</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide describes the aspect and details about versioning of <a href="guide-service-layer.html" class="xref page">services</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_motivation"><a class="anchor" href="#_motivation"></a>Motivation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Why versioning of services? First of all, you should only care about this topic if you really have to. Service versioning is complex and requires effort (time and budget). The best way to avoid this is to be smart in the first place when designing the service API.
+Further, if you are creating services where the only consumer is e.g. the web-client that you deploy together with the consumed services then you can change your service without the overhead to create new service versions and keeping old service versions for compatibility.</p>
+</div>
+<div class="paragraph">
+<p>However, if the following indicators are given you typically need to do service versioning:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Your service is part of a complex and distributed IT landscape</p>
+</li>
+<li>
+<p>Your service requires incompatible changes</p>
+</li>
+<li>
+<p>There are many consumers or there is at least one (relevant) consumer that can not be updated at the same time or is entirely out of control (unknown or totally different party/company)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>What are incompatible changes?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Almost any change when <a href="guide-soap.html" class="xref page">SOAP</a> is used (as it changes the WSDL and breaks the contract). Therefore, we recommend to use <a href="guide-rest.html" class="xref page">REST</a> instead. Then, only the following changes are critical.</p>
+</li>
+<li>
+<p>A change where existing properties (attributes) have to change their name</p>
+</li>
+<li>
+<p>A change where existing features (properties, operations, etc.) have to change their semantics (meaning)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>What changes do not cause incompatibilities?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adding new service operations is entirely uncritical with <a href="guide-rest.html" class="xref page">REST</a>.</p>
+</li>
+<li>
+<p>Adding new properties is only a problem in the following cases:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Adding new mandatory properties to the input of a service is causing incompatibilities. This problem can be avoided by contract-design.</p>
+</li>
+<li>
+<p>If a consumer is using a service to read data, modify it and then save it back via a service and a property is added to the data, then this property might be lost. This is not a problem with dynamic languages such as JavaScript/TypeScript but with strictly typed languages such as Java. In Java you will typically use structured typed transfer-objects (and not <code>Map&lt;String, Object&gt;</code>) so new properties that have been added but are not known to the consumer can not be mapped to the transfer-object and will be lost. When saving that transfer-object later the property will be gone. It might be impossible to determine the difference between a lost property and a property that was removed on purpose. This is a general problem that you need to be aware of and that you have to consider by your design in such situations.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Even if you hit an indicator for incompatible changes you can still think about adding a new service operation instead of changing an existing one (and deprecating the old one). Be creative to simplify and avoid extra effort.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_procedure"><a class="anchor" href="#_procedure"></a>Procedure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The procedure when rolling out incompatible changes is illustrated by the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">+------+  +------+
+| App1 |  | App2 |
++---+--+  +--+---+
+    |        |
+    +---+----+
+        |
++-------+--------+
+|      Sv1       |
+|                |
+|      App3      |
++----------------+</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So, here we see a simple example where <code>App3</code> provides a Service <code>S</code> in Version <code>v1</code> that is consumed both by <code>App1</code> and <code>App2</code>.</p>
+</div>
+<div class="paragraph">
+<p>Now for some reason the service <code>S</code> has to be changed in an incompatible way to make it future-proof for demands. However, upgrading all 3 applications at the same time is not possible in this case for whatever reason. Therefore, service versioning is applied for the changes of <code>S</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">+------+  +------+
+| App1 |  | App2 |
++---+--+  +--+---+
+    |        |
+    +--------+
+    |
++---+------------+
+|  Sv1  |  Sv2   |
+|                |
+|      App3*     |
++----------------+</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, <code>App3</code> has been upgraded and the new release was deployed. A new version <code>v2</code> of <code>S</code> has been added while <code>v1</code> is still kept for compatibility reasons and that version is still used by <code>App1</code> and <code>App2</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">+------+  +------+
+| App1 |  | App2*|
++---+--+  +--+---+
+    |        |
+    |        |
+    |        |
++---+--------+---+
+|  Sv1  |  Sv2   |
+|                |
+|      App3      |
++----------------+</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, <code>App2</code> has been updated and deployed and it is using the new version <code>v2</code> of <code>S</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">+------+  +------+
+| App1*|  | App2 |
++---+--+  +--+---+
+    |        |
+    +--------+
+             |
++------------+---+
+|  Sv1  |  Sv2   |
+|                |
+|      App3      |
++----------------+</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, also <code>App1</code> has been updated and deployed and it is using the new version <code>v2</code> of <code>S</code>. The version <code>v1</code> of <code>S</code> is not used anymore. This can be verified via logging and monitoring.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">+------+  +------+
+| App1 |  | App2 |
++---+--+  +--+---+
+    |        |
+    +--------+
+             |
++------------+---+
+|          Sv2   |
+|                |
+|      App3*     |
++----------------+</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Finally, version <code>v1</code> of the service <code>S</code> was removed from <code>App3</code> and the new release has been deployed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_versioning_schema"><a class="anchor" href="#_versioning_schema"></a>Versioning Schema</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In general anything can be used to differentiate versions of a service. Possibilities are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Code names (e.g. <code>Strawberry</code>, <code>Blueberry</code>, <code>Grapefruit</code>)</p>
+</li>
+<li>
+<p>Timestamps (<code>YYYYMMDD-HHmmSS</code>)</p>
+</li>
+<li>
+<p>Sequential version numbers (e.g. <code>v1</code>, <code>v2</code>, <code>v3</code>)</p>
+</li>
+<li>
+<p>Composed version numbers (e.g. <code>1.0.48-pre-alpha-3-20171231-235959-Strawberry</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As we are following the KISS principle (see <a href="architecture.html#key-principles" class="xref page">key principles</a>) we propose to use sequential version numbers. These are short, clear, and easy while still allowing to see what version is after another one. Especially composed version numbers (even <code>1.1</code> vs. <code>2.0</code>) lead to decisions and discussions that easily waste more time than adding value. It is still very easy to maintain an Excel sheet or release-notes document that is explaining the changes for each version (<code>v1</code>, <code>v2</code>, <code>v3</code>) of a particular service.</p>
+</div>
+<div class="paragraph">
+<p>We suggest to always add the version schema to the service URL to be prepared for service versioning even if service versioning is not (yet) actively used. For simplicity it is explicitly stated that you may even do incompatible changes to the current version (typically <code>v1</code>) of your service if you can update the according consumers within the same deployment.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practice"><a class="anchor" href="#_practice"></a>Practice</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>So assuming you know that you have to do service versioning, the question is how to do it practically in the code.
+The approach for your devon4j project in case of code-first should be as described below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Determine which types in the code need to be changed. It is likely to be the API and implementation of the according service but it may also impact transfer objects and potentially even datatypes.</p>
+</li>
+<li>
+<p>Create new packages for all these concerned types containing the current version number (e.g. <code>v1</code>).</p>
+</li>
+<li>
+<p>Copy all these types to that new packages.</p>
+</li>
+<li>
+<p>Rename these copies so they carry the version number as suffix (e.g. <code>V1</code>).</p>
+</li>
+<li>
+<p>Increase the version of the service in the unversioned package (e.g. from <code>v1</code> to <code>v2</code>).</p>
+</li>
+<li>
+<p>Now you have two versions of the same service (e.g. <code>v1</code> and <code>v2</code>) but so far they behave exactly the same.</p>
+</li>
+<li>
+<p>You start with your actual changes and modify the original files that have been copied before.</p>
+</li>
+<li>
+<p>You will also ensure the links (import statements) of the copied types point to the copies with the version number</p>
+</li>
+<li>
+<p>This will cause incompatibilities (and compile errors) in the copied service. Therefore, you need to fix that service implementation to map from the old API to the new API and behavior. In some cases, this may be easy (e.g. mapping <code>x.y.z.v1.FooTo</code> to <code>x.y.z.FooTo</code> using <a href="guide-beanmapping.html" class="xref page">bean-mapping</a> with some custom mapping for the incompatible changes), in other cases this can get very complex. Be aware of this complexity from the start before you make your decision about service versioning.</p>
+</li>
+<li>
+<p>As far as possible this mapping should be done in the service-layer, not to pollute your business code in the core-layer with versioning-aspects. If there is no way to handle it in the service layer, e.g. you need some data from the persistence-layer, implement the "mapping" in the core-layer then, but don&#8217;t forget to remove this code, when removing the old service version.</p>
+</li>
+<li>
+<p>Finally, ensure that both the old service behaves as before as well as the new service works as planned.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_modularization"><a class="anchor" href="#_modularization"></a>Modularization</h3>
+<div class="paragraph">
+<p>For modularization, we also follow the KISS principle (see <a href="architecture.html#key-principles" class="xref page">key principles</a>):
+we suggest to have one <code>api</code> module per application that will contain the most recent version of your service and get released with every release-version of the application. The compatibility code with the versioned packages will be added to the <code>core</code> module and therefore is not exposed via the <code>api</code> module (because it has already been exposed in the previous release of the app). This way, you can always determine for sure which version of a service is used by another application just by its maven dependencies.</p>
+</div>
+<div class="paragraph">
+<p>The KISS approach with only a single module that may contain multiple services (e.g. one for each business component) will cause problems when you want to have mixed usages of service versions: You can not use an old version of one service and a new version of another service from the same APP as then you would need to have its API module twice as a dependency on different versions, which is not possible. However, to avoid complicated overhead we always suggest to follow this easy approach. Only if you come to the point that you really need this complexity you can still solve it (even afterwards by publishing another maven artefact). As we are all on our way to build more but smaller applications (SOA, microservices, etc.) we should always start simple and only add complexity when really needed.</p>
+</div>
+<div class="paragraph">
+<p>The following example gives an idea of the structure:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">/«my-app»
+├──/api
+|  └──/src/main/java/
+|     └──/«rootpackage»/«application»/«component»
+|        ├──/common/api/to
+|        |  └──FooTo
+|        └──/service/api/rest
+|           └──FooRestService
+└──/core
+   └──/src/main/java/
+      └──«rootpackage»/«application»/«component»
+         ├──/common/api/to/v1
+         |  └──FooToV1
+         └──/service
+            ├──/api/rest/v1
+            |  └──FooRestServiceV1
+            └──impl/rest
+               ├──/v1
+               |  └── FooRestServiceImplV1
+               └──FooRestServiceImpl</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
