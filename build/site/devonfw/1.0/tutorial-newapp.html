@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/tutorial-newapp.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_creating_a_new_application">Creating a new application</a></li>
+<li><a href="#_running_the_archetype">Running the archetype</a>
+<ul class="sectlevel2">
+<li><a href="#_from_command_line">From command Line</a></li>
+<li><a href="#_from_eclipse">From Eclipse</a></li>
+</ul>
+</li>
+<li><a href="#_what_is_generated">What is generated</a></li>
+<li><a href="#_how_to_run_your_app">How to run your app</a>
+<ul class="sectlevel2">
+<li><a href="#_run_app_from_ide">Run app from IDE</a></li>
+<li><a href="#_run_app_as_bootified_jar_or_war">Run app as bootified jar or war</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_creating_a_new_application"><a class="anchor" href="#_creating_a_new_application"></a>Creating a new application</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_the_archetype"><a class="anchor" href="#_running_the_archetype"></a>Running the archetype</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to create a new application you must use the archetype provided by devon4j which uses the maven archetype functionality.</p>
+</div>
+<div class="paragraph">
+<p>To create a new application, you should have installed devonfw IDE. Follow the devon ide documentation to install
+the same.
+You can choose between 2 alternatives, create it from command line or, in more visual manner, within eclipse.</p>
+</div>
+<div class="sect2">
+<h3 id="_from_command_line"><a class="anchor" href="#_from_command_line"></a>From command Line</h3>
+<div class="paragraph">
+<p>To create a new devon4j application from command line, you can simply run the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">devon java create com.example.application.sampleapp</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For low-level creation you can also manually call this command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">mvn -DarchetypeVersion=${devon4j.version} -DarchetypeGroupId=com.devonfw.java.templates -DarchetypeArtifactId=devon4j-template-server archetype:generate -DgroupId=com.example.application -DartifactId=sampleapp -Dversion=1.0.0-SNAPSHOT -Dpackage=com.devonfw.application.sampleapp</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Attention: The <code>archetypeVersion</code> (first argument) should be set to the latest version of <code>devon4j</code>. You can easily determine the version from this badge:
+<span class="image"><img src="https://javadoc.io/badge2/com.devonfw.java.modules/devon4j-basic/javadoc.svg" alt="latest devon4j version"></span></p>
+</div>
+<div class="paragraph">
+<p>Further providing additional properties (using <code>-D</code> parameter) you can customize the generated app:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Options for app template</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>property</strong></th>
+<th class="tableblock halign-left valign-top"><strong>comment</strong></th>
+<th class="tableblock halign-left valign-top"><strong>example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dbType</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choose the type of RDBMS to use (<code>hana</code>, <code>oracle</code>, <code>mssql</code>, <code>postgresql</code>, <code>mariadb</code>, <code>mysql</code>, etc.)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-DdbTpye=postgresql</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>batch</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Option to add an <code>batch</code> module</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-Dbatch=batch</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_from_eclipse"><a class="anchor" href="#_from_eclipse"></a>From Eclipse</h3>
+<div class="literalblock">
+<div class="content">
+<pre>After that, you should follow this Eclipse steps to create your application:</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create a new Maven Project.</p>
+</li>
+<li>
+<p>Choose the devon4j-template-server archetype, just like the image.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/images/eclipse-m2e-create-devon4j-project.png" alt="Select archetype">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fill the Group Id, Artifact Id, Version and Package for your project.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="_images/images/eclipse-m2e-create-devon4j-project-parameters.png" alt="Configure archetype">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Finish the Eclipse assistant and you are ready to start your project.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_generated"><a class="anchor" href="#_what_is_generated"></a>What is generated</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The application template (archetype) generates a Maven multi-module project. It has the following modules:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>api</code>: module with the API (REST service interfaces, transferobjects, datatypes, etc.) to be imported by other apps as a maven dependency in order to invoke and consume the offered (micro)services.</p>
+</li>
+<li>
+<p><code>core</code>: maven module containing the core of the application.</p>
+</li>
+<li>
+<p><code>batch</code>: optional module for <a href="guide-batch-layer.html" class="xref page">batch</a>(es)</p>
+</li>
+<li>
+<p><code>server</code>: module that bundles the entire app (<code>core</code> with optional <code>batch</code>) as a WAR file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The toplevel <code>pom.xml</code> of the generated project has the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Properties definition: Spring-boot version, Java version, etc.</p>
+</li>
+<li>
+<p>Modules definition for the modules (described above)</p>
+</li>
+<li>
+<p>Dependency management: define versions for dependencies of the technology stack that are recommended and work together in a compatible way.</p>
+</li>
+<li>
+<p>Maven plugins with desired versions and configuration</p>
+</li>
+<li>
+<p>Profiles for <a href="guide-testing.html" class="xref page">test stages</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_run_your_app"><a class="anchor" href="#_how_to_run_your_app"></a>How to run your app</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_run_app_from_ide"><a class="anchor" href="#_run_app_from_ide"></a>Run app from IDE</h3>
+<div class="paragraph">
+<p>To run your application from your favourite IDE, simply launch <code>SpringBootApp</code> as java application.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_run_app_as_bootified_jar_or_war"><a class="anchor" href="#_run_app_as_bootified_jar_or_war"></a>Run app as bootified jar or war</h3>
+<div class="paragraph">
+<p>More details are available <a href="guide-structure.html#make-jar-not-war" class="xref page">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

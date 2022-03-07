@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Migration Guide from oasp 3.0.0 to devon4j 3.1.0 migration :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Cobigen</a></li>
+    <li><a href="guide-migration-oasp3-to-devon3.1.html">Migration Guide from oasp 3.0.0 to devon4j 3.1.0 migration</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-migration-oasp3-to-devon3.1.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Migration Guide from oasp 3.0.0 to devon4j 3.1.0 migration</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/devonfw/devonfw-guide/blob/master/general/devcon-command-reference.adoc#devon4j-migrate">Automatic migration</a> with devcon doesn&#8217;t work with parent pom&#8217;s; you need to migrate every single subproject on it&#8217;s own.</p>
+</li>
+<li>
+<p>If your subproject&#8217;s don&#8217;t contain the old oasp4j or devon4j version number you have to copy your parent pom file into your child pom files and then use the migrate command.</p>
+</li>
+<li>
+<p>use the <a href="https://github.com/devonfw/devonfw-guide/blob/master/general/devcon-command-reference.adoc#devon4j-migrate">devon4j migation command</a></p>
+</li>
+<li>
+<p>after migration you need to update the version tag in the pom file manually. If you&#8217;re working with a parent pom you also need to update the version tag of the parent reference
+in the child pom file.</p>
+</li>
+<li>
+<p>In case you are using eclipse, now you have to update and rebuild all your maven projects (alt + F5)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jsondeserializer"><a class="anchor" href="#_jsondeserializer"></a>JsonDeserializer:</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Change the super class from AbstractJsonDeserializer to JsonDeserializer</p>
+</li>
+<li>
+<p>Implement unimplemented methods or change the methode signatur from Pageable deserializeNode(JsonNode node) to Pageable deserialize(JsonParser p, DeserializationContext context)</p>
+</li>
+<li>
+<p>To get the JsonNode you need to use the following methods with the JsonParser p: JsonNode node = p.getCodec().readTree(p);</p>
+</li>
+<li>
+<p>To get values of properties, you need to change from getRequiredValue(node, "property", String.class) to JacksonUtil.readValue(node, "property", String.class, false);</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_queryutil_update"><a class="anchor" href="#_queryutil_update"></a>QueryUtil update</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>whereString() (StringSearchConfigTo) method or similar:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check the parameter type with attetion on the source of the used class (the classes may have the same name but the one from oasp4j is obsolete)</p>
+</li>
+<li>
+<p>Delete the old import of oasp4j (for example import io.oasp.module.beanmapping.common.api.BeanMapper) and import the new class of
+devon4j (for example import com.devonfw.module.beanmapping.common.api.BeanMapper)</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logback_xml_file"><a class="anchor" href="#_logback_xml_file"></a>logback.xml file</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>There maximum three chnages that needed to be done in the logback.xml file</p>
+</li>
+<li>
+<p>Change the logging properties tag from
+<code>&lt;property resource="io/oasp/logging/logback/application-logging.properties" /&gt;</code> to <code>&lt;property resource="com/devonfw/logging/logback/application-logging.properties" /&gt;</code></p>
+</li>
+<li>
+<p>Change the appenders file all tag from
+<code>&lt;include resource="io/oasp/logging/logback/appenders-file-all.xml" /&gt;</code> to <code>&lt;include resource="com/devonfw/logging/logback/appenders-file-all.xml" /&gt;</code></p>
+</li>
+<li>
+<p>Change the appender console tag from <code>&lt;include resource="io/oasp/logging/logback/appender-console.xml" /&gt;</code> to <code>&lt;include resource="com/devonfw/logging/logback/appender-console.xml" /&gt;</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_oasppackage"><a class="anchor" href="#_oasppackage"></a>OaspPackage:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you use the OaspPackage class you can replace it with the Devon4jPackage class</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_abstractlogic"><a class="anchor" href="#_abstractlogic"></a>AbstractLogic</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You can replace all net.sf.mmm.util imports with the appropriate com.devonfw.module imports. For example "import net.sf.mmm.util.entity.api.GenericEntity" to "import com.devonfw.module.basic.common.api.entity.GenericEntity"</p>
+</li>
+<li>
+<p>Except the TransferObject and the AbstractTransferObject. These are replaced with the denvonfw AbstractTo.
+Example: "import net.sf.mmm.util.transferobject.api.AbstractTransferObject" or "import net.sf.mmm.util.transferobject.api.TransferObject" to "import com.devonfw.module.basic.common.api.to.AbstractTo".</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_beandozerconfig"><a class="anchor" href="#_beandozerconfig"></a>BeanDozerConfig</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Change the @ComponentScan annotation from <code>@ComponentScan(basePackages = { "io.oasp.module.beanmapping" })</code> to <code>@ComponentScan(basePackages = { "com.devonfw.module.beanmapping" })</code>.</p>
+</li>
+<li>
+<p>Now you have to create a variable <code>DOZER_MAPPING_XML</code> with following content: <code>static final String DOZER_MAPPING_XML = "config/app/common/dozer-mapping.xml"</code>.</p>
+</li>
+<li>
+<p>Then you create an list beanMappings where you add the variable created in step 2.</p>
+</li>
+<li>
+<p>To get an Mapper instance you now have to use a builder like <code>Mapper mapper = DozerBeanMapperBuilder.create().withMappingFiles(beanMappings).build()</code>.</p>
+</li>
+<li>
+<p>Change occurrences of <code>io.oasp.module.beanmapping.common.impl.dozer.IdentityConverter</code> in <code>dozer-mappings.xml</code> to <code>com.devonfw.module.beanmapping.common.impl.dozer.IdentityConverter</code></p>
+</li>
+<li>
+<p>Migration of dozer 5 to 6.4:
+<a href="https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v6-to-v61.adoc" class="bare">https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v6-to-v61.adoc</a>
+<a href="https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v61-to-v62.adoc" class="bare">https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v61-to-v62.adoc</a>
+<a href="https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v62-to-v63.adoc" class="bare">https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v62-to-v63.adoc</a>
+<a href="https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v63-to-v64.adoc" class="bare">https://github.com/DozerMapper/dozer/blob/master/docs/asciidoc/migration/v63-to-v64.adoc</a></p>
+</li>
+<li>
+<p>In addition, the semantics of <code>&lt;mapping type="one-way"&gt;</code> seems to be changed. If you for example just needed to exclude files on mapping from a to b one-way, you now have to declare an empty mapping as well from b to a one-way without any field(-extension) declarations to enable mapping from b to a at all. See also <a href="https://github.com/DozerMapper/dozer/issues/605" class="bare">https://github.com/DozerMapper/dozer/issues/605</a> and <a href="https://github.com/DozerMapper/dozer/issues/451" class="bare">https://github.com/DozerMapper/dozer/issues/451</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pom_xml"><a class="anchor" href="#_pom_xml"></a>pom.xml</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the pom.xml file you have to do some manuall changes. You need to change all oasp dependencies to denvonfw dependencies. Here are some examples:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-beanmapping&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-beanmapping&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-security&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-security&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-web&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-web&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-starter-cxf-client-rest&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-starter-cxf-client-rest&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-starter-cxf-client-ws&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-starter-cxf-client-ws&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-starter-cxf-server-rest&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-starter-cxf-server-rest&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-starter-spring-data-jpa&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.starters&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-starter-spring-data-jpa&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-batch&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-batch&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-test&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-test&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-logging&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-logging&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-jpa-spring-data&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-jpa-spring-data&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>from</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">    &lt;dependency&gt;
+      &lt;groupId&gt;io.oasp.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;oasp4j-rest&lt;/artifactId&gt;
+	&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>to</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">	&lt;dependency&gt;
+      &lt;groupId&gt;com.devonfw.java.modules&lt;/groupId&gt;
+      &lt;artifactId&gt;devon4j-rest&lt;/artifactId&gt;
+    &lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mutablegenericentity"><a class="anchor" href="#_mutablegenericentity"></a>MutableGenericEntity</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you use the MutableGenericEntity&lt;&gt; class you have to change it to the PersistenceEntity&lt;&gt; class. Change the import "net.sf.mmm.util.entity.api.MutableGenericEntity" to
+"import com.devonfw.module.basic.common.api.entity.PersistenceEntity".</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compositeto"><a class="anchor" href="#_compositeto"></a>CompositeTo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you use the CompositeTo class you should now use the AbstractTo class. Just change the import from "import net.sf.mmm.util.transferobject.api.CompositeTo"
+to "import com.devonfw.module.basic.common.api.to.AbstractTo".</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

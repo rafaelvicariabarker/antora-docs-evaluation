@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-configuration.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_configuration">Configuration</a></li>
+<li><a href="#_internal_application_configuration">Internal Application Configuration</a></li>
+<li><a href="#_externalized_configuration">Externalized Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_environment_configuration">Environment Configuration</a></li>
+<li><a href="#_business_configuration">Business Configuration</a></li>
+</ul>
+</li>
+<li><a href="#_security">Security</a>
+<ul class="sectlevel2">
+<li><a href="#_password_encryption">Password Encryption</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An application needs to be configurable in order to allow internal setup (like CDI) but also to allow externalized configuration of a deployed package (e.g. integration into runtime environment). We rely on a comprehensive configuration approach following a "convention over configuration" pattern. This guide adds on to this by detailed instructions and best-practices how to deal with configurations.</p>
+</div>
+<div class="paragraph">
+<p>In general we distinguish the following kinds of configuration that are explained in the following sections:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#internal-application-configuration">Internal Application configuration</a> maintained by developers</p>
+</li>
+<li>
+<p><a href="#externalized-configuration">Externalized Environment configuration</a> maintained by operators</p>
+</li>
+<li>
+<p><a href="#business-configuration">Externalized Business configuration</a> maintained by business administrators</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_internal_application_configuration"><a class="anchor" href="#_internal_application_configuration"></a>Internal Application Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The application configuration contains all internal settings and wirings of the application (bean wiring, database mappings, etc.) and is maintained by the application developers at development time.</p>
+</div>
+<div class="paragraph">
+<p>For more detail of <a href="spring.html" class="xref page">Spring</a> stack, see <a href="spring/guide-spring-configuration.html#internal-application-configuration" class="xref page">here</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_externalized_configuration"><a class="anchor" href="#_externalized_configuration"></a>Externalized Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Externalized configuration is a configuration that is provided separately to a deployment package and can be maintained undisturbed by re-deployments.</p>
+</div>
+<div class="sect2">
+<h3 id="_environment_configuration"><a class="anchor" href="#_environment_configuration"></a>Environment Configuration</h3>
+<div class="paragraph">
+<p>The environment configuration contains configuration parameters (typically port numbers, host names, passwords, logins, timeouts, certificates, etc.) specific for the different environments. These are under the control of the operators responsible for the application.</p>
+</div>
+<div class="paragraph">
+<p>The environment configuration is maintained in <code>application.properties</code> files, defining various properties.
+These properties are explained in the corresponding configuration sections of the guides for each topic:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>persistence configuration (for Spring see <a href="spring/guide-spring-configuration.html#database-configuration" class="xref page">here</a>, for Quarkus see <a href="quarkus/guide-quarkus-configuration.html#database-configuration" class="xref page">here</a>)</p>
+</li>
+<li>
+<p><a href="guide-service-layer.html#jax-rs-configuration" class="xref page">service configuration</a></p>
+</li>
+<li>
+<p><a href="guide-logging.html#configuration" class="xref page">logging guide</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Make sure your properties are thoroughly documented by providing a comment to each property. This inline documentation is most valuable for your operating department.</p>
+</div>
+<div class="paragraph">
+<p>More about structuring your <code>application.properties</code> files can be read <a href="spring/guide-spring-configuration.html#application-properties-files" class="xref page">here</a> for Spring.</p>
+</div>
+<div class="paragraph">
+<p>For Quarkus, please refer to <a href="https://quarkus.io/guides/config-reference">Quarkus Config Reference</a> for more details.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_business_configuration"><a class="anchor" href="#_business_configuration"></a>Business Configuration</h3>
+<div class="paragraph">
+<p>Often applications do not need business configuration. In case they do it should typically be editable by administrators via the GUI. The business configuration values should therefore be stored in the database in key/value pairs.</p>
+</div>
+<div class="paragraph">
+<p>Therefore we suggest to create a dedicated table with (at least) the following columns:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID</p>
+</li>
+<li>
+<p>Property name</p>
+</li>
+<li>
+<p>Property type (Boolean, Integer, String)</p>
+</li>
+<li>
+<p>Property value</p>
+</li>
+<li>
+<p>Description</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>According to the entries in this table, an administrative GUI may show a generic form to modify business configuration. Boolean values should be shown as checkboxes, integer and string values as text fields. The values should be validated according to their type so an error is raised if you try to save a string in an integer property for example.</p>
+</div>
+<div class="paragraph">
+<p>We recommend the following base layout for the hierarchical business configuration:</p>
+</div>
+<div class="paragraph">
+<p><code>component.[subcomponent].[subcomponent].propertyname</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security"><a class="anchor" href="#_security"></a>Security</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Often you need to have passwords (for databases, third-party services, etc.) as part of your configuration. These are typically environment specific (see above). However, with DevOps and continuous-deployment you might be tempted to commit such configurations into your version-control (e.g. <code>git</code>). Doing that with plain text passwords is a severe problem especially for production systems. Never do that! Instead we offer some suggestions how to deal with sensible configurations:</p>
+</div>
+<div class="sect2">
+<h3 id="_password_encryption"><a class="anchor" href="#_password_encryption"></a>Password Encryption</h3>
+<div class="paragraph">
+<p>A simple but reasonable approach is to configure the passwords encrypted with a master-password. The master-password should be a strong secret that is specific for each environment. It must never be committed to version-control.</p>
+</div>
+<div class="paragraph">
+<p>For <a href="spring.html" class="xref page">Spring</a>, we use <a href="https://github.com/ulisesbocchio/jasypt-spring-boot#jasypt-spring-boot">jasypt-spring-boot</a>. For more details, see <a href="spring/guide-spring-configuration.html#password-encryption" class="xref page">here</a></p>
+</div>
+<div class="paragraph">
+<p>For <a href="quarkus.html" class="xref page">Quarkus</a>, see <a href="quarkus/guide-quarkus-configuration.html#password-encryption" class="xref page">here</a></p>
+</div>
+<div class="sect3">
+<h4 id="_is_this_security_by_obscurity"><a class="anchor" href="#_is_this_security_by_obscurity"></a>Is this Security by Obscurity?</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Yes, from the point of view to protect the passwords on the target environment this is nothing but security by obscurity. If an attacker somehow got full access to the machine this will only cause him to spend some more time.</p>
+</li>
+<li>
+<p>No, if someone only gets the configuration file. So all your developers might have access to the version-control where the config is stored. Others might have access to the software releases that include this configs. But without the master-password that should only be known to specific operators none else can decrypt the password (except with brute-force what will take a very long time, see jasypt for details).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

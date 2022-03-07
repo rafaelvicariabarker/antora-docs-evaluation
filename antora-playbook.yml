@@ -4,8 +4,9 @@ site:
 content:
   sources:
   - url: https://github.com/rafaelvicariabarker/devon4j.git
-    branches: HEAD
-ui:
-  bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    snapshot: true
+    branches: [refactorForAntora]
+  - url: https://github.com/rafaelvicariabarker/cobigen.git
+    branches: [refactorForAntora]
+ui: 
+  bundle: 
+    url: /Users/rvicaria/projects/my-project/workspaces/main/antora-ui-default/build/ui-bundle.zip

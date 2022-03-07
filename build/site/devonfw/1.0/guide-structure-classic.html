@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-structure-classic.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_classic_project_structure">Classic project structure</a></li>
+<li><a href="#_modules">Modules</a></li>
+<li><a href="#_deployment">Deployment</a></li>
+<li><a href="#_package_structure">Package Structure</a></li>
+<li><a href="#_layers">Layers</a></li>
+<li><a href="#_architecture_mapping">Architecture Mapping</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_classic_project_structure"><a class="anchor" href="#_classic_project_structure"></a>Classic project structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this section we describe the classic project structure as initially proposed for Java in devonfw.
+It is still valid and fully supported.
+However, if you want to start a new project, please consider using the <a href="guide-structure-modern.html" class="xref page">modern structure</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modules"><a class="anchor" href="#_modules"></a>Modules</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The structure of a <code>devon4j</code> application is divided into the following modules:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>api</code>: module containing the API of your application. The API contains the required artifacts to interact with your application via remote services. This can be <a href="guide-rest.html#jax-rs" class="xref page">REST service interfaces</a>, <a href="guide-transferobject.html" class="xref page">transfer-objects</a> with their interfaces and <a href="guide-datatype.html" class="xref page">datatypes</a> but also <a href="https://www.openapis.org/">OpenAPI</a> or <a href="https://grpc.io/">gRPC</a> contracts.</p>
+</li>
+<li>
+<p><code>core</code>: maven module containing the core of the application with service implementation, as well as entire <a href="guide-logic-layer.html" class="xref page">logic layer</a> and <a href="guide-dataaccess-layer.html" class="xref page">dataaccess layer</a>.</p>
+</li>
+<li>
+<p><code>batch</code>: optional module for <a href="guide-batch-layer.html" class="xref page">batch layer</a></p>
+</li>
+<li>
+<p><code>server</code>: module that bundles the entire app (<code>core</code> with optional <code>batch</code>) typically as a bootified WAR file.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deployment"><a class="anchor" href="#_deployment"></a>Deployment</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Make jar not war</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Josh Long
+</div>
+</div>
+<div class="paragraph">
+<p>First of all it is important to understand that the above defined modules aim to make <code>api</code>, <code>core</code>, and <code>batch</code> reusable artifacts, that can be used as a regular maven dependency.
+On the other hand to build and deploy your application you want a final artifact that is containing all required 3rd party libraries.
+This artifact is not reusable as a maven dependency.
+That is exactly the purpose of the <code>server</code> module to build and package this final deployment artifact.
+By default we first build a regular <code>WAR</code> file with maven in your <code>server/target</code> directory (<code>*-server-«version».war</code>) and in a second step create a bootified <code>WAR</code> out of this (<code>*-server-bootified.war</code>).
+The bootified <code>WAR</code> file can then be started standalone (<code>java -jar «filename».war</code>).
+However, it is also possible to deploy the same <code>WAR</code> file to a servlet container like <code>tomcat</code> or <code>jetty</code>.
+As application servers and externally provided servlet containers are not recommendet anymore for various reasons (see <a href="guide-jee.html" class="xref page">JEE</a>), you may also want to create a bootified <code>JAR</code> file instead.
+All you need to do in that case is to change the <code>packaging</code> in your <code>server/pom.xml</code> from <code>war</code> to <code>jar</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_package_structure"><a class="anchor" href="#_package_structure"></a>Package Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The package structure of your code inside <code>src/main/java</code> (and <code>src/test/java</code>) of your modules is described in our coding conventions in the sections <a href="coding-conventions.html#packages" class="xref page">packages</a>. A full mapping of the architecture and the different code elements to the packaging is described in the following section.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layers"><a class="anchor" href="#_layers"></a>Layers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The package structure of your code inside <code>src/main/java</code> (and <code>src/test/java</code>) of your app is described in our coding conventions in the sections <a href="coding-conventions.html#packages" class="xref page">packages</a>.
+The following table describes our classic approach for packaging and layering:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Traditional generic devon4j layers</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Layer</strong></th>
+<th class="tableblock halign-left valign-top"><strong>«layer»</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-service-layer.html" class="xref page">service</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>service</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-logic-layer.html" class="xref page">logic</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>logic</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-dataaccess-layer.html" class="xref page">data-access</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dataaccess</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-batch-layer.html" class="xref page">batch</a> (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>batch</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-client-layer.html" class="xref page">client</a> (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>client</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="guide-common.html" class="xref page">common</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>common</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architecture_mapping"><a class="anchor" href="#_architecture_mapping"></a>Architecture Mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to help you to map the architecture, packaging, layering, etc. to the code and see where different code elements should be placed,
+we provide this architecture mapping:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>«root»
+├──.<a href="guide-component.html#business-component" class="xref page">«component»</a>
+|  ├──.<a href="guide-common.html" class="xref page">common</a>
+|  |  ├──.api[.«detail»]
+|  |  |  ├──.<a href="guide-datatype.html" class="xref page">datatype</a>
+|  |  |  |  └──.<a href="guide-datatype.html" class="xref page">«Datatype»</a> (api)
+|  |  |  └──.<a href="guide-transferobject.html#bo" class="xref page">«BusinessObject»</a> (api)
+|  |  └──.impl[.«detail»]
+|  |     ├──.<a href="guide-configuration-mapping.html#mapping-advanced-configuration" class="xref page">«Aspect»ConfigProperties</a> (core)
+|  |     ├──.<a href="guide-json.html#custom-mapping" class="xref page">«Datatype»JsonSerializer</a> (core)
+|  |     └──.<a href="guide-json.html#custom-mapping" class="xref page">«Datatype»JsonDeserializer</a> (core)
+|  ├──.<a href="guide-dataaccess-layer.html" class="xref page">dataaccess</a>
+|  |  ├──.api[.«detail»]
+|  |  |  ├──.<a href="guide-repository.html" class="xref page">repo</a>
+|  |  |  |  └──.<a href="guide-repository.html#repository" class="xref page">«BusinessObject»Repository</a> (core)
+|  |  |  ├──.<a href="guide-dao.html" class="xref page">dao</a> (core) [alternative to repo]
+|  |  |  |  └──.<a href="guide-dao.html#data-access-object" class="xref page">«BusinessObject»Dao</a> (core) [alternative to Repository]
+|  |  |  └──.<a href="guide-jpa.html#entity" class="xref page">«BusinessObject»Entity</a> (core)
+|  |  └──.impl[.«detail»]
+|  |     ├──.<a href="guide-dao.html" class="xref page">dao</a> (core) [alternative to repo]
+|  |     |  └──.<a href="guide-dao.html#data-access-object" class="xref page">«BusinessObject»DaoImpl</a> (core) [alternative to Repository]
+|  |     └──.<a href="guide-jpa.html#entities-and-datatypes" class="xref page">«Datatype»AttributeConverter</a> (core)
+|  ├──.<a href="guide-logic-layer.html" class="xref page">logic</a>
+|  |  ├──.api
+|  |  |  ├──.[«detail».]<a href="guide-transferobject.html" class="xref page">to</a>
+|  |  |  |   ├──.<a href="guide-transferobject.html#to" class="xref page">«MyCustom»«To</a> (api)
+|  |  |  |   ├──.<a href="guide-jpa.html#embeddable" class="xref page">«DataStructure»Embeddable</a> (api)
+|  |  |  |   ├──.<a href="guide-transferobject.html#eto" class="xref page">«BusinessObject»Eto</a> (api)
+|  |  |  |   └──.<a href="guide-transferobject.html#cto" class="xref page">«BusinessObject»«Subset»Cto</a> (api)
+|  |  |  ├──.[«detail».]<a href="guide-usecase.html" class="xref page">usecase</a>
+|  |  |  |   ├──.<a href="guide-usecase.html#find" class="xref page">UcFind«BusinessObject»</a> (core)
+|  |  |  |   ├──.<a href="guide-usecase.html#manage" class="xref page">UcManage«BusinessObject»</a> (core)
+|  |  |  |   └──.<a href="guide-usecase.html#custom" class="xref page">Uc«Operation»«BusinessObject»</a> (core)
+|  |  |  └──.<a href="guide-logic-layer.html#component" class="xref page">«Component»</a> (core)
+|  |  ├──.base
+|  |  |  └──.[«detail».]<a href="guide-usecase.html" class="xref page">usecase</a>
+|  |  |     └──.<a href="guide-usecase.html" class="xref page">Abstract«BusinessObject»Uc</a> (core)
+|  |  └──.impl
+|  |     ├──.[«detail».]<a href="guide-usecase.html" class="xref page">usecase</a>
+|  |     |   ├──.<a href="guide-usecase.html#find" class="xref page">UcFind«BusinessObject»Impl</a> (core)
+|  |     |   ├──.<a href="guide-usecase.html#manage" class="xref page">UcManage«BusinessObject»Impl</a> (core)
+|  |     |   └──.<a href="guide-usecase.html#custom" class="xref page">Uc«Operation»«BusinessObject»Impl</a> (core)
+|  |     └──.<a href="guide-logic-layer.html#component" class="xref page">«Component»Impl</a> (core)
+|  └──.<a href="guide-service-layer.html" class="xref page">service</a>
+|     ├──.api[.«detail»]
+|     |  ├──.<a href="guide-rest.html" class="xref page">rest</a>
+|     |  |  └──.<a href="guide-rest.html#rest-service-api" class="xref page">«Component»RestService</a> (api)
+|     |  └──.<a href="guide-soap.html" class="xref page">ws</a>
+|     |     └──.<a href="guide-soap.html#web-service-api" class="xref page">«Component»WebService</a> (api)
+|     └──.impl[.«detail»]
+|        ├──.<a href="guide-jms.html" class="xref page">jms</a>
+|        |  └──.<a href="guide-jms.html#jms-listener" class="xref page">«BusinessObject»JmsListener</a> (core)
+|        ├──.<a href="guide-rest.html" class="xref page">rest</a>
+|        |  └──.<a href="guide-rest.html#rest-service-implementation" class="xref page">«Component»RestServiceImpl</a> (core)
+|        └──.<a href="guide-soap.html" class="xref page">ws</a>
+|           └──.<a href="guide-soap.html#web-service-implementation" class="xref page">«Component»WebServiceImpl</a> (core)
+├──.<a href="guide-component.html#general-component" class="xref page">general</a>
+│  ├──.<a href="guide-common.html" class="xref page">common</a>
+│  |  ├──.api
+|  |  |  ├──.to
+|  |  |  |  ├──.AbstractSearchCriteriaTo (api)
+|  |  |  └──.ApplicationEntity
+│  |  ├──.base
+|  |  |  └──.AbstractBeanMapperSupport (core)
+│  |  └──.impl
+│  |     ├──.config
+│  |     |  └──.ApplicationObjectMapperFactory (core)
+│  |     └──.security
+│  |        └──.ApplicationWebSecurityConfig (core)
+│  ├──.dataaccess
+│  |  └──.api
+|  |     └──.ApplicationPersistenceEntity (core)
+│  ├──.logic
+│  |  └──.base
+|  |     ├──.AbstractComponentFacade (core)
+|  |     ├──.AbstractLogic (core)
+|  |     └──.AbstractUc (core)
+|  └──.service
+|     └──...
+└──.SpringBootApp (core)</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-data-permission.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_data_permissions">Data-permissions</a></li>
+<li><a href="#_structuring_your_data">Structuring your data</a></li>
+<li><a href="#_permissions_for_processing_data">Permissions for processing data</a>
+<ul class="sectlevel2">
+<li><a href="#_beware_of_aop">Beware of AOP</a></li>
+</ul>
+</li>
+<li><a href="#_permissions_for_reading_data">Permissions for reading data</a></li>
+<li><a href="#_managing_and_granting_the_data_permissions">Managing and granting the data-permissions</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_data_permissions"><a class="anchor" href="#_data_permissions"></a>Data-permissions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In some projects there are demands for permissions and authorization that is dependent on the processed data. E.g. a user may only be allowed to read or write data for a specific region. This is adding some additional complexity to your authorization. If you can avoid this it is always best to keep things simple. However, in various cases this is a requirement. Therefore the following sections give you guidance and patterns how to solve this properly.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structuring_your_data"><a class="anchor" href="#_structuring_your_data"></a>Structuring your data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For all your business objects (entities) that have to be secured regarding to data permissions we recommend that you create a separate interface that provides access to the relevant data required to decide about the permission. Here is a simple example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface SecurityDataPermissionCountry {
+
+  /**
+   * @return the 2-letter ISO code of the country this object is associated with. Users need
+   *         a data-permission for this country in order to read and write this object.
+   */
+  String getCountry();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now related business objects (entities) can implement this interface. Often such data-permissions have to be applied to an entire object-hierarchy. For security reasons we recommend that also all child-objects implement this interface. For performance reasons we recommend that the child-objects redundantly store the data-permission properties (such as <code>country</code> in the example above) and this gets simply propagated from the parent, when a child object is created.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_permissions_for_processing_data"><a class="anchor" href="#_permissions_for_processing_data"></a>Permissions for processing data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When saving or processing objects with a data-permission, we recommend to provide dedicated methods to verify the permission in an abstract base-class such as <code>AbstractUc</code> and simply call this explicitly from your business code. This makes it easy to understand and debug the code. Here is a simple example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">protected void verifyPermission(SecurityDataPermissionCountry entity) throws AccessDeniedException;</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_beware_of_aop"><a class="anchor" href="#_beware_of_aop"></a>Beware of AOP</h3>
+<div class="paragraph">
+<p>For simple but cross-cutting data-permissions you may also use <a href="guide-aop.html" class="xref page">AOP</a>. This leads to programming aspects that reflectively scan method arguments and magically decide what to do. Be aware that this quickly gets tricky:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>What if multiple of your method arguments have data-permissions (e.g. implement <code>SecurityDataPermission*</code>)?</p>
+</li>
+<li>
+<p>What if the object to authorize is only provided as reference (e.g. <code>Long</code> or <code>IdRef</code>) and only loaded and processed inside the implementation where the AOP aspect does not apply?</p>
+</li>
+<li>
+<p>How to express advanced data-permissions in annotations?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>What we have learned is that annotations like <code>@PreAuthorize</code> from <code>spring-security</code> easily lead to the "programming in string literals" anti-pattern. We strongly discourage to use this anti-pattern. In such case writing your own <code>verifyPermission</code> methods that you manually call in the right places of your business-logic is much better to understand, debug and maintain.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_permissions_for_reading_data"><a class="anchor" href="#_permissions_for_reading_data"></a>Permissions for reading data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When it comes to restrictions on the data to read it becomes even more tricky. In the context of a user only entities shall be loaded from the database he is permitted to read. This is simple for loading a single entity (e.g. by its ID) as you can load it and then if not permitted throw an exception to secure your code. But what if the user is performing a search query to find many entities? For performance reasons we should only find data the user is permitted to read and filter all the rest already via the database query. But what if this is not a requirement for a single query but needs to be applied cross-cutting to tons of queries? Therefore we have the following pattern that solves your problem:</p>
+</div>
+<div class="paragraph">
+<p>For each data-permission attribute (or set of such) we create an abstract base entity:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@MappedSuperclass
+@EntityListeners(PermissionCheckListener.class)
+@FilterDef(name = "country", parameters = {@ParamDef(name = "countries", type = "string")})
+@Filter(name = "country", condition = "country in (:countries)")
+public abstract class SecurityDataPermissionCountryEntity extends ApplicationPersistenceEntity
+    implements SecurityDataPermissionCountry {
+
+  private String country;
+
+  @Override
+  public String getCountry() {
+    return this.country;
+  }
+
+  public void setCountry(String country) {
+    this.country = country;
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There are some special hibernate annotations <code>@EntityListeners</code>, <code>@FilterDef</code>, and <code>@Filter</code> used here allowing to apply a filter on the <code>country</code> for any (non-native) query performed by hibernate. The entity listener may look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class PermissionCheckListener {
+
+  @PostLoad
+  public void read(SecurityDataPermissionCountryEntity entity) {
+    PermissionChecker.getInstance().requireReadPermission(entity);
+  }
+
+  @PrePersist
+  @PreUpdate
+  public void write(SecurityDataPermissionCountryEntity entity) {
+    PermissionChecker.getInstance().requireWritePermission(entity);
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will ensure that hibernate implicitly will call these checks for every such entity when it is read from or written to the database. Further to avoid reading entities from the database the user is not permitted to (and ending up with exceptions), we create an AOP aspect that automatically activates the above declared hibernate filter:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Named
+public class PermissionCheckerAdvice implements MethodBeforeAdvice {
+
+  @Inject
+  private PermissionChecker permissionChecker;
+
+  @PersistenceContext
+  private EntityManager entityManager;
+
+  @Override
+  public void before(Method method, Object[] args, Object target) {
+
+    Collection&lt;String&gt; permittedCountries = this.permissionChecker.getPermittedCountriesForReading();
+    if (permittedCountries != null) { // null is returned for admins that may access all countries
+      if (permittedCountries.isEmpty()) {
+        throw new AccessDeniedException("Not permitted for any country!");
+      }
+      Session session = this.entityManager.unwrap(Session.class);
+      session.enableFilter("country").setParameterList("countries", permittedCountries.toArray());
+    }
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Finally to apply this aspect to all Repositories (can easily be changed to DAOs) implement the following advisor:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Named
+public class PermissionCheckerAdvisor implements PointcutAdvisor, Pointcut, ClassFilter, MethodMatcher {
+
+  @Inject
+  private PermissionCheckerAdvice advice;
+
+  @Override
+  public Advice getAdvice() {
+    return this.advice;
+  }
+
+  @Override
+  public boolean isPerInstance() {
+    return false;
+  }
+
+  @Override
+  public Pointcut getPointcut() {
+    return this;
+  }
+
+  @Override
+  public ClassFilter getClassFilter() {
+    return this;
+  }
+
+  @Override
+  public MethodMatcher getMethodMatcher() {
+    return this;
+  }
+
+  @Override
+  public boolean matches(Method method, Class&lt;?&gt; targetClass) {
+    return true; // apply to all methods
+  }
+
+  @Override
+  public boolean isRuntime() {
+    return false;
+  }
+
+  @Override
+  public boolean matches(Method method, Class&lt;?&gt; targetClass, Object... args) {
+    throw new IllegalStateException("isRuntime()==false");
+  }
+
+  @Override
+  public boolean matches(Class&lt;?&gt; clazz) {
+    // when using DAOs simply change to some class like ApplicationDao
+    return DefaultRepository.class.isAssignableFrom(clazz);
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_and_granting_the_data_permissions"><a class="anchor" href="#_managing_and_granting_the_data_permissions"></a>Managing and granting the data-permissions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Following our <a href="guide-access-control.html#authorization" class="xref page">authorization guide</a> we can simply create a permission for each country. We might simply reserve a prefix (as virtual <code>«app-id»</code>) for each data-permission to allow granting data-permissions to end-users across all applications of the IT landscape. In our example we could create access controls <code>country.DE</code>, <code>country.US</code>, <code>country.ES</code>, etc. and assign those to the users. The method <code>permissionChecker.getPermittedCountriesForReading()</code> would then scan for these access controls and only return the 2-letter country code from it.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Before you make your decisions how to design your access controls please clarify the following questions:
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Do you need to separate data-permissions independent of the functional permissions? E.g. may it be required to express that a user can read data from the countries <code>ES</code> and <code>PL</code> but is only permitted to modify data from <code>PL</code>? In such case a single assignment of "country-permissions" to users is insufficient.</p>
+</li>
+<li>
+<p>Do you want to grant data-permissions individually for each application (higher flexibility and complexity) or for the entire application landscape (simplicity, better maintenance for administrators)? In case of the first approach you would rather have access controls like <code>app1.country.GB</code> and <code>app2.country.GB</code>.</p>
+</li>
+<li>
+<p>Do your data-permissions depend on objects that can be created dynamically inside your application?</p>
+</li>
+<li>
+<p>If you want to grant data-permissions on other business objects (entities), how do you want to reference them (primary keys, business keys, etc.)? What reference is most stable? Which is most readable?</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

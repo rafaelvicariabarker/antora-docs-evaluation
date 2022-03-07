@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-datatype.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_datatypes">Datatypes</a></li>
+<li><a href="#_datatype_packaging">Datatype Packaging</a></li>
+<li><a href="#_technical_concerns">Technical Concerns</a></li>
+<li><a href="#_datatypes_in_entities">Datatypes in Entities</a></li>
+<li><a href="#_datatypes_in_transfer_objects">Datatypes in Transfer-Objects</a>
+<ul class="sectlevel2">
+<li><a href="#_xml">XML</a></li>
+<li><a href="#_json">JSON</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_datatypes"><a class="anchor" href="#_datatypes"></a>Datatypes</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A datatype is an object representing a value of a specific type with the following aspects:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It has a technical or business specific semantic.</p>
+</li>
+<li>
+<p>Its JavaDoc explains the meaning and semantic of the value.</p>
+</li>
+<li>
+<p>It is immutable and therefore stateless (its value assigned at construction time and can not be modified).</p>
+</li>
+<li>
+<p>It is serializable.</p>
+</li>
+<li>
+<p>It properly implements #equals(Object) and #hashCode() (two different instances with the same value are equal and have the same hash).</p>
+</li>
+<li>
+<p>It shall ensure syntactical validation so it is NOT possible to create an instance with an invalid value.</p>
+</li>
+<li>
+<p>It is responsible for formatting its value to a string representation suitable for sinks such as UI, loggers, etc. Also consider cases like a Datatype representing a password where toString() should return something like "<strong><strong></strong></strong>**" instead of the actual password to prevent security accidents.</p>
+</li>
+<li>
+<p>It is responsible for parsing the value from other representations such as a string (as needed).</p>
+</li>
+<li>
+<p>It shall provide required logical operations on the value to prevent redundancies. Due to the immutable attribute all manipulative operations have to return a new Datatype instance (see e.g. BigDecimal.add(java.math.BigDecimal)).</p>
+</li>
+<li>
+<p>It should implement Comparable if a natural order is defined.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Based on the Datatype a presentation layer can decide how to view and how to edit the value. Therefore a structured data model should make use of custom datatypes in order to be expressive.
+Common generic datatypes are String, Boolean, Number and its subclasses, Currency, etc.
+Please note that both Date and Calendar are mutable and have very confusing APIs. Therefore, use JSR-310 or jodatime instead.
+Even if a datatype is technically nothing but a String or a Number but logically something special it is worth to define it as a dedicated datatype class already for the purpose of having a central javadoc to explain it. On the other side avoid to introduce technical datatypes like String32 for a String with a maximum length of 32 characters as this is not adding value in the sense of a real Datatype.
+It is suitable and in most cases also recommended to use the class implementing the datatype as API omitting a dedicated interface.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; mmm project<br>
+<cite>datatype javadoc</cite>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="http://m-m-m.sourceforge.net/apidocs/net/sf/mmm/util/lang/api/Datatype.html">mmm datatype javadoc</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_datatype_packaging"><a class="anchor" href="#_datatype_packaging"></a>Datatype Packaging</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For the devonfw we use a common <a href="coding-conventions.html#packages" class="xref page">packaging schema</a>.
+The specifics for datatypes are as following:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Segment</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Value</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Explanation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;component&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Here we use the (business) component defining the datatype or general for generic datatypes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;layer&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">common</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatypes are used across all layers and are not assigned to a dedicated layer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;scope&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">api</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatypes are always used directly as API even tough they may contain (simple) implementation logic. Most datatypes are simple wrappers for generic Java types (e.g. String) but make these explicit and might add some validation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_technical_concerns"><a class="anchor" href="#_technical_concerns"></a>Technical Concerns</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Many technologies like Dozer and QueryDSL&#8217;s (alias API) are heavily based on reflection. For them to work properly with custom datatypes, the frameworks must be able to instantiate custom datatypes with no-argument constructors. It is therefore recommended to implement a no-argument constructor for each datatype of at least protected visibility.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_datatypes_in_entities"><a class="anchor" href="#_datatypes_in_entities"></a>Datatypes in Entities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The usage of custom datatypes in entities is explained in the <a href="guide-jpa.html#entities-and-datatypes" class="xref page">persistence layer guide</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_datatypes_in_transfer_objects"><a class="anchor" href="#_datatypes_in_transfer_objects"></a>Datatypes in Transfer-Objects</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_xml"><a class="anchor" href="#_xml"></a>XML</h3>
+<div class="paragraph">
+<p>For mapping datatypes with JAXB see <a href="guide-xml.html" class="xref page">XML guide</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_json"><a class="anchor" href="#_json"></a>JSON</h3>
+<div class="paragraph">
+<p>For mapping datatypes from and to JSON see <a href="guide-json#json-custom-mapping.adoc">JSON custom mapping</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

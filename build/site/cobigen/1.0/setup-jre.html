@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Set up JRE for development :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">^
+      <img class="toolbar-logo" src="../../_/img/Logo_devonfw.svg" viewBox="20 0 80 80"
+        alt="Devonfw Logo">
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container"  data-component="cobigen" data-version="1.0">
+  <div class="panels">
+         <div class="nav-trees">
+      <div class="version-box">
+        <select data-component="cobigen" class="select-version">
+            <option value="1.0">
+              1.0
+            </option>
+        </select>
+      </div>
+        <div data-component="cobigen" data-version="1.0" class="hide">
+          <div class="nav-item is-link">
+              <button class="nav-item-toggle"></button>
+            <a  class="" href="index.html">
+              Cobigen
+            </a>
+          </div>
+          <div class="nav-children-panel hide">
+             
+   
+     
+      <div class="nav-item ">
+        <button class="nav-item-toggle"></button>
+         
+          <span class="">Usage</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <button class="nav-item-toggle"></button>
+         
+          <span class="">Installation</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <button class="nav-item-toggle"></button>
+         
+          <span class="">Architecture</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a class="spacer" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>              </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <div class="nav-trees">
+      <div class="version-box">
+        <select data-component="devon4j" class="select-version">
+            <option value="1.0">
+              1.0
+            </option>
+        </select>
+      </div>
+        <div data-component="devon4j" data-version="1.0" class="hide">
+          <div class="nav-item is-link">
+              <button class="nav-item-toggle"></button>
+            <a  class="" href="../../devon4j/1.0/index.html">
+              Devon4j
+            </a>
+          </div>
+          <div class="nav-children-panel hide">
+             
+   
+     
+      <div class="nav-item ">
+        <button class="nav-item-toggle"></button>
+         
+          <span class="">Documentation</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/architecture.html">Architecture Overview</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-domain-layer.html">Domain Layer</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-logic-layer.html">Logic Layer</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-service-layer.html">Service Layer</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-batch-layer.html">Batch Layer</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-client-layer.html">Client Layer (GUI)</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <button class="nav-item-toggle"></button>
+         
+          <span class="">Coding</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/coding-conventions.html">Coding Conventions</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/coding-tools.html">Development Tools</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <button class="nav-item-toggle"></button>
+         
+          <span class="">Guides</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-dependency-injection.html">Bean Dependency Injection</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-configuration.html">Configuration</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-logging.html">Logging</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-exceptions.html">Exception Handling</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-i18n.html">Internationalization (I18N)</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-transferobject.html">Transferobjects</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-beanmapping.html">Bean-Mapping</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-datatype.html">Datatypes</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-xml.html">XML</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-json.html">JSON</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-rest.html">REST</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-soap.html">SOAP</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-service-client.html">Service Client</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-kafka.html">Kafka</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-validation.html">Validation</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-security.html">Security</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-access-control.html">Access Control</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-testing.html">Testing</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-transactions.html">Transaction Handling</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-aop.html">AOP</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-jpa.html">JPA</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-repository.html">Repository</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-dao.html">DAO</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-jpa-query.html">Queries</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-jpa-performance.html">JPA Performance</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-auditing.html">Auditing</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-database-migration.html">Database Migration</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-accessibility.html">Accessibility</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-caching.html">Caching</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-cors-support.html">CORS support</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-blob-support.html">BLOB support</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-sql.html">SQL</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../devon4j/1.0/guide-apm.html">Application Performance Management</a>              </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+   </div>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>  <a href="../../devon4j/1.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Cobigen</a></li>
+    <li><a href="setup-jre.html">Set up JRE for development</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/cobigen/edit/refactorForAntora/modules/ROOT/pages/setup-jre.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Set up JRE for development</h1>
+<div class="paragraph">
+<p>Cobigen is supposed to support both java 8 and java 11 even though we are moving to 11. Here is a short description of how to setup the execution environment for developing so that you can test both environments.</p>
+</div>
+<div class="paragraph">
+<p>By default, cobigen development tools come with some installed JREs in <code>/software/java (11)</code> and <code>/software/java/additionalJdk (7 and 8)</code></p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="documentation/images/howtos/setup-jre/installed-jre.PNG" alt="installed jre"></span></p>
+</div>
+<div class="paragraph">
+<p>In cobigen, there is a fixed setup of JAVASE-1.8 in maven, which leads to the odd that no matter which Java is currently used, eclipse keeps showing JAVASE-1.8. A temporary reconfiguration of JRE in build path will also be overwritten by a maven update.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="documentation/images/howtos/setup-jre/java-11.PNG" alt="java 11"></span></p>
+</div>
+<div class="paragraph">
+<p>Eclipse has a fixed list of execution environments, which is automatically matched with the current most suitable installed JRE, in our case JDK-8 by default. The matching JRE is the actual one, which is used to compile no matter which name eclipse shows</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="documentation/images/howtos/setup-jre/execution-environments.PNG" alt="execution environments"></span></p>
+</div>
+<div class="paragraph">
+<p>As that, to move to 11, just setup the match JRE of JAVASE-1.8 to 11 or any version you need</p>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

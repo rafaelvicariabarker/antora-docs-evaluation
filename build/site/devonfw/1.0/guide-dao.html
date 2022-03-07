@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: devonfw Documentation</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">devonfw Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="devonfw" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Cobigen</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Usage</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_usage">Usage of the eclipse UI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-openapiplugin#usage">OpenAPI Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_ionic-client-generation">Ionic/Cordova Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/howto_angular-client-generation">Angular Client Generation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-maven_configuration">Usage in Maven Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-core_configuration">Configuration of the Templates</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki/cobigen-eclipse_installation">For eclipse users</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/devonfw/cobigen/wiki#architecture">CobiGen is build as an extensible framework for incremental code generation&#8230;&#8203;</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cobigen</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Cobigen</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rafaelvicariabarker/devon4j/edit/refactorForAntora/modules/ROOT/pages/guide-dao.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_data_access_object">Data Access Object</a></li>
+<li><a href="#_dao_interface">DAO Interface</a></li>
+<li><a href="#_dao_implementation">DAO Implementation</a>
+<ul class="sectlevel2">
+<li><a href="#_static_queries_for_dao_implementation">Static queries for DAO Implementation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_data_access_object"><a class="anchor" href="#_data_access_object"></a>Data Access Object</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <em>Data Access Objects</em> (DAOs) are part of the persistence layer.
+They are responsible for a specific <a href="#entity">entity</a> and should be named <code>«Entity»Dao</code> and <code>«Entity»DaoImpl</code>.
+The DAO offers the so called CRUD-functionalities (create, retrieve, update, delete) for the corresponding entity.
+Additionally a DAO may offer advanced operations such as <a href="guide-jpa-query.html" class="xref page">query</a> or locking methods.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dao_interface"><a class="anchor" href="#_dao_interface"></a>DAO Interface</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For each DAO there is an interface named <code>«Entity»Dao</code> that defines the API. For CRUD support and common naming we derive it from the <code>ApplicationDao</code> interface that comes with the devon application template:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface MyEntityDao extends ApplicationDao&lt;MyEntity&gt; {
+  List&lt;MyEntity&gt; findByCriteria(MyEntitySearchCriteria criteria);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All CRUD operations are inherited from <code>ApplicationDao</code> so you only have to declare the additional methods.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dao_implementation"><a class="anchor" href="#_dao_implementation"></a>DAO Implementation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Implementing a DAO is quite simple. We create a class named <code>«Entity»DaoImpl</code> that extends <code>ApplicationDaoImpl</code> and implements your <code>«Entity»Dao</code> interface:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class MyEntityDaoImpl extends ApplicationDaoImpl&lt;MyEntity&gt; implements MyEntityDao {
+
+  public List&lt;MyEntity&gt; findByCriteria(MyEntitySearchCriteria criteria) {
+    TypedQuery&lt;MyEntity&gt; query = createQuery(criteria, getEntityManager());
+    return query.getResultList();
+  }
+  ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Again you only need to implement the additional non-CRUD methods that you have declared in your <code>«Entity»Dao</code> interface.
+In the DAO implementation you can use the method <code>getEntityManager()</code> to access the <code>EntityManager</code> from the JPA. You will need the <code>EntityManager</code> to create and execute <a href="guide-jpa-query.html" class="xref page">queries</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_static_queries_for_dao_implementation"><a class="anchor" href="#_static_queries_for_dao_implementation"></a>Static queries for DAO Implementation</h3>
+<div class="paragraph">
+<p>All static <a href="guide-jpa-query.html" class="xref page">queries</a> are declared in the file <code>src\main\resources\META-INF\orm.xml</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;entity-mappings version="1.0" xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"&gt;
+  &lt;named-query name="find.dish.with.max.price"&gt;
+    &lt;query&gt;&lt;![SELECT dish FROM DishEntity dish WHERE dish.price &lt;= :maxPrice]]&gt;&lt;/query&gt;
+  &lt;/named-query&gt;
+  ...
+&lt;/hibernate-mapping&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When your application is started, all these static queries will be created as prepared statements. This allows better performance and also ensures that you get errors for invalid JPQL queries when you start your app rather than later when the query is used.</p>
+</div>
+<div class="paragraph">
+<p>To avoid redundant occurrences of the query name (<code>get.open.order.positions.for.order</code>) we define a constant for each named query:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class NamedQueries {
+  public static final String FIND_DISH_WITH_MAX_PRICE = "find.dish.with.max.price";
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that changing the name of the java constant (<code>FIND_DISH_WITH_MAX_PRICE</code>) can be done easily with refactoring. Further you can trace where the query is used by searching the references of the constant.</p>
+</div>
+<div class="paragraph">
+<p>The following listing shows how to use this query:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public List&lt;DishEntity&gt; findDishByMaxPrice(BigDecimal maxPrice) {
+  Query query = getEntityManager().createNamedQuery(NamedQueries.FIND_DISH_WITH_MAX_PRICE);
+  query.setParameter("maxPrice", maxPrice);
+  return query.getResultList();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Via <code>EntityManager.createNamedQuery(String)</code> we create an instance of <code>Query</code> for our predefined static query.
+Next we use <code>setParameter(String, Object)</code> to provide a parameter (<code>maxPrice</code>) to the query. This has to be done for all parameters of the query.</p>
+</div>
+<div class="paragraph">
+<p>Note that using the <code>createQuery(String)</code> method, which takes the entire query as string (that may already contain the parameter) is not allowed to avoid SQL injection vulnerabilities.
+When the method <code>getResultList()</code> is invoked, the query is executed and the result is delivered as <code>List</code>. As an alternative, there is a method called <code>getSingleResult()</code>, which returns the entity if the query returned exactly one and throws an exception otherwise.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
