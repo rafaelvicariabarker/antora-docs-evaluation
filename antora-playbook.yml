@@ -7,6 +7,6 @@ content:
     branches: [refactorForAntora]
   - url: https://github.com/rafaelvicariabarker/cobigen.git
     branches: [refactorForAntora]
-ui: 
-  bundle: 
-    url: /Users/rvicaria/projects/my-project/workspaces/main/antora-ui-default/build/ui-bundle.zip
+ui:
+  bundle:
+    url: C:\Users\rvicaria\projects\my-project\workspaces\main\devonfw-ui\build\ui-bundle.zip
