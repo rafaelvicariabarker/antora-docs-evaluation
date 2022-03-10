@@ -1,0 +1,17 @@
+== Project structure
+Antora requires a very specific project structure https://docs.antora.org/antora/latest/standard-directories/.
+
+== Level 0 sections
+Asciidoctor does not like the use of level 0 sections in article doctypes
+
+== Image Folder
+When Antora finds an image tag-in a document, it searches for the image in the images folder. Because the documentation currently has the images/ folder in every file path, the images folder has to contain another images folder. Otherwise, images/ has to be deleted in every file path.
+
+== Rename Asciidoc
+Antora does not recognize the .asciidoc file ending. Every file has to be chaged to .adoc
+
+== xref vs link
+Internal documents need to be tagged with xref: and external websites need to be tagged with link:app-name: 
+
+== Other Asciidoctor errors/warnings
+Asciidoctor throws errors such as "id assigned to section already" and "skipping reference to missing attribute: app"
